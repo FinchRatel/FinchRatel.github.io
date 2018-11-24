@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="VIM · 基础06">
-<meta name="keywords" content="vim-tutor">
+  <meta name="description" content="SFTP · 简易教程及示例">
+<meta name="keywords" content="sftp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VIM · 基础06">
-<meta property="og:url" content="https://finchratel.github.io/2018/11/21/vim-learn-006/index.html">
+<meta property="og:title" content="SFTP · 简易教程及示例">
+<meta property="og:url" content="https://finchratel.github.io/2018/11/23/linux-learn-002/index.html">
 <meta property="og:site_name" content="远上寒山石径斜">
-<meta property="og:description" content="VIM · 基础06">
+<meta property="og:description" content="SFTP · 简易教程及示例">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-21T09:11:15.610Z">
+<meta property="og:updated_time" content="2018-11-24T08:08:32.805Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VIM · 基础06">
-<meta name="twitter:description" content="VIM · 基础06">
+<meta name="twitter:title" content="SFTP · 简易教程及示例">
+<meta name="twitter:description" content="SFTP · 简易教程及示例">
 
 
 
 
 
 
-  <link rel="canonical" href="https://finchratel.github.io/2018/11/21/vim-learn-006/">
+  <link rel="canonical" href="https://finchratel.github.io/2018/11/23/linux-learn-002/">
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>VIM · 基础06 | 远上寒山石径斜</title>
+  <title>SFTP · 简易教程及示例 | 远上寒山石径斜</title>
   
 
 
@@ -347,7 +347,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/11/21/vim-learn-006/">
+    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/11/23/linux-learn-002/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Finch Zhang">
@@ -364,7 +364,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VIM · 基础06
+          <h1 class="post-title" itemprop="name headline">SFTP · 简易教程及示例
               
             
           </h1>
@@ -389,12 +389,24 @@
                 
               
 
-              <time title="创建时间：2018-11-21 15:07:15 / 修改时间：17:11:15" itemprop="dateCreated datePublished" datetime="2018-11-21T15:07:15+08:00">2018-11-21</time>
+              <time title="创建时间：2018-11-23 17:54:26" itemprop="dateCreated datePublished" datetime="2018-11-23T17:54:26+08:00">2018-11-23</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-24 16:08:32" itemprop="dateModified" datetime="2018-11-24T16:08:32+08:00">2018-11-24</time>
               
             
           </span>
@@ -411,7 +423,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/vim/" itemprop="url" rel="index"><span itemprop="name">vim</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
 
                 
                 
@@ -426,8 +438,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/21/vim-learn-006/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/11/21/vim-learn-006/" itemprop="commentsCount"></span>
+                <a href="/2018/11/23/linux-learn-002/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/11/23/linux-learn-002/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -455,37 +467,101 @@
       
 
       
-        <p><strong>VIM · 基础06</strong></p>
+        <p><strong>SFTP · 简易教程及示例</strong></p>
 <a id="more"></a>
 <ul>
-<li><p>进入插入模式 在光标后<br><code>i</code></p>
+<li><p>sftp</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># sftp</span></span><br><span class="line">usage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]</span><br><span class="line">          [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l <span class="built_in">limit</span>]</span><br><span class="line">          [-o ssh_option] [-P port] [-R num_requests] [-S program]</span><br><span class="line">          [-s subsystem | sftp_server] host</span><br><span class="line">       sftp [user@]host[:file ...]</span><br><span class="line">       sftp [user@]host[:dir[/]]</span><br><span class="line">       sftp -b batchfile [user@]host</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>进入插入模式 在光标前<br><code>a</code></p>
+<li><p>连接sftp</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># sftp root@host</span></span><br><span class="line">The authenticity of host <span class="string">'host (192.168.16.128)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:t5KwBH+CBk7Emp24FI73Jr4IzVkD9VEUG9XIu86CvsE.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is MD5:3c:31:c4:06:8a:6a:a6:4d:9a:21:58:c0:bc:e1:eb:de.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>host,192.168.16.128<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@host'</span>s password: </span><br><span class="line">Connected to host.</span><br><span class="line">sftp&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>进入插入模式 在光标所在行尾<br><code>A</code></p>
+<li><p>help</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">sftp&gt; <span class="built_in">help</span></span><br><span class="line">Available commands:</span><br><span class="line"><span class="built_in">bye</span>                                Quit sftp</span><br><span class="line"><span class="built_in">cd</span> path                            Change remote directory to <span class="string">'path'</span></span><br><span class="line">chgrp grp path                     Change group of file <span class="string">'path'</span> to <span class="string">'grp'</span></span><br><span class="line">chmod mode path                    Change permissions of file <span class="string">'path'</span> to <span class="string">'mode'</span></span><br><span class="line">chown own path                     Change owner of file <span class="string">'path'</span> to <span class="string">'own'</span></span><br><span class="line">df [-hi] [path]                    Display statistics <span class="keyword">for</span> current directory or</span><br><span class="line">                                   filesystem containing <span class="string">'path'</span></span><br><span class="line"><span class="built_in">exit</span>                               Quit sftp</span><br><span class="line">get [-afPpRr] remote [<span class="built_in">local</span>]       Download file</span><br><span class="line">reget [-fPpRr] remote [<span class="built_in">local</span>]      Resume download file</span><br><span class="line">reput [-fPpRr] [<span class="built_in">local</span>] remote      Resume upload file</span><br><span class="line"><span class="built_in">help</span>                               Display this <span class="built_in">help</span> text</span><br><span class="line">lcd path                           Change <span class="built_in">local</span> directory to <span class="string">'path'</span></span><br><span class="line">lls [ls-options [path]]            Display <span class="built_in">local</span> directory listing</span><br><span class="line">lmkdir path                        Create <span class="built_in">local</span> directory</span><br><span class="line">ln [-s] oldpath newpath            Link remote file (-s <span class="keyword">for</span> symlink)</span><br><span class="line">lpwd                               Print <span class="built_in">local</span> working directory</span><br><span class="line">ls [-1afhlnrSt] [path]             Display remote directory listing</span><br><span class="line">lumask <span class="built_in">umask</span>                       Set <span class="built_in">local</span> <span class="built_in">umask</span> to <span class="string">'umask'</span></span><br><span class="line">mkdir path                         Create remote directory</span><br><span class="line">progress                           Toggle display of progress meter</span><br><span class="line">put [-afPpRr] <span class="built_in">local</span> [remote]       Upload file</span><br><span class="line"><span class="built_in">pwd</span>                                Display remote working directory</span><br><span class="line">quit                               Quit sftp</span><br><span class="line">rename oldpath newpath             Rename remote file</span><br><span class="line">rm path                            Delete remote file</span><br><span class="line">rmdir path                         Remove remote directory</span><br><span class="line">symlink oldpath newpath            Symlink remote file</span><br><span class="line">version                            Show SFTP version</span><br><span class="line">!<span class="built_in">command</span>                           Execute <span class="string">'command'</span> <span class="keyword">in</span> <span class="built_in">local</span> shell</span><br><span class="line">!                                  Escape to <span class="built_in">local</span> shell</span><br><span class="line">?</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>光标下方新建一行，并进入插入模式<br><code>o</code></p>
+<li><p>常用命令一览  </p>
 </li>
-<li><p>光标上方新建一行，并进入插入模式<br><code>O</code></p>
-</li>
-<li><p>替换模式 连续替换<br><code>R</code></p>
-</li>
-<li><p>复制<br><code>y</code></p>
-</li>
-<li><p>粘贴<br><code>p</code></p>
-</li>
-<li><p>复制粘贴</p>
-<ul>
-<li><code>v</code> 进入可视模式</li>
-<li>移动光标，选择文本</li>
-<li><code>y</code> 复制</li>
-<li><code>p</code> 粘贴</li>
 </ul>
-</li>
-<li><p>窗口切换<br><code>CTRL + W; CTRL + W</code></p>
-</li>
-<li><p>自动补全<br><code>CTRL + D</code><br><code>TAB</code></p>
-</li>
+<blockquote>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bye</code></td>
+<td>退出</td>
+</tr>
+<tr>
+<td><code>quit</code></td>
+<td>退出</td>
+</tr>
+<tr>
+<td><code>cd path</code></td>
+<td>切换远程目录</td>
+</tr>
+<tr>
+<td><code>lcd path</code></td>
+<td>切换本地目录</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>展示远程当前文件夹</td>
+</tr>
+<tr>
+<td><code>lpwd</code></td>
+<td>展示本地当前文件夹</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td>列出远程目录信息</td>
+</tr>
+<tr>
+<td><code>lls</code></td>
+<td>列出本地目录信息</td>
+</tr>
+<tr>
+<td><code>mkdir</code></td>
+<td>创建远程目录</td>
+</tr>
+<tr>
+<td><code>lmkdir</code></td>
+<td>创建本地目录</td>
+</tr>
+<tr>
+<td><code>progress</code></td>
+<td>是否展示进度</td>
+</tr>
+<tr>
+<td><code>put</code></td>
+<td>上传</td>
+</tr>
+<tr>
+<td><code>get</code></td>
+<td>下载</td>
+</tr>
+<tr>
+<td><code>df</code></td>
+<td>查看磁盘信息</td>
+</tr>
+<tr>
+<td><code>!command</code></td>
+<td>在本地shell执行命令</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>退出到本地shell</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</blockquote>
+<ul>
+<li>上传下载示例<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">sftp&gt; <span class="built_in">pwd</span></span><br><span class="line">Remote working directory: /root</span><br><span class="line">sftp&gt; lpwd</span><br><span class="line">Local working directory: /c/Users/zhanghao30/Desktop/temp</span><br><span class="line">sftp&gt; ls</span><br><span class="line">anaconda-ks.cfg</span><br><span class="line">sftp&gt; lls</span><br><span class="line">note.txt</span><br><span class="line">sftp&gt; put note.txt</span><br><span class="line">Uploading note.txt to /root/note.txt</span><br><span class="line">note.txt                    100% 1781   175.3KB/s   00:00</span><br><span class="line">sftp&gt; get anaconda-ks.cfg</span><br><span class="line">Fetching /root/anaconda-ks.cfg to anaconda-ks.cfg</span><br><span class="line">/root/anaconda-ks.cfg       100% 1421   157.1KB/s   00:00</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -510,7 +586,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/vim-tutor/" rel="tag"># vim-tutor</a>
+            <a href="/tags/sftp/" rel="tag"># sftp</a>
           
         </div>
       
@@ -523,8 +599,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/21/vim-learn-005/" rel="next" title="VIM · 基础05">
-                <i class="fa fa-chevron-left"></i> VIM · 基础05
+              <a href="/2018/11/23/vim-learn-007/" rel="next" title="VIM · 小结01">
+                <i class="fa fa-chevron-left"></i> VIM · 小结01
               </a>
             
           </div>
@@ -532,10 +608,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/23/vim-learn-007/" rel="prev" title="VIM · 小结01">
-                VIM · 小结01 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
