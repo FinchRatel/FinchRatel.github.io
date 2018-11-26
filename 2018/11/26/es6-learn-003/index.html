@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="VIM · 基础06">
-<meta name="keywords" content="vim-tutor">
+  <meta name="description" content="ES6 · Module">
+<meta name="keywords" content="es6-module">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VIM · 基础06">
-<meta property="og:url" content="https://finchratel.github.io/2018/11/21/vim-learn-006/index.html">
+<meta property="og:title" content="ES6 · Module">
+<meta property="og:url" content="https://finchratel.github.io/2018/11/26/es6-learn-003/index.html">
 <meta property="og:site_name" content="远上寒山石径斜">
-<meta property="og:description" content="VIM · 基础06">
+<meta property="og:description" content="ES6 · Module">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-21T09:11:15.610Z">
+<meta property="og:updated_time" content="2018-11-26T09:25:23.240Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VIM · 基础06">
-<meta name="twitter:description" content="VIM · 基础06">
+<meta name="twitter:title" content="ES6 · Module">
+<meta name="twitter:description" content="ES6 · Module">
 
 
 
 
 
 
-  <link rel="canonical" href="https://finchratel.github.io/2018/11/21/vim-learn-006/">
+  <link rel="canonical" href="https://finchratel.github.io/2018/11/26/es6-learn-003/">
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>VIM · 基础06 | 远上寒山石径斜</title>
+  <title>ES6 · Module | 远上寒山石径斜</title>
   
 
 
@@ -347,7 +347,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/11/21/vim-learn-006/">
+    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/11/26/es6-learn-003/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Finch Zhang">
@@ -364,7 +364,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VIM · 基础06
+          <h1 class="post-title" itemprop="name headline">ES6 · Module
               
             
           </h1>
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="创建时间：2018-11-21 15:07:15 / 修改时间：17:11:15" itemprop="dateCreated datePublished" datetime="2018-11-21T15:07:15+08:00">2018-11-21</time>
+              <time title="创建时间：2018-11-26 15:36:00 / 修改时间：17:25:23" itemprop="dateCreated datePublished" datetime="2018-11-26T15:36:00+08:00">2018-11-26</time>
             
 
             
@@ -411,7 +411,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/vim/" itemprop="url" rel="index"><span itemprop="name">vim</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/es6/" itemprop="url" rel="index"><span itemprop="name">es6</span></a></span>
 
                 
                 
@@ -426,8 +426,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/21/vim-learn-006/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/11/21/vim-learn-006/" itemprop="commentsCount"></span>
+                <a href="/2018/11/26/es6-learn-003/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/11/26/es6-learn-003/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -455,38 +455,75 @@
       
 
       
-        <p><strong>VIM · 基础06</strong></p>
+        <p><strong>ES6 · Module</strong></p>
 <a id="more"></a>
+<p>运行时加载，在运行到的时候才能确定依赖关系，输出的是值的缓存，不能动态更新</p>
 <ul>
-<li><p>进入插入模式 在光标后<br><code>i</code></p>
-</li>
-<li><p>进入插入模式 在光标前<br><code>a</code></p>
-</li>
-<li><p>进入插入模式 在光标所在行尾<br><code>A</code></p>
-</li>
-<li><p>光标下方新建一行，并进入插入模式<br><code>o</code></p>
-</li>
-<li><p>光标上方新建一行，并进入插入模式<br><code>O</code></p>
-</li>
-<li><p>替换模式 连续替换<br><code>R</code></p>
-</li>
-<li><p>复制<br><code>y</code></p>
-</li>
-<li><p>粘贴<br><code>p</code></p>
-</li>
-<li><p>复制粘贴</p>
+<li>CommonJS</li>
+<li>AMD</li>
+</ul>
+<p>编译时加载，编译时即可确定依赖关系，效率更高，输出的是值的引用，可以做静态优化，输出会动态更新</p>
 <ul>
-<li><code>v</code> 进入可视模式</li>
-<li>移动光标，选择文本</li>
-<li><code>y</code> 复制</li>
-<li><code>p</code> 粘贴</li>
+<li>ES6</li>
 </ul>
-</li>
-<li><p>窗口切换<br><code>CTRL + W; CTRL + W</code></p>
-</li>
-<li><p>自动补全<br><code>CTRL + D</code><br><code>TAB</code></p>
-</li>
+<p>ES6模块自动启用严格模式，严格模式下：</p>
+<ul>
+<li>变量必须声明后再使用</li>
+<li>函数的参数不能有同名属性，否则报错</li>
+<li>不能使用with语句</li>
+<li>不能对只读属性赋值，否则报错</li>
+<li>不能使用前缀 0 表示八进制数，否则报错</li>
+<li>不能删除不可删除的属性，否则报错</li>
+<li>不能删除变量delete prop，会报错，只能删除属性delete global[prop]</li>
+<li>eval不会在它的外层作用域引入变量</li>
+<li>eval和arguments不能被重新赋值</li>
+<li>arguments不会自动反映函数参数的变化</li>
+<li>不能使用arguments.callee</li>
+<li>不能使用arguments.caller</li>
+<li>禁止this指向全局对象，顶层的this指向undefined</li>
+<li>不能使用fn.caller和fn.arguments获取函数调用的堆栈</li>
+<li>增加了保留字（比如protected、static和interface）</li>
 </ul>
+<blockquote>
+<p>export命令用于规定模块的对外接口<br>import命令用于输入其他模块提供的功能<br>as 重命名<br>default 指定默认输出<br>* 代表模块所有内容</p>
+</blockquote>
+<hr>
+<p><strong>一般用法</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123; name &#125;;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; name &#125; <span class="keyword">from</span> <span class="string">'./module'</span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>使用default指定默认输出</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> name;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> name <span class="keyword">from</span> <span class="string">'./module'</span>; <span class="comment">// name可以是任何合法变量名</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>使用 * 整体加载</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">let</span> version = <span class="string">'1.0.0'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123; name, version &#125;;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> <span class="built_in">module</span> <span class="keyword">from</span> <span class="string">'./module'</span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>模块继承</strong><br><figure class="highlight js"><figcaption><span>utils.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'utils'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123;name&#125;;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>tools.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> * <span class="keyword">from</span> <span class="string">'./utils'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> version = <span class="string">'1.0.0'</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> tools <span class="keyword">from</span> <span class="string">'./tools'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(tools.name, tools.version);</span><br><span class="line"><span class="comment">// utils 1.0.0</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>浏览器加载ES6模块</strong><br><code>&lt;script&gt;</code>标签加入<code>type=&quot;module&quot;</code>属性表示是ES6模块<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"path/to/myModule.js"</span> <span class="attr">defer</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"path/to/myModule.js"</span> <span class="attr">async</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>加载方式</th>
+<th>执行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defer</td>
+<td>异步加载</td>
+<td>渲染完再执行</td>
+</tr>
+<tr>
+<td>async</td>
+<td>异步加载</td>
+<td>下载完就执行</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"module"</span> <span class="attr">src</span>=<span class="string">"./foo.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 等同于 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"module"</span> <span class="attr">src</span>=<span class="string">"./foo.js"</span> <span class="attr">defer</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -510,7 +547,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/vim-tutor/" rel="tag"># vim-tutor</a>
+            <a href="/tags/es6-module/" rel="tag"># es6-module</a>
           
         </div>
       
@@ -523,8 +560,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/21/vim-learn-005/" rel="next" title="VIM · 基础05">
-                <i class="fa fa-chevron-left"></i> VIM · 基础05
+              <a href="/2018/11/23/linux-learn-002/" rel="next" title="SFTP · 简易教程及示例">
+                <i class="fa fa-chevron-left"></i> SFTP · 简易教程及示例
               </a>
             
           </div>
@@ -532,10 +569,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/23/vim-learn-007/" rel="prev" title="VIM · 小结01">
-                VIM · 小结01 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
