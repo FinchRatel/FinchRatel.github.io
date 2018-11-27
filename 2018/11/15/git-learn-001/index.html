@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="远上寒山石径斜">
 <meta property="og:description" content="1. clone2. branch3. checkout4. status5. add6. commit7. push8. 示例">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-15T11:29:22.803Z">
+<meta property="og:updated_time" content="2018-11-27T09:43:05.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git · 简易教程">
 <meta name="twitter:description" content="1. clone2. branch3. checkout4. status5. add6. commit7. push8. 示例">
@@ -389,12 +389,24 @@
                 
               
 
-              <time title="创建时间：2018-11-15 16:58:33 / 修改时间：19:29:22" itemprop="dateCreated datePublished" datetime="2018-11-15T16:58:33+08:00">2018-11-15</time>
+              <time title="创建时间：2018-11-15 16:58:33" itemprop="dateCreated datePublished" datetime="2018-11-15T16:58:33+08:00">2018-11-15</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-27 17:43:05" itemprop="dateModified" datetime="2018-11-27T17:43:05+08:00">2018-11-27</time>
               
             
           </span>
@@ -490,11 +502,8 @@
 </li>
 </ul>
 <h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><ul>
-<li><p>提交代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加到索引</span></span><br><span class="line">$ git add .</span><br><span class="line"><span class="comment"># 记录变动</span></span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line"><span class="comment"># 推送到远程分支</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
-</li>
 <li><p>克隆-修改-提交</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> ssh://git.moyuqingpen.com.cn:7999/~zhanghao30/playground.git</span><br><span class="line"><span class="comment"># do some change here</span></span><br><span class="line">$ git add .</span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">$ git <span class="built_in">clone</span> ssh://git.moyuqingpen.com.cn:7999/~zhanghao30/playground.git</span><br><span class="line"><span class="comment"># do some change here ...</span></span><br><span class="line"><span class="comment"># 添加到索引</span></span><br><span class="line">$ git add .</span><br><span class="line"><span class="comment"># 记录变动</span></span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line"><span class="comment"># 推送到远程分支</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>新建本地develop分支，并提交到远程</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git branch develop</span><br><span class="line">$ git branch --<span class="built_in">set</span>-upstream-to=/origin/develop</span><br><span class="line">$ git pull</span><br><span class="line"><span class="comment"># do some change here</span></span><br><span class="line">$ git add .</span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
