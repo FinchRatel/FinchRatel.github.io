@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="远上寒山石径斜">
 <meta property="og:description" content="1. 官网2. 源码安装3. npm源">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-12T12:01:43.470Z">
+<meta property="og:updated_time" content="2018-11-27T08:18:35.582Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nodejs · 安装">
 <meta name="twitter:description" content="1. 官网2. 源码安装3. npm源">
@@ -406,7 +406,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-12 20:01:43" itemprop="dateModified" datetime="2018-11-12T20:01:43+08:00">2018-11-12</time>
+                <time title="修改时间：2018-11-27 16:18:35" itemprop="dateModified" datetime="2018-11-27T16:18:35+08:00">2018-11-27</time>
               
             
           </span>
@@ -469,7 +469,7 @@
       
         <p><strong>1. 官网</strong><br><strong>2. 源码安装</strong><br><strong>3. npm源</strong></p>
 <a id="more"></a>
-<h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>NodeJS有两个版本：<br><code>长期维护版</code>(LTS)推荐多数用户使用，建议开发中使用<br><code>最新发布版</code>含实验性功能，建议个人学习时使用</p>
+<h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>NodeJS有两个版本：<br>    <code>长期维护版</code>(LTS)推荐多数用户使用，建议开发中使用；<br>    <code>最新发布版</code>含实验性功能，建议个人学习时使用。</p>
 <ul>
 <li><a href="https://nodejs.org" target="_blank" rel="noopener">官网-英文</a></li>
 <li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">官网-中文</a></li>
@@ -477,10 +477,16 @@
 <li><a href="http://nodejs.cn" target="_blank" rel="noopener">国内官网</a></li>
 <li><a href="https://npm.taobao.org/mirrors/node/" target="_blank" rel="noopener">淘宝镜像</a></li>
 </ul>
-<h3 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h3><p>官方镜像下载较慢，建议使用国内镜像<br>用到了 <code>wget</code>下载源码，也可以使用其它方式下载<br>编译需要 <code>gcc</code> <code>g++</code> <code>gcc-c++</code><br>源码安装时间较长，请耐心等待<br>推荐使用二进制包，下载解压即用</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://npm.taobao.org/mirrors/node/v10.13.0/node-v10.13.0.tar.gz</span><br><span class="line">$ tar -zxvf node-v10.13.0.tar.gz</span><br><span class="line">$ <span class="built_in">cd</span> node-v10.13.0</span><br><span class="line">$ ./configure</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
-<h3 id="npm源"><a href="#npm源" class="headerlink" title="npm源"></a>npm源</h3><p><a href="https://registry.npmjs.org/" target="_blank" rel="noopener">官方源</a>在国外，速度较慢，建议切换为国内源，推荐使用<a href="https://npm.taobao.org/" target="_blank" rel="noopener"><code>淘宝源</code></a><br>更换npm源有三种方式，如下：</p>
-<h4 id="1-直接修改配置文件"><a href="#1-直接修改配置文件" class="headerlink" title="1.直接修改配置文件"></a>1.直接修改配置文件</h4><p>配置文件在 <code>~/.npmrc</code></p>
+<h3 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://npm.taobao.org/mirrors/node/v10.13.0/node-v10.13.0.tar.gz</span><br><span class="line">$ tar -zxvf node-v10.13.0.tar.gz</span><br><span class="line">$ <span class="built_in">cd</span> node-v10.13.0</span><br><span class="line">$ ./configure</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<ul>
+<li>官方镜像下载较慢，建议使用国内镜像</li>
+<li>用到了 <code>wget</code>下载源码，也可以使用其它方式下载</li>
+<li>编译需要 <code>gcc</code> <code>g++</code> <code>gcc-c++</code></li>
+<li>源码安装时间较长，请耐心等待</li>
+<li>推荐使用二进制包，下载解压即用</li>
+</ul>
+<h3 id="npm源"><a href="#npm源" class="headerlink" title="npm源"></a>npm源</h3><p><a href="https://registry.npmjs.org/" target="_blank" rel="noopener">官方源</a>在国外，速度较慢，建议切换为国内源，推荐使用<a href="https://npm.taobao.org/" target="_blank" rel="noopener">淘宝源</a>。<br>更换npm源有三种方式，如下：</p>
+<h4 id="1-直接修改配置文件-推荐"><a href="#1-直接修改配置文件-推荐" class="headerlink" title="1.直接修改配置文件(推荐)"></a>1.直接修改配置文件(推荐)</h4><p>配置文件在 <code>~/.npmrc</code></p>
 <figure class="highlight bash"><figcaption><span>.npmrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">registry=https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
 <h4 id="2-使用-cnpm-替代-npm"><a href="#2-使用-cnpm-替代-npm" class="headerlink" title="2.使用 cnpm 替代 npm"></a>2.使用 <a href="https://npm.taobao.org/" target="_blank" rel="noopener">cnpm</a> 替代 npm</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install cnpm -g</span><br></pre></td></tr></table></figure>
 <h4 id="3-使用-nrm-管理-npm-源"><a href="#3-使用-nrm-管理-npm-源" class="headerlink" title="3.使用 nrm 管理 npm 源"></a>3.使用 <a href="https://www.npmjs.com/package/nrm" target="_blank" rel="noopener">nrm</a> 管理 npm 源</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 nrm</span></span><br><span class="line">$ npm install nrm -g</span><br><span class="line"><span class="comment"># 列出可用的npm源</span></span><br><span class="line">$ nrm ls</span><br><span class="line"><span class="comment"># 切换为淘宝npm源</span></span><br><span class="line">$ nrm use taobao</span><br><span class="line"><span class="comment"># 切换为官方npm源</span></span><br><span class="line">$ nrm use npm</span><br></pre></td></tr></table></figure>
@@ -739,7 +745,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#官网"><span class="nav-number">1.</span> <span class="nav-text">官网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源码安装"><span class="nav-number">2.</span> <span class="nav-text">源码安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm源"><span class="nav-number">3.</span> <span class="nav-text">npm源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-直接修改配置文件"><span class="nav-number">3.1.</span> <span class="nav-text">1.直接修改配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-使用-cnpm-替代-npm"><span class="nav-number">3.2.</span> <span class="nav-text">2.使用 cnpm 替代 npm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-使用-nrm-管理-npm-源"><span class="nav-number">3.3.</span> <span class="nav-text">3.使用 nrm 管理 npm 源</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#官网"><span class="nav-number">1.</span> <span class="nav-text">官网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源码安装"><span class="nav-number">2.</span> <span class="nav-text">源码安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm源"><span class="nav-number">3.</span> <span class="nav-text">npm源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-直接修改配置文件-推荐"><span class="nav-number">3.1.</span> <span class="nav-text">1.直接修改配置文件(推荐)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-使用-cnpm-替代-npm"><span class="nav-number">3.2.</span> <span class="nav-text">2.使用 cnpm 替代 npm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-使用-nrm-管理-npm-源"><span class="nav-number">3.3.</span> <span class="nav-text">3.使用 nrm 管理 npm 源</span></a></li></ol></li></ol></div>
             
 
           </div>

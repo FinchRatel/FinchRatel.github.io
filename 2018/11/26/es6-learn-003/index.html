@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="远上寒山石径斜">
 <meta property="og:description" content="ES6 · Module">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-26T09:25:23.240Z">
+<meta property="og:updated_time" content="2018-11-27T08:21:23.680Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6 · Module">
 <meta name="twitter:description" content="ES6 · Module">
@@ -389,12 +389,24 @@
                 
               
 
-              <time title="创建时间：2018-11-26 15:36:00 / 修改时间：17:25:23" itemprop="dateCreated datePublished" datetime="2018-11-26T15:36:00+08:00">2018-11-26</time>
+              <time title="创建时间：2018-11-26 15:36:00" itemprop="dateCreated datePublished" datetime="2018-11-26T15:36:00+08:00">2018-11-26</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-27 16:21:23" itemprop="dateModified" datetime="2018-11-27T16:21:23+08:00">2018-11-27</time>
               
             
           </span>
@@ -457,14 +469,13 @@
       
         <p><strong>ES6 · Module</strong></p>
 <a id="more"></a>
-<p>运行时加载，在运行到的时候才能确定依赖关系，输出的是值的缓存，不能动态更新</p>
+<p>CommonJS</p>
 <ul>
-<li>CommonJS</li>
-<li>AMD</li>
+<li>运行时加载，在运行到的时候才能确定依赖关系，输出的是值的缓存，不能动态更新</li>
 </ul>
-<p>编译时加载，编译时即可确定依赖关系，效率更高，输出的是值的引用，可以做静态优化，输出会动态更新</p>
+<p>ES6</p>
 <ul>
-<li>ES6</li>
+<li>编译时加载，编译时即可确定依赖关系，效率更高，输出的是值的引用，可以做静态优化，输出会动态更新</li>
 </ul>
 <p>ES6模块自动启用严格模式，严格模式下：</p>
 <ul>
@@ -494,7 +505,7 @@
 <p><strong>使用default指定默认输出</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> name;</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> name <span class="keyword">from</span> <span class="string">'./module'</span>; <span class="comment">// name可以是任何合法变量名</span></span><br></pre></td></tr></table></figure>
 <hr>
-<p><strong>使用 * 整体加载</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">let</span> version = <span class="string">'1.0.0'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123; name, version &#125;;</span><br></pre></td></tr></table></figure></p>
+<p><strong>使用 * 整体加载，使用as改名</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">let</span> version = <span class="string">'1.0.0'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123; name, version &#125;;</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> <span class="built_in">module</span> <span class="keyword">from</span> <span class="string">'./module'</span>;</span><br></pre></td></tr></table></figure>
 <hr>
 <p><strong>模块继承</strong><br><figure class="highlight js"><figcaption><span>utils.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'utils'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123;name&#125;;</span><br></pre></td></tr></table></figure></p>
