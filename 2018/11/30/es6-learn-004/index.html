@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="1. hexo-server2. 静态模式3. 自定义IP4. Pow">
-<meta name="keywords" content="hexo-blog">
+  <meta name="description" content="ES6 · Class基础">
+<meta name="keywords" content="es6-class">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo · 服务器">
-<meta property="og:url" content="https://finchratel.github.io/2018/11/03/hexo-learn-011/index.html">
+<meta property="og:title" content="ES6 · Class基础">
+<meta property="og:url" content="https://finchratel.github.io/2018/11/30/es6-learn-004/index.html">
 <meta property="og:site_name" content="远上寒山石径斜">
-<meta property="og:description" content="1. hexo-server2. 静态模式3. 自定义IP4. Pow">
+<meta property="og:description" content="ES6 · Class基础">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-12T12:01:43.467Z">
+<meta property="og:updated_time" content="2018-12-03T03:13:07.920Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo · 服务器">
-<meta name="twitter:description" content="1. hexo-server2. 静态模式3. 自定义IP4. Pow">
+<meta name="twitter:title" content="ES6 · Class基础">
+<meta name="twitter:description" content="ES6 · Class基础">
 
 
 
 
 
 
-  <link rel="canonical" href="https://finchratel.github.io/2018/11/03/hexo-learn-011/">
+  <link rel="canonical" href="https://finchratel.github.io/2018/11/30/es6-learn-004/">
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>Hexo · 服务器 | 远上寒山石径斜</title>
+  <title>ES6 · Class基础 | 远上寒山石径斜</title>
   
 
 
@@ -347,7 +347,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/11/03/hexo-learn-011/">
+    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/11/30/es6-learn-004/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Finch Zhang">
@@ -364,7 +364,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo · 服务器
+          <h1 class="post-title" itemprop="name headline">ES6 · Class基础
               
             
           </h1>
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="创建时间：2018-11-03 10:29:30" itemprop="dateCreated datePublished" datetime="2018-11-03T10:29:30+08:00">2018-11-03</time>
+              <time title="创建时间：2018-11-30 16:11:16" itemprop="dateCreated datePublished" datetime="2018-11-30T16:11:16+08:00">2018-11-30</time>
             
 
             
@@ -406,7 +406,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-12 20:01:43" itemprop="dateModified" datetime="2018-11-12T20:01:43+08:00">2018-11-12</time>
+                <time title="修改时间：2018-12-03 11:13:07" itemprop="dateModified" datetime="2018-12-03T11:13:07+08:00">2018-12-03</time>
               
             
           </span>
@@ -423,7 +423,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/es6/" itemprop="url" rel="index"><span itemprop="name">es6</span></a></span>
 
                 
                 
@@ -457,13 +457,30 @@
       
 
       
-        <p><strong>1. hexo-server</strong><br><strong>2. 静态模式</strong><br><strong>3. 自定义IP</strong><br><strong>4. Pow</strong></p>
+        <p><strong>ES6 · Class基础</strong></p>
 <a id="more"></a>
-<h3 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a>hexo-server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br><span class="line">$ hexo server</span><br><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure>
-<h3 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h3><p>静态模式下，服务器只处理<code>public</code>文件夹内的文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server -s</span><br></pre></td></tr></table></figure>
-<h3 id="自定义IP"><a href="#自定义IP" class="headerlink" title="自定义IP"></a>自定义IP</h3><p>默认运行在<code>0.0.0.0</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server -i 192.168.1.1</span><br></pre></td></tr></table></figure></p>
-<h3 id="Pow"><a href="#Pow" class="headerlink" title="Pow"></a>Pow</h3><p>Pow是Mac系统上的零配置Rack服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ curl get.pow.cx | sh</span><br><span class="line">$ <span class="built_in">cd</span> ~/.pow</span><br><span class="line">$ ln -s /path/to/myapp</span><br></pre></td></tr></table></figure></p>
+<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Rectangle (width, height) &#123;</span><br><span class="line">  this.width = width;</span><br><span class="line">  this.height = height;</span><br><span class="line">  this.area = this.width * this.height;</span><br><span class="line">&#125;</span><br><span class="line">Rectangle.prototype.getArea = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  <span class="built_in">return</span> this.width * this.height;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const square = new Rectangle(4, 4);</span><br><span class="line">square.width //4</span><br><span class="line">square.height //4</span><br><span class="line">square.getArea() //16</span><br></pre></td></tr></table></figure>
+<h3 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Rectangle &#123;</span><br><span class="line">  constructor(width, height) &#123;</span><br><span class="line">    this.width = width;</span><br><span class="line">    this.height = height;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="title">getArea</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> this.width * this.height;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const square = new Rectangle(4, 4);</span><br><span class="line">square.width //4</span><br><span class="line">square.height //4</span><br><span class="line">square.getArea() //16</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><code>constructor</code><br>类的构造函数，实例化(new)时自动调用</p>
+</li>
+<li><p><code>static</code><br>静态方法，通过类调用，不会被实例继承，会被子类继承<br>this指向类，而不是实例</p>
+</li>
+<li><p><code>name</code><br>返回类的名称</p>
+</li>
+<li><p><code>new.target</code><br>返回实例化时调用的类<br>子类继承父类时，会返回子类</p>
+</li>
+</ul>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><ul>
+<li>类的所有方法都在原型上</li>
+<li>类内部的方法，都是不可枚举的</li>
+<li>类的属性名和方法名可以用表达式</li>
+<li>类的内部默认启用严格模式</li>
+<li>类不存在变量提升</li>
+</ul>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><blockquote>
+<p>实例的属性，除非定义在this对象上，否则都定义在原型上<br>类的所有实例共享一个原型对象</p>
+</blockquote>
 
       
     </div>
@@ -516,7 +533,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo-blog/" rel="tag"># hexo-blog</a>
+            <a href="/tags/es6-class/" rel="tag"># es6-class</a>
           
         </div>
       
@@ -529,8 +546,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/02/hexo-learn-010/" rel="next" title="Hexo · 数据文件夹">
-                <i class="fa fa-chevron-left"></i> Hexo · 数据文件夹
+              <a href="/2018/11/29/vim-study-003/" rel="next" title="VIM · 小结03">
+                <i class="fa fa-chevron-left"></i> VIM · 小结03
               </a>
             
           </div>
@@ -539,8 +556,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/03/hexo-learn-012/" rel="prev" title="Hexo · 生成器">
-                Hexo · 生成器 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/30/es6-learn-005/" rel="prev" title="ES6 · Class继承">
+                ES6 · Class继承 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -716,7 +733,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-server"><span class="nav-number">1.</span> <span class="nav-text">hexo-server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#静态模式"><span class="nav-number">2.</span> <span class="nav-text">静态模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义IP"><span class="nav-number">3.</span> <span class="nav-text">自定义IP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pow"><span class="nav-number">4.</span> <span class="nav-text">Pow</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数"><span class="nav-number">1.</span> <span class="nav-text">构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6"><span class="nav-number">2.</span> <span class="nav-text">ES6</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类"><span class="nav-number">3.</span> <span class="nav-text">类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-number">4.</span> <span class="nav-text">实例</span></a></li></ol></div>
             
 
           </div>
