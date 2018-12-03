@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[ES6 · Class继承]]></title>
+    <url>%2F2018%2F11%2F30%2Fes6-learn-005%2F</url>
+    <content type="text"><![CDATA[ES6 · Class继承 参考文档：阮一峰 ECMAScript 6 入门 extends12class Line &#123;&#125;class ColorLine extends Line &#123;&#125; 子类必须在constructor方法中调用super方法如果子类没有constructor方法，constructor会被默认添加在constructor方法中，只有调用super方法后，才能使用this可继承原生构造函数(String/Number/Boolean/Array/Date/Error/Regexp/Function/Object) Object.getPrototypeOf判断一个类是否继承自另一个类1Object.getPrototypeOf(ColorLine) === Line //true 每个对象都有一个名为proto的属性 每个构造函数都有一个名为prototype的方法 每个对象的proto指向自身构造函数的prototype123456789101112131415161718192021class Line &#123; constructor(length) &#123; this.length = length; &#125;&#125;const line = new Line(12);console.log(line.__proto__ === Line.prototype); //trueconsole.log(line.__proto__.__proto__ === Object.prototype); //trueconsole.log(line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Line &lt;= lineconsole.log(Line.__proto__ === Function.prototype); //trueconsole.log(Line.__proto__.__proto__ === Object.prototype); //trueconsole.log(Line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Function &lt;= Lineconsole.log(Function.__proto__ === Function.prototype);console.log(Object.__proto__ === Function.prototype);console.log(Object.__proto__ === Function.__proto__); super 作为函数 super()只能在子类的constructor方法中调用子类constructor方法中必须调用一次super方法 用作对象普通方法中，指向父类的原型对象静态方法中，指向父类]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-class</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6 · Class基础]]></title>
+    <url>%2F2018%2F11%2F30%2Fes6-learn-004%2F</url>
+    <content type="text"><![CDATA[ES6 · Class基础 构造函数12345678910111213function Rectangle (width, height) &#123; this.width = width; this.height = height; this.area = this.width * this.height;&#125;Rectangle.prototype.getArea = function() &#123; return this.width * this.height;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 ES61234567891011121314class Rectangle &#123; constructor(width, height) &#123; this.width = width; this.height = height; &#125; getArea() &#123; return this.width * this.height; &#125;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 constructor类的构造函数，实例化(new)时自动调用 static静态方法，通过类调用，不会被实例继承，会被子类继承this指向类，而不是实例 name返回类的名称 new.target返回实例化时调用的类子类继承父类时，会返回子类 类 类的所有方法都在原型上 类内部的方法，都是不可枚举的 类的属性名和方法名可以用表达式 类的内部默认启用严格模式 类不存在变量提升 实例 实例的属性，除非定义在this对象上，否则都定义在原型上类的所有实例共享一个原型对象]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-class</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 小结03]]></title>
+    <url>%2F2018%2F11%2F29%2Fvim-study-003%2F</url>
+    <content type="text"><![CDATA[VIM · 小结03 缩进 expandtab 是否将tab转化为空格 shfitwidth &gt;&gt;或&lt;&lt;时缩进的列数 tabstop 一个tab键所占的列数 softtabstop tab实际占的列数 autoindent(ai) 自动换行.vimrc12345set autoindentset expandtabset shiftwidth=4set tabstop=4set softtabstop=4]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 小结02]]></title>
+    <url>%2F2018%2F11%2F28%2Fvim-study-002%2F</url>
+    <content type="text"><![CDATA[VIM · 小结02 进入普通模式(Normal mode) Esc CTRL + [ 进入命令模式(Commant line mode) : 进入插入模式(Insert mode) i I a A o O 进入可视模式(Visual mode) v 退出 q Shift + zz 常用命令一览 模式 命令 说明 正常模式 b 跳转到前一个单词的开头 正常模式 ge 跳转到前一个单词的结尾 正常模式 f&lt;字母&gt; 向后搜索字母，并跳转到第一个匹配的位置 正常模式 F&lt;字母&gt; 向前搜索字母，并跳转到第一个匹配的位置 复制 yy y0 y^ y$ yw yG y1G 粘贴 p P 上下行交换 ddp 替换 r 替换当前光标位置 R 连续替换 cc 替换当前行 cw 替换一个单词 C 替换到行尾 ~ 反转大小写 u 撤销一次 U 撤销当前行的所有更改 Ctrl + r 取消撤销 文本位置 ce 居中 ri 居右 le 居左 查找 ?&lt;单词&gt; 向上查找word /&lt;单词&gt; 向下查找word n 下一个 N 上一个 \* 向下查找光标所在单词 \# 向上查找鼠标所在单词 多文件编辑 vim 1.txt 2.txt 同时打开两个文件 :n 编辑下一个文件 :N 编辑上一个文件 :e 3.txt 打开3.txt :e# 回到前一个文件 :ls 列出已打开的文件 :b 2.txt 编辑2.txt :bd 2.txt 删除已打开的文件列表中的2.txt e! 4.txt 强制打开4.txt :f 显示正在编辑的文件名 :f 5.txt 另存为5.txt 恢复文件 vim -r filename 可视模式 v 字符选择 Shift + v 行选择 Ctrl + v 区域选择 缩进 &gt;&gt; 向右缩进 &lt;&lt; 向左缩进 视窗操作 :new 水平分屏 :sp 水平分屏 :vsp 垂直分屏 Ctrl + w s 水平分屏 Ctrl + w v 垂直分屏 Ctrl + w q 关闭当前分屏 Ctrl + w o 打开新视窗，并隐藏之前的所有视窗 Ctrl + w h 切换到左侧分屏 Ctrl + w j 切换到下面分屏 Ctrl + w k 切换到上面分屏 Ctrl + w l 切换到下册分屏 Ctrl + w H 移动视窗到左侧 Ctrl + w J 移动视窗值下面 Ctrl + w K 移动视窗至上面 Ctrl + w L 移动视窗至右侧 Ctrl + w - 减小视窗高度 Ctrl + w + 增加视窗高度 文档加密 vim -x file 设置 :set 显示所有修改过的配置 :set all 显示所有的设定值 :set option? 显示option的设定值 :set nooption 取消当前设定值 :set autoindent(ai) 设置自动缩进 :set autowrite(aw) 设置自动保存，默认未打开 :set background=dark 设置背景风格 :set backup(bk) 设置自动备份，默认未打开]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6 · Module]]></title>
+    <url>%2F2018%2F11%2F26%2Fes6-learn-003%2F</url>
+    <content type="text"><![CDATA[ES6 · Module CommonJS 运行时加载，在运行到的时候才能确定依赖关系，输出的是值的缓存，不能动态更新 ES6 编译时加载，编译时即可确定依赖关系，效率更高，输出的是值的引用，可以做静态优化，输出会动态更新 ES6模块自动启用严格模式，严格模式下： 变量必须声明后再使用 函数的参数不能有同名属性，否则报错 不能使用with语句 不能对只读属性赋值，否则报错 不能使用前缀 0 表示八进制数，否则报错 不能删除不可删除的属性，否则报错 不能删除变量delete prop，会报错，只能删除属性delete global[prop] eval不会在它的外层作用域引入变量 eval和arguments不能被重新赋值 arguments不会自动反映函数参数的变化 不能使用arguments.callee 不能使用arguments.caller 禁止this指向全局对象，顶层的this指向undefined 不能使用fn.caller和fn.arguments获取函数调用的堆栈 增加了保留字（比如protected、static和interface） export命令用于规定模块的对外接口import命令用于输入其他模块提供的功能as 重命名default 指定默认输出* 代表模块所有内容 一般用法module.js12let name = 'module';export &#123; name &#125;; main.js1import &#123; name &#125; from './module'; 使用default指定默认输出module.js12let name = 'module';export default name; main.js1import name from './module'; // name可以是任何合法变量名 使用 * 整体加载，使用as改名module.js123let name = 'module';let version = '1.0.0';export &#123; name, version &#125;; main.js1import * as module from './module'; 模块继承utils.js12let name = 'utils';export &#123;name&#125;; tools.js12export * from './utils';export let version = '1.0.0'; main.js123import * as tools from './tools';console.log(tools.name, tools.version);// utils 1.0.0 浏览器加载ES6模块&lt;script&gt;标签加入type=&quot;module&quot;属性表示是ES6模块12&lt;script src="path/to/myModule.js" defer&gt;&lt;/script&gt;&lt;script src="path/to/myModule.js" async&gt;&lt;/script&gt; 属性 加载方式 执行时间 defer 异步加载 渲染完再执行 async 异步加载 下载完就执行 123&lt;script type="module" src="./foo.js"&gt;&lt;/script&gt;&lt;!-- 等同于 --&gt;&lt;script type="module" src="./foo.js" defer&gt;&lt;/script&gt;]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-module</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SFTP · 简易教程及示例]]></title>
+    <url>%2F2018%2F11%2F23%2Flinux-learn-002%2F</url>
+    <content type="text"><![CDATA[SFTP · 简易教程及示例 sftp 12345678[root@localhost ~]# sftpusage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher] [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l limit] [-o ssh_option] [-P port] [-R num_requests] [-S program] [-s subsystem | sftp_server] host sftp [user@]host[:file ...] sftp [user@]host[:dir[/]] sftp -b batchfile [user@]host 连接sftp 123456789[root@localhost ~]# sftp root@hostThe authenticity of host 'host (192.168.16.128)' can't be established.ECDSA key fingerprint is SHA256:t5KwBH+CBk7Emp24FI73Jr4IzVkD9VEUG9XIu86CvsE.ECDSA key fingerprint is MD5:3c:31:c4:06:8a:6a:a6:4d:9a:21:58:c0:bc:e1:eb:de.Are you sure you want to continue connecting (yes/no)? yesWarning: Permanently added 'host,192.168.16.128' (ECDSA) to the list of known hosts.root@host's password: Connected to host.sftp&gt; help 12345678910111213141516171819202122232425262728293031323334sftp&gt; helpAvailable commands:bye Quit sftpcd path Change remote directory to 'path'chgrp grp path Change group of file 'path' to 'grp'chmod mode path Change permissions of file 'path' to 'mode'chown own path Change owner of file 'path' to 'own'df [-hi] [path] Display statistics for current directory or filesystem containing 'path'exit Quit sftpget [-afPpRr] remote [local] Download filereget [-fPpRr] remote [local] Resume download filereput [-fPpRr] [local] remote Resume upload filehelp Display this help textlcd path Change local directory to 'path'lls [ls-options [path]] Display local directory listinglmkdir path Create local directoryln [-s] oldpath newpath Link remote file (-s for symlink)lpwd Print local working directoryls [-1afhlnrSt] [path] Display remote directory listinglumask umask Set local umask to 'umask'mkdir path Create remote directoryprogress Toggle display of progress meterput [-afPpRr] local [remote] Upload filepwd Display remote working directoryquit Quit sftprename oldpath newpath Rename remote filerm path Delete remote filermdir path Remove remote directorysymlink oldpath newpath Symlink remote fileversion Show SFTP version!command Execute 'command' in local shell! Escape to local shell? Synonym for help 常用命令一览 命令 说明 bye 退出 quit 退出 cd path 切换远程目录 lcd path 切换本地目录 pwd 展示远程当前路径 lpwd 展示本地当前路径 ls 列出远程目录信息 lls 列出本地目录信息 mkdir 创建远程目录 lmkdir 创建本地目录 progress 是否展示进度 put 上传 get 下载 df 查看磁盘信息 !command 在本地shell执行命令 ! 退出到本地shell help 查看帮助信息 ? 查看帮助信息 上传下载示例1234567891011121314sftp&gt; pwdRemote working directory: /rootsftp&gt; lpwdLocal working directory: /c/Users/zhanghao30/Desktop/tempsftp&gt; lsanaconda-ks.cfgsftp&gt; llsnote.txtsftp&gt; put note.txtUploading note.txt to /root/note.txtnote.txt 100% 1781 175.3KB/s 00:00sftp&gt; get anaconda-ks.cfgFetching /root/anaconda-ks.cfg to anaconda-ks.cfg/root/anaconda-ks.cfg 100% 1421 157.1KB/s 00:00]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>sftp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 小结01]]></title>
+    <url>%2F2018%2F11%2F23%2Fvim-study-001%2F</url>
+    <content type="text"><![CDATA[VIM · 小结01 操作 模式 命令 说明 打开 命令行 vim 打开VIM 打开 命令行 vim [path/to/file] 打开file文件，若不存在，则新建file并打开 打开 VIM正常模式 :e [path/to/file] 打开file文件，若不存在，则新建file并打开 保存 VIM正常模式 :w 保存 保存 VIM正常模式 :w! 强制保存 保存 VIM正常模式 :w [path/to/file] 保存到file中 保存 VIM正常模式 :w! [path/to/file] 强制保存到file中 保存 VIM正常模式 :sav [path/to/file] 另存为file 退出 VIM正常模式 :q 退出 退出 VIM正常模式 :q! 强制退出]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 基础06]]></title>
+    <url>%2F2018%2F11%2F21%2Fvim-learn-006%2F</url>
+    <content type="text"><![CDATA[VIM · 基础06 进入插入模式 在光标前插入i 进入插入模式 在光标所在行首插入I 进入插入模式 在光标后插入a 进入插入模式 在光标所在行尾插入A 在光标下方新建一行，并进入插入模式o 在光标上方新建一行，并进入插入模式O 替换模式 连续替换R 复制y 粘贴p 复制粘贴 v 进入可视模式 移动光标，选择文本 y 复制 p 粘贴 窗口切换CTRL + W; CTRL + W 自动补全CTRL + DTAB]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 基础05]]></title>
+    <url>%2F2018%2F11%2F21%2Fvim-learn-005%2F</url>
+    <content type="text"><![CDATA[VIM · 基础05 执行外部命令:!ls 保存到文件中:w [filename] 选择性保存 v 进入可视模式 选择文本 :w 保存 提取内容:r [filename]:r !tree]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 基础04]]></title>
+    <url>%2F2018%2F11%2F20%2Fvim-learn-004%2F</url>
+    <content type="text"><![CDATA[VIM · 基础04 显示光标位置和文件状态CTRL + g 跳转 到最后一行G 跳转 到第一行gg 跳转 到指定行[number] G 向下查找/word 向上查找?word 查找下一个n 查找上一个N 回到上一个匹配项CTRL + o 回到下一个匹配项CTRL + i 查找匹配的括号 () [] {}% 替换 光标所在行第一个匹配项:s/old/new 替换 光标所在行所有匹配项:s/old/new/g 替换 指定行的匹配项:#,#s/old/new/g #,#分别代表起始行和结束行 替换 文件中所有匹配项:%s/old/new/g 替换 替换时询问:s/old/new/gc]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 基础03]]></title>
+    <url>%2F2018%2F11%2F19%2Fvim-learn-003%2F</url>
+    <content type="text"><![CDATA[VIM · 基础03 粘贴 寄存器内的文本p 替换 光标所在位置的一个字符r 更改c [number] motion 更改 从光标到词尾ce 更改 从光标到下一个单词的起始cw 更改 从光标到行尾c$]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 基础02]]></title>
+    <url>%2F2018%2F11%2F16%2Fvim-learn-002%2F</url>
+    <content type="text"><![CDATA[VIM · 基础02 删除（光标所在字符）x 删除（光标所在前一个字符）X 删除d [number] motion 删除 从光标到单词的末尾de 删除 从光标到下一个单词的开始dw 删除 从光标到行尾d$D 删除 从光标到行首d^ 删除 整行dd 删除 从当前行到文档结尾处dG 删除 从当前行到文档开始处d1G 光标移动到下一个单词的开头w 光标移动到单词的末尾，如果已经在单词的末尾或空格处，则移动到下一个单词的末尾。e 光标移动到行首0^ 光标移动到行尾$ 撤销一步u 撤销一行U 取消撤销CTRL + R]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VIM · 基础01]]></title>
+    <url>%2F2018%2F11%2F16%2Fvim-learn-001%2F</url>
+    <content type="text"><![CDATA[VIM · 基础01 移动光标 123 k上h左 l右 j下 打开/创建vim filename:e path/to/file 退出（不保存）q 强制退出（不保存）q! 保存w 保存并退出wq 强制保存并退出wq!]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git · 简易教程]]></title>
+    <url>%2F2018%2F11%2F15%2Fgit-learn-001%2F</url>
+    <content type="text"><![CDATA[1. clone2. branch3. checkout4. status5. add6. commit7. push8. 示例 clone 克隆远程仓库到本地1234567$ git clone ssh://git@git.moyuqingpen.com.cn:7999/~zhanghao30/playground.gitCloning into 'playground'...remote: 对象计数中: 155, 完成.remote: 压缩对象中: 100% (133/133), 完成.remote: Total 155 (delta 52), reused 0 (delta 0)Receiving objects: 100% (155/155), 392.57 KiB | 1.86 MiB/s, done.Resolving deltas: 100% (52/52), done. branch 查看分支 12$ git branch* master 创建分支 1$ git branch develop checkout 检出分支12$ git checkout developSwitched to branch 'develop' status 显示工作目录和暂存区状态123456$ git statusOn branch developUntracked files: (use "git add &lt;file&gt;..." to include in what will be committed) readme.mdnothing added to commit but untracked files present (use "git add" to track) add 添加到暂存区123$ git add .warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory commit 提交变动123456$ git commit . -m "add readme"warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory[develop dbe505a] add readme 1 file changed, 1 insertion(+) create mode 100644 readme.md push 推送到远程分支12345678910111213$ git pushEnumerating objects: 5, done.Counting objects: 100% (5/5), done.Delta compression using up to 8 threadsCompressing objects: 100% (2/2), done.Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.Total 3 (delta 1), reused 0 (delta 0)remote:remote: Create pull request for develop:remote: https://git.moyuqingpen.com.cn/users/zhanghao30/repos/playground/compare/commits?sourceBranch=refs/heads/developremote:To ssh://git.moyuqingpen.com.cn:7999/~zhanghao30/playground.git dbe505a..dcf6cc8 develop -&gt; develop 示例 克隆-修改-提交 123456789# 克隆仓库$ git clone ssh://git.moyuqingpen.com.cn:7999/~zhanghao30/playground.git# do some change here ...# 添加到索引$ git add .# 记录变动$ git commit . -m "tips"# 推送到远程分支$ git push 新建本地develop分支，并提交到远程 1234567$ git branch develop$ git branch --set-upstream-to=/origin/develop$ git pull# do some change here$ git add .$ git commit . -m "tips"$ git push 删除远程develop分支 12$ git checkout master$ git branch -d -r origin/develop 注：以上只是 git 命令行的简单教程，具体的用法请参考 git &lt;command&gt; --help，或git book]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[博客计划 · 2018年]]></title>
+    <url>%2F2018%2F11%2F13%2Fplan-blog-0811%2F</url>
+    <content type="text"><![CDATA[git 命令行简易教程 eslint es6 Proxy es6 Reflect es6 Module es6 Class 基于 nodejs 的爬虫 css flex vim vim plugin sftp webpack nginx shell编程]]></content>
+      <categories>
+        <category>plan</category>
+      </categories>
+      <tags>
+        <tag>plan-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vue · 生命周期]]></title>
+    <url>%2F2018%2F11%2F09%2Fvue-learn-001%2F</url>
+    <content type="text"><![CDATA[1. beforeCreate2. created3. beforeMount4. mounted5. beforeUpdate6. updated7. beforeDestroy8. destroyed9. 示例 Vue生命周期图示 1. beforeCreate 在实例初始化之后，数据观测(data observer)和event/watcher事件配置之前被调用 2. created 在实例创建完成之后被立即调用在这一步，已完成一下的配置： 数据观测(data observer) 属性和方法的运算 watch/event事件回调挂载阶段还未开始，$el属性目前不可用 3. beforeMount 在挂载开始之前被调用该钩子在服务端渲染期间不被调用 4. mounted el被新创建的vm.$el替换，并挂载到实例上去之后调用该钩子mounted时，子组件未必已经被挂载若需要整个视图渲染完毕再执行，需要用vm.$nextTick()该钩子在服务端渲染期间不被调用 5. beforeUpdate 数据更新时调用，发生在虚拟 DOM 打补丁之前。这里适合在更新之前访问现有的 DOM，比如手动移除已添加的事件监听器。该钩子在服务器端渲染期间不被调用，因为只有初次渲染会在服务端进行。 6. updated 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态。如果要相应状态改变，通常最好使用计算属性或 watcher 取而代之。注意 updated 不会承诺所有的子组件也都一起被重绘。如果你希望等到整个视图都重绘完毕，可以用 vm.$nextTick该钩子在服务器端渲染期间不被调用。 7. beforeDestroy 实例销毁之前调用。在这一步，实例仍然完全可用。该钩子在服务器端渲染期间不被调用。 8. destroyed Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。该钩子在服务器端渲染期间不被调用。 9. 示例app.vue12345678910111213141516171819202122232425262728293031323334353637383940414243&lt;template&gt; &lt;div id=&quot;app&quot;&gt;hello, vue.&lt;/div&gt;&lt;/template&gt;&lt;script&gt;export default &#123; data() &#123; return &#123; time: new Date().getTime() &#125;; &#125;, beforeCreate() &#123; console.log(&apos;beforeCreate&apos;, new Date().getTime() - this.time); &#125;, created() &#123; console.log(&apos;created&apos;, new Date().getTime() - this.time); &#125;, beforeMount() &#123; console.log(&apos;beforeMount&apos;, new Date().getTime() - this.time); &#125;, mounted() &#123; console.log(&apos;mounted&apos;, new Date().getTime() - this.time); setTimeout(() =&gt; &#123; this.$forceUpdate(); &#125;, 1000); setTimeout(() =&gt; &#123; this.$destroy(); &#125;, 2000); &#125;, beforeUpdate() &#123; console.log(&apos;beforeUpdate&apos;, new Date().getTime() - this.time); &#125;, updated() &#123; console.log(&apos;updated&apos;, new Date().getTime() - this.time); &#125;, beforeDestroy() &#123; console.log(&apos;beforeDestroyed&apos;, new Date().getTime() - this.time); &#125;, destroyed() &#123; console.log(&apos;destroyed&apos;, new Date().getTime() - this.time); &#125;&#125;;&lt;/script&gt; 输出结果12345678beforeCreate NaN # 这里输出NaN是因为beforeCreate时，this.time取不到值created 0beforeMount 0mounted 3beforeUpdate 1005updated 1006beforeDestroyed 2004destroyed 2005 参考文档：Vue 官网 API]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue-lifeCircle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6 · async/await]]></title>
+    <url>%2F2018%2F11%2F09%2Fes6-learn-002%2F</url>
+    <content type="text"><![CDATA[async 是 Generator 函数的语法糖，用于异步编程async 返回 Promise 对象，可以链式添加回调函数await 代表后面跟着的可能是异步操作，要等待异步操作结束，再接着执行如果不是异步操作，会立即返回对应值 例如：现在有一个商品的 goodsId，要获取商品对应店铺的所有宝贝。 1.先通过 goodsId 查询 shopId 2.然后通过 shopId 查询 GoodsList 12345async function getGoodsList(goodsId) &#123; const shopId = await getShopIdByGoodsId(goodsId) const goodsList = await getAllGoodsByShopId(shopId) return goodsList&#125; async 函数 return 返回的值，将会是第一个回调函数的参数 例如：获取店铺的所有宝贝之后，按照价格进行排序1234getGoodsList() .then(list =&gt; &#123; sortByPrice(list) &#125;) async 函数内部出错时，如果内部异步方法没有错误处理，则 Promise 的状态会变为 rejected，该错误会被第一个 catch 回调函数接收。 例如：获取 shopId 出错了，如果 getShopIdByGoodsId 内部有部署 catch 方法，错误会被自己捕获，如果没有部署，错误会被 async 的回调捕获。123getGoodsList() .then(f1) .catch(error =&gt; console.error(error))]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-async</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6 · Promise]]></title>
+    <url>%2F2018%2F11%2F07%2Fes6-learn-001%2F</url>
+    <content type="text"><![CDATA[1. 理解Promise2. new Promise()3. Promise.resolve()4. Promise.reject()5. Promise.prototype.then()6. Promise.prototype.catch()7. Promise.prototype.finally()8. Promise.prototype.done()9. Promise.all()10. Promise.race() 异步编程的传统解决方案是回调函数和事件，在复杂的逻辑中，很容易出现多层回调函数嵌套(Callback Hell)Promise 是一种新的解决方案，帮助开发者摆脱多层回调函数嵌套问题 理解PromisePromise即承诺，即答应未来会做某件事。在未来某个时间，这个承诺可能会实现，也可能会被拒绝。例如：A承诺(promise)B，十年后娶B。在这十年里，这个承诺的状态是进行中(状态为pending)。十年后，如果A娶B，这个承诺就实现(状态变为resolved)了。如果A不娶B，这个承诺就被拒绝(转态变为rejected)了。 123456789const promise = new Promise((resolve, reject) =&gt; &#123; setTimeout(() =&gt; &#123; if (AMarryB) &#123; resolve() &#125; else &#123; reject() &#125; &#125;, tenYear)&#125;) B说：十年后如果A娶B(承诺resolved)，B就给A生猴子；如果A不娶B(承诺rejected)，B就给嫁给C；但无论如何(finally)，B都爱着A。 12345678910promise.then(() =&gt; &#123; // 十年后，A娶了B BMakeMonkeyWithA()&#125;).catch(() =&gt; &#123; // 十年后，A不娶B BMarryC()&#125;).finally(() =&gt; &#123; // 无论如何 BStillLoveA()&#125;) Promise的状态一旦发生变化，就不会再变。Promise的状态只能变化一次，而且只能是下面两种之一：pending =&gt; resolved，即承诺达成pending =&gt; rejected，即承诺未达成 new Promise()创建一个Promise实例 123const promise = new Promise((resolve, reject) =&gt; &#123; &#125;) Promise.resolve()把Promise实例的状态由pending转化为resolved，可以传参也可以把普通对象转化为Promise对象，并立即转化为resolved状态1234const promise = new Promise((resolve, reject) =&gt; &#123; // some async code here resolve(param1)&#125;) Promise.reject()把Promise实例的状态由pending转化为rejected，可以传参也可以把普通对象转化为Promise对象，并立即转化为rejected状态1234const promise = new Promise((resolve, reject) =&gt; &#123; // some async code here reject(param2)&#125;) Promise.prototype.then()Promise实例的回调函数，Promise实例的状态发生变化时调用。有两个参数：第一个参数是状态变为resolved的回调，接收resolve()传递的参数；第二个是状态变为rejected的回调，接收reject()传递的参数；第二个参数是可选的。 1234567promise.then((param1) =&gt; &#123; // resolve()的回调 // do some thing here&#125;, (param2) =&gt; &#123; // reject()的回调 // do some thing here&#125;) Promise.prototype.catch()Promise实例状态变为rejected的回调，.then(null, rejectCallBack)的别名，接收reject()传递的参数。 1234promise.catch(param2 =&gt; &#123; // reject()的回调 // some code here&#125;) Promise.prototype.finally()只要状态发生变化，就会执行有一个回调参数，处于链式的末端ES2018引入标准1234567promise .then() .catch() .finally(() =&gt; &#123; // 不接收任何参数 // some code here &#125;) Promise.prototype.done()捕捉可能出现的错误，并向全局抛出处于链式的末端可以有回调参数，也可以没有1234promise .then() .catch() .done() Promise.all()将多个Promise实例包装成一个新的Promise实例接收一个数组作为参数数组的元素都是Promise实例所有参数Promise实例状态都变化为resolved，该实例的状态才会变为resolved，所有参数Promise实例都可以向该实例传参，这些参数会被包装成一个数组，传给改实例有一个参数Promise实例的状态变为rejected，该实例的状态立即变为rejected，率先发生状态变化的参数Promise实例，可以把参数传给该实例例如：猴王承诺花十年时间同时和三千妃嫔生猴子，十年后，最聪明的小公猴立为太子，最漂亮的小母猴立为公主，但是如果发现有的小猴子不像猴王，承诺作废。1234567891011121314151617const promise = Promise.all([ makeMonkeyWith1, makeMonkeyWith2, ...])promise .then(monkeys =&gt; &#123; // monkeys是所有小猴子的数组 monkeys.map(monkey =&gt; &#123; if(isMale(monkey) &amp;&amp; isMostClever(monkey)) &#123; bePrince(monkey) &#125; else if (isFemale(monkey) &amp;&amp; isMostBeautiful(monkey)) &#123; bePrincess(monkey) &#125; else &#123; beGone(monkey) &#125; &#125;) &#125;) .catch(error =&gt; &#123; monkeyKingHadGreenHats() &#125;) Promise.race()将多个Promise实例包装成一个新的Promise实例接收一个数组作为参数数组的元素都是Promise实例任何一个参数Promise实例状态发生变化，都会改变该实例的状态率先发生状态变化的参数Promise实例，可以把参数传给该实例例如：猴王承诺同时和三千妃嫔生猴子，第一个出生的如果是公猴立为太子，如果是母猴立为公主。123456789101112131415const promise = Promise.race([ makeMonkeyWith1InTenYear, makeMonkeyWith2InTenYear, ...])promise .then(monkey =&gt; &#123; // monkey是第一个出生的小猴子 if(isMale(monkey)) &#123; bePrince(monkey) &#125; else if (isFemale(monkey)) &#123; bePrincess(monkey) &#125; else &#123; beGone(monkey) &#125; &#125;) .catch(error =&gt; &#123; neverBelieveInLove() &#125;)]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-promise</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux · 环境变量]]></title>
+    <url>%2F2018%2F11%2F07%2Flinux-learn-001%2F</url>
+    <content type="text"><![CDATA[1. 查看环境变量2. 设置临时环境变量3. 当前用户的环境变量4. 所有用户的环境变量 查看环境变量 $PATH 12[root@localhost ~]# echo $PATH/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin export 12345678910111213141516171819202122232425[root@localhost node-v11.1.0-linux-x64]# exportdeclare -x HISTCONTROL="ignoredups"declare -x HISTSIZE="1000"declare -x HOME="/root"declare -x HOSTNAME="localhost.localdomain"declare -x LANG="zh_CN.UTF-8"declare -x LESSOPEN="||/usr/bin/lesspipe.sh %s"declare -x LOGNAME="root"declare -x LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:"declare -x MAIL="/var/spool/mail/root"declare -x OLDPWD="/opt"declare -x PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin"declare -x PWD="/opt/node-v11.1.0-linux-x64"declare -x SELINUX_LEVEL_REQUESTED=""declare -x SELINUX_ROLE_REQUESTED=""declare -x SELINUX_USE_CURRENT_RANGE=""declare -x SHELL="/bin/bash"declare -x SHLVL="1"declare -x SSH_CLIENT="192.168.197.1 56779 22"declare -x SSH_CONNECTION="192.168.197.1 56779 192.168.197.130 22"declare -x SSH_TTY="/dev/pts/0"declare -x TERM="xterm"declare -x USER="root"declare -x XDG_RUNTIME_DIR="/run/user/0"declare -x XDG_SESSION_ID="1" 临时环境变量 重启后临时环境变量消失12345[root@localhost opt]# export PATH=/opt/nodejs/bin:$PATH[root@localhost opt]# node -vv11.1.0[root@localhost opt]# npm -v6.4.1 当前用户的环境变量(CentOS) 编辑 ~/.bash_profile 1[root@localhost ~]# vi .bash_profile 找到PATH，并在后面追加： 1PATH=$PATH:$HOME/bin:/opt/nodejs/bin 刷新环境变量 12345[root@localhost ~]# source .bash_profile[root@localhost ~]# node -vv11.1.0[root@localhost ~]# npm -v6.4.1 所有用户的环境变量 编辑 /etc/profile 1[root@localhost ~]# vi .bash_profile 在后面追加： 1PATH=$PATH:$HOME/bin:/opt/nodejs/bin 刷新环境变量 12345[root@localhost ~]# source /etc/profile[root@localhost ~]# node -vv11.1.0[root@localhost ~]# npm -v6.4.1]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux-env</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Nodejs · 安装]]></title>
+    <url>%2F2018%2F11%2F06%2Fnodejs-learn-001%2F</url>
+    <content type="text"><![CDATA[1. 官网2. 源码安装3. npm源 官网NodeJS有两个版本： 长期维护版(LTS)推荐多数用户使用，建议开发中使用； 最新发布版含实验性功能，建议个人学习时使用。 官网-英文 官网-中文 官方镜像 国内官网 淘宝镜像 源码安装12345$ wget https://npm.taobao.org/mirrors/node/v10.13.0/node-v10.13.0.tar.gz$ tar -zxvf node-v10.13.0.tar.gz$ cd node-v10.13.0$ ./configure$ make &amp;&amp; make install 官方镜像下载较慢，建议使用国内镜像 用到了 wget下载源码，也可以使用其它方式下载 编译需要 gcc g++ gcc-c++ 源码安装时间较长，请耐心等待 推荐使用二进制包，下载解压即用 npm源官方源在国外，速度较慢，建议切换为国内源，推荐使用淘宝源。更换npm源有三种方式，如下： 1.直接修改配置文件(推荐)配置文件在 ~/.npmrc .npmrc1registry=https://registry.npm.taobao.org/ 2.使用 cnpm 替代 npm1$ npm install cnpm -g 3.使用 nrm 管理 npm 源12345678# 安装 nrm$ npm install nrm -g# 列出可用的npm源$ nrm ls# 切换为淘宝npm源$ nrm use taobao# 切换为官方npm源$ nrm use npm]]></content>
+      <categories>
+        <category>nodejs</category>
+      </categories>
+      <tags>
+        <tag>nodejs-install</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 模板]]></title>
+    <url>%2F2018%2F11%2F05%2Fhexo-learn-016%2F</url>
+    <content type="text"><![CDATA[1. 模板2. 布局3. 局部模板4. 局部变量5. 优化 模板每个主题至少应包含一个index模板 模板 用途 回调 index 首页 - post 文章 index page 分页 index archive 归档 index category 分类 archive tag 标签 archive 布局通过布局让多个模板共享相同的结构默认使用layout布局，可以在front-matter中指定其他布局，或设置为false关闭布局功能 局部模板局部模板类似组件，可以在多个模板之间共享 局部变量可以在局部模板中指定局部变量 优化Hexo 2.7 新增了局部缓存(Fragment Caching)功能]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 主题]]></title>
+    <url>%2F2018%2F11%2F05%2Fhexo-learn-015%2F</url>
+    <content type="text"><![CDATA[1. 更换主题2. 主题结构3. _config.yml4. language5. layout6. scripts7. source 更换主题选择主题 主题列表 克隆仓库 克隆主题仓库到本地themes文件夹下1$ git clone repo-url themes/repo-name 修改配置 修改根目录下的_config.yml文件_config.yml1theme: repo-name 重新生成 重新生成静态资源12$ hexo clean$ hexo generate 主题结构123456.├── _config.yml├── languages├── layout├── scripts└── source _config.yml主题的配置文件，修改时会自动更新，无需重启 languages语言文件夹 layout布局文件夹，存放主题的模板文件。内建Swig模板引擎，可以安装插件来支持EJS、Haml或Jade根据扩展名来决定使用哪一个模板引擎 scripts脚本文件夹，启动时会自动载入 source资源文件夹，除了模板以外的Asset都应该放在这里。_开头的文件或文件夹会被忽略如果文件可以渲染，解析后存储到public文件夹，否则直接拷贝到public文件夹]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 永久链接]]></title>
+    <url>%2F2018%2F11%2F04%2Fhexo-learn-014%2F</url>
+    <content type="text"><![CDATA[1. 变量2. 示例3. 多语种支持 可以在_config.yml配置中调整网站的永久链接，也可以在每篇文章的Front-matter中指定 变量 变量 描述 :year 年 :month 月 :day 日 :title 文章名称 :post_title 文章标题 :id 文章ID :category 分类 在permalink_default调整变量的默认值 12permalink_defaults: lang: en 示例 参数 结果 :year/:month/:day/:title 2018/11/04/hello-world :year-:month-:day-:title.html 2018-11-04-hello-world.html :/category/:title foo/bar/hello-world 多语种支持修改new_post_name 和 permalink 12new_post_name: :lang/:title.mdpermalink: :lang/:title/ 12$ hexo new "hello world" --lang en# =&gt; source/_post/en/hello-world.md 1http://localhost:4000/en/hello-world/]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 部署]]></title>
+    <url>%2F2018%2F11%2F03%2Fhexo-learn-013%2F</url>
+    <content type="text"><![CDATA[1. Git2. Heroku3. Rsync4. OpenShift5. FTPSync6. 其它方法 一键部署修改_config.yml，可以同时部署多个12345deploy:- type: git repo:- type: heroku repo: 一键部署12$ hexo d$ hexo deploy Git安装hexo-deployer-git1$ npm install hexo-deployer-git --save _config.yml12345deploy: type: git repo: &lt;repository url&gt; branch: [branch] message: [message] Heroku安装hexo-deployer-heroku1$ npm install hexo-deployer-heroku --save _config.yml1234deploy: type: heroku repo: &lt;repository url&gt; message: [message] Rsync安装hexo-deployer-rsync1$ npm install hexo-deployer-rsync --save _config.yml123456789deploy: type: rsync host: &lt;host&gt; user: &lt;user&gt; root: &lt;root&gt; port: [port] delete: Boolean # 删除远程主机上的旧文件 verbose: Boolean # 显示调试信息 ignore_errors: Boolean # 忽略错误 OpenShift安装hexo-deployer-openshift1$ npm install hexo-deployer-openshift --save _config.yml1234deploy: type: openshift repo: &lt;repository url&gt; message: [message] FTPSync1$ npm install hexo-deployer-ftpsync --save _config.yml12345678910deploy: type: ftpsync host: &lt;host&gt; user: &lt;user&gt; pass: &lt;password&gt; remote: [remote] # 远程主机的根目录 port: [port] ignore: [ignore] # 忽略的文件或目录 connections: [connections] # 使用连接数 1 verbose: Boolean # 显示调试信息 true 其它方法Hexo生成的所有文件都放在public文件夹中，可以将它们复制到静态服务器中]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 生成器]]></title>
+    <url>%2F2018%2F11%2F03%2Fhexo-learn-012%2F</url>
+    <content type="text"><![CDATA[1. 生成文件2. 监视文件变动3. 完成后部署4. 简写 生成文件1$ hexo generate 监视文件变动1$ hexo generate --watch 完成后部署12$ hexo generate --deploy$ hexo deploy --generate 简写12$ hexo g -d$ hexo d -g]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 服务器]]></title>
+    <url>%2F2018%2F11%2F03%2Fhexo-learn-011%2F</url>
+    <content type="text"><![CDATA[1. hexo-server2. 静态模式3. 自定义IP4. Pow hexo-server123$ npm install hexo-server --save$ hexo server$ hexo server -p 5000 静态模式静态模式下，服务器只处理public文件夹内的文件 1$ hexo server -s 自定义IP默认运行在0.0.0.01$ hexo server -i 192.168.1.1 PowPow是Mac系统上的零配置Rack服务器123$ curl get.pow.cx | sh$ cd ~/.pow$ ln -s /path/to/myapp]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 数据文件夹]]></title>
+    <url>%2F2018%2F11%2F02%2Fhexo-learn-010%2F</url>
+    <content type="text"><![CDATA[1. 数据文件 数据文件hexo3.0新增数据文件功能自动载入source/_data内的YAML/JSON文件 source/_data/menu.yml12Home: /Archives: /archives/ 123&lt;% for (var link in site.data.menu) &#123; %&gt;&lt;a href=&quot;&lt;%= site.data.menu[link] %&gt;&quot;&gt; &lt;%= link %&gt; &lt;/a&gt;&lt;% &#125; %&gt; 12&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;a href=&quot;/archives/&quot;&gt;Archives&lt;/a&gt;]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo · 资源文件夹]]></title>
+    <url>%2F2018%2F11%2F02%2Fhexo-learn-009%2F</url>
+    <content type="text"><![CDATA[1. 资源文件夹2. 文章资源文件夹3. 相对路径引用的标签插件 资源文件夹资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。 文章资源文件夹将 config.yml 文件中的 post_asset_folder 选项设为 true 来启用，默认为 false通过 new 命令创建文章时，会同时创建同名文件夹，可以通过相对路径来引用它们 相对路径引用的标签插件123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% asset_link slug [title] %&#125; 正确的引用图片方式是使用下列的标签插件而不是 markdown 1&#123;% asset_img example.jpg This is an example image %&#125;]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 标签插件]]></title>
+    <url>%2F2018%2F11%2F01%2Fhexo-learn-008%2F</url>
+    <content type="text"><![CDATA[1. 引用块2. 代码块3. 反引号代码块4. Pull Quote5. jsFiddle6. Gist7. iframe8. Image9. Link10. Include Code11. Youtube12. Vimeo13. 引用文章14. 引用资源15. Raw 引用块 用法 123&#123;% blockquote %&#125;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.&#123;% endblockquote %&#125; 效果 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem. 代码块 用法 123&#123;% codeblock lang:javascript Object.assign http://es6.ruanyifeng.com/#docs/object#Object-assign Object.assign %&#125;Object.assign(targetObject, sourceObject);&#123;% endcodeblock %&#125; 效果 Object.assignObject.assign1Object.assign(targetObject, sourceObject); 反引号代码块 用法[language] [title] [url] [link text] code snippet 效果 Object.assignObject.assign1Object.assign(targetObject, sourceObject); Pull Quote 用法 123&#123;% pullquote [class] %&#125;content&#123;% endpullquote %&#125; 效果 content jsFiddle 用法1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; Gist 用法1&#123;% gist gist_id [filename %&#125; iframe 用法 1&#123;% iframe url [width] [height] %&#125; 效果 Image 用法 1&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125; 效果 Link 用法 1&#123;% link text url [external] [title] %&#125; 效果 Object.assign Include Code 用法1&#123;% include_code [title] [lang:language] path/to/file %&#125; Youtube 用法1&#123;% youtube video_id %&#125; Vimeo 用法1&#123;% vimeo vimeo_id %&#125; 引用文章 用法12&#123;% post_path slug %&#125;&#123;% post_link slug [title] %&#125; 引用资源 用法123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% assset_link slug [title] %&#125; Raw 用法123&#123;% raw %&#125;content&#123;% endraw %&#125;]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · Front-Matter]]></title>
+    <url>%2F2018%2F11%2F01%2Fhexo-learn-007%2F</url>
+    <content type="text"><![CDATA[1. layout 布局2. title 标题3. date 建立日期4. update 更新日期5. comments 开启评论6. tags 标签7. categories 分类 Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量 12345---title: Hexo · Front-Matterdate: 2018-11-01 16:06:00tags: hexo---]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 写作]]></title>
+    <url>%2F2018%2F10%2F29%2Fhexo-learn-006%2F</url>
+    <content type="text"><![CDATA[1. 新建2. 布局3. 文件名称4. 草稿5. 模板 1. 新建layout 默认为 post， 可以通过修改_config.yml中的 default_layout 来指定默认布局 1$ hexo new [layout] &lt;title&gt; 2. 布局 post – 文章 page draft – 草稿 3. 文件名称默认以标题作为文件名称可以通过 new_post_name 来修改默认文件名称 4. 草稿12$ hexo new draft &lt;title&gt;$ hexo publish [layout] &lt;title&gt; 草稿默认不会展示在页面中，可以在执行是加上 --draft 参数，或把 render_draft 设为 true 来预览草稿。 5. 模板12$ hexo new photo 'my page'# 根据 photo 模板来创建 my page]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 迁移]]></title>
+    <url>%2F2018%2F10%2F29%2Fhexo-learn-005%2F</url>
+    <content type="text"><![CDATA[1. RSS2. Jekll3. Octopress4. WordPress5. Joomla RSS12$ npm install hexo-migrator-rss -S$ hexo migrate rss &lt;source&gt; Jekyll 把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，并在 _config.yml 中修改 new_post_name 参数。 1new_post_name: :year-:month-:day-:title.md Octopress 把 Octopress source/_posts 文件夹内的所有文件转移到 Hexo 的 source/_posts 文件夹，并修改 _config.yml 中的 new_post_name 参数 1new_post_name: :year-:month-:day-:title.md WordPress12$ npm install hexo-migrator-wordpress --save$ hexo migrate wordpress &lt;source&gt; Joomla12$ npm install hexo-migrator-joomla --save$ hexo migrate joomla &lt;source&gt;]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 命令]]></title>
+    <url>%2F2018%2F10%2F29%2Fhexo-learn-004%2F</url>
+    <content type="text"><![CDATA[1. init2. new3. generate4. publish5. server6. deploy7. render8. migrate9. clean10. list11. version init1$ hexo init blog new 新建文章12$ hexo new [layout] &lt;title&gt;# 例如 hexo new post hello-world generate 生成静态文件12$ hexo generate$ hexo g publish 发表草稿1$ hexo publish [layout] filename server 启动本地服务器1234$ hexo server# -p, --port# -s, --static 只使用静态文件# -l, --log 启用日志 deploy 部署123$ hexo deploy$ hexo d# -g, --generate 部署之前生成静态文件 render 渲染文件12$ hexo render &lt;file1&gt; [file2] ...# -o, --output 设置输出路径 migrate 从其它博客迁移1$ hexo migrate &lt;type&gt; clean 清理缓存和静态文件1$ hexo clean list1$ hexo list version1$ hexo version 安全模式1$ hexo --safe 调试模式1$ hexo --debug 简洁模式1$ hexo --silent 自定义配置文件的路径1$ hexo --config custom.yml 显示草稿1$ hexo --draft 自定义CWD1$ hexo --cwd /path/to/cwd]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 配置]]></title>
+    <url>%2F2018%2F10%2F29%2Fhexo-learn-003%2F</url>
+    <content type="text"><![CDATA[1. timezone2. language3. theme4. deploy _config.yml timezone: Asia/Shanghai 时区列表 language: zh-CN theme: Hacker false代表禁用主题 deploy: 部署相关]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 建站]]></title>
+    <url>%2F2018%2F10%2F29%2Fhexo-learn-002%2F</url>
+    <content type="text"><![CDATA[1. _config.yml 配置2. package.json 应用信息3. scaffolds 模板4. source 资源5. theme 主题 创建123$ hexo init blog$ cd blog$ npm install _config.yml配置信息 package.json应用信息和依赖。 scaffolds模板。Hexo根据scaffold来生成文件。 source资源文件夹，用来存放用户资源。 theme主题。Hexo根据主题来生成静态页面。]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo · 概述]]></title>
+    <url>%2F2018%2F10%2F29%2Fhexo-learn-001%2F</url>
+    <content type="text"><![CDATA[1. Hexo 是一个快速、简洁且高效的博客框架2. 安装git3. 安装nodejs4. 安装hexo-cli 什么是 Hexo？Hexo 是一个快速、简洁且高效的博客框架。 安装 安装gitGit for Windows 国内下载站 安装nodejsNodejs中文官网 安装hexo-cli1$ npm install -g hexo-cli]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo-blog</tag>
+      </tags>
+  </entry>
+</search>
