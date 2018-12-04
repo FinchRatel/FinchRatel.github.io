@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ES6 · Reflect]]></title>
+    <url>%2F2018%2F12%2F04%2Fes6-learn-006%2F</url>
+    <content type="text"><![CDATA[Reflect.get()Reflect.set()Reflect.has()Reflect.deleteProperty()Reflect.construct()Reflect.getPrototypeOf()Reflect.setPrototypeOf()Reflect.apply()Reflect.defineProperty()Reflect.getOwnPropertyDescriptor()Reflect.isExtensible()Reflect.preventExtensions()Reflect.ownKeys() Reflect.get(target, name, receiver)查找并返回target.name如果name属性部署了getter，getter的this绑定receiver Reflect.set(target, name, value, receiver)设置target的name属性值为value如果name属性部署了setter，setter的this绑定receiver Reflect.has(obj, name)等同于 name in obj Reflect.deleteProperty(obj, name)等同于 delete obj.name Reflect.construct(target, args)等同于 new target(…args)不使用new调用构造函数的方式 Reflect.getPrototypeOf(obj)等同于 Object.getPrototypeOf(obj)读取obj的proto属性 Reflect.setPrototypeOf(obj, newProto)等同于 Object.setPrototypeOf(obj, newProto) Reflect.apply(func, thisArgs, args)等同于 Function.prototype.apply.call(func, thisArgs, args) Reflect.defineProperty(target, propertyKey, attributies)等同于 Object.defineProperty(target, propertyKey, attiruties) Reflect.getOwnPropertyDescriptor(target, propertyKey)等同于 Object.getOwnPropertyDescriptor(target, propertyKey) Reflect.isExtensible(target)等同于 Object.isExtensible(target)target是否可扩展，返回布尔值 Reflect.preventExtensible(target)等同于 Object.preventExtensible(target)让target不可扩展 Reflect.ownKeys(target)等同于 Object.ownKeys(target)返回一个对象的所有属性Object.getOwnPropertyNames + Object.getOwnPropertySymbols]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-reflect</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ES6 · Class继承]]></title>
     <url>%2F2018%2F11%2F30%2Fes6-learn-005%2F</url>
     <content type="text"><![CDATA[ES6 · Class继承 参考文档：阮一峰 ECMAScript 6 入门 extends12class Line &#123;&#125;class ColorLine extends Line &#123;&#125; 子类必须在constructor方法中调用super方法如果子类没有constructor方法，constructor会被默认添加在constructor方法中，只有调用super方法后，才能使用this可继承原生构造函数(String/Number/Boolean/Array/Date/Error/Regexp/Function/Object) Object.getPrototypeOf判断一个类是否继承自另一个类1Object.getPrototypeOf(ColorLine) === Line //true 每个对象都有一个名为proto的属性 每个构造函数都有一个名为prototype的方法 每个对象的proto指向自身构造函数的prototype123456789101112131415161718192021class Line &#123; constructor(length) &#123; this.length = length; &#125;&#125;const line = new Line(12);console.log(line.__proto__ === Line.prototype); //trueconsole.log(line.__proto__.__proto__ === Object.prototype); //trueconsole.log(line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Line &lt;= lineconsole.log(Line.__proto__ === Function.prototype); //trueconsole.log(Line.__proto__.__proto__ === Object.prototype); //trueconsole.log(Line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Function &lt;= Lineconsole.log(Function.__proto__ === Function.prototype);console.log(Object.__proto__ === Function.prototype);console.log(Object.__proto__ === Function.__proto__); super 作为函数 super()只能在子类的constructor方法中调用子类constructor方法中必须调用一次super方法 用作对象普通方法中，指向父类的原型对象静态方法中，指向父类]]></content>
@@ -36,7 +47,7 @@
   <entry>
     <title><![CDATA[VIM · 小结02]]></title>
     <url>%2F2018%2F11%2F28%2Fvim-study-002%2F</url>
-    <content type="text"><![CDATA[VIM · 小结02 进入普通模式(Normal mode) Esc CTRL + [ 进入命令模式(Commant line mode) : 进入插入模式(Insert mode) i I a A o O 进入可视模式(Visual mode) v 退出 q Shift + zz 常用命令一览 模式 命令 说明 正常模式 b 跳转到前一个单词的开头 正常模式 ge 跳转到前一个单词的结尾 正常模式 f&lt;字母&gt; 向后搜索字母，并跳转到第一个匹配的位置 正常模式 F&lt;字母&gt; 向前搜索字母，并跳转到第一个匹配的位置 复制 yy y0 y^ y$ yw yG y1G 粘贴 p P 上下行交换 ddp 替换 r 替换当前光标位置 R 连续替换 cc 替换当前行 cw 替换一个单词 C 替换到行尾 ~ 反转大小写 u 撤销一次 U 撤销当前行的所有更改 Ctrl + r 取消撤销 文本位置 ce 居中 ri 居右 le 居左 查找 ?&lt;单词&gt; 向上查找word /&lt;单词&gt; 向下查找word n 下一个 N 上一个 \* 向下查找光标所在单词 \# 向上查找鼠标所在单词 多文件编辑 vim 1.txt 2.txt 同时打开两个文件 :n 编辑下一个文件 :N 编辑上一个文件 :e 3.txt 打开3.txt :e# 回到前一个文件 :ls 列出已打开的文件 :b 2.txt 编辑2.txt :bd 2.txt 删除已打开的文件列表中的2.txt e! 4.txt 强制打开4.txt :f 显示正在编辑的文件名 :f 5.txt 另存为5.txt 恢复文件 vim -r filename 可视模式 v 字符选择 Shift + v 行选择 Ctrl + v 区域选择 缩进 &gt;&gt; 向右缩进 &lt;&lt; 向左缩进 视窗操作 :new 水平分屏 :sp 水平分屏 :vsp 垂直分屏 Ctrl + w s 水平分屏 Ctrl + w v 垂直分屏 Ctrl + w q 关闭当前分屏 Ctrl + w o 打开新视窗，并隐藏之前的所有视窗 Ctrl + w h 切换到左侧分屏 Ctrl + w j 切换到下面分屏 Ctrl + w k 切换到上面分屏 Ctrl + w l 切换到下册分屏 Ctrl + w H 移动视窗到左侧 Ctrl + w J 移动视窗值下面 Ctrl + w K 移动视窗至上面 Ctrl + w L 移动视窗至右侧 Ctrl + w - 减小视窗高度 Ctrl + w + 增加视窗高度 文档加密 vim -x file 设置 :set 显示所有修改过的配置 :set all 显示所有的设定值 :set option? 显示option的设定值 :set nooption 取消当前设定值 :set autoindent(ai) 设置自动缩进 :set autowrite(aw) 设置自动保存，默认未打开 :set background=dark 设置背景风格 :set backup(bk) 设置自动备份，默认未打开]]></content>
+    <content type="text"><![CDATA[VIM · 小结02 进入普通模式(Normal mode) Esc CTRL + [ 进入命令模式(Commant line mode) : 进入插入模式(Insert mode) i I a A o O 进入可视模式(Visual mode) v 退出 q ZZ 常用命令一览 模式 命令 说明 正常模式 b 跳转到前一个单词的开头 正常模式 ge 跳转到前一个单词的结尾 正常模式 f&lt;字母&gt; 向后搜索字母，并跳转到第一个匹配的位置 正常模式 F&lt;字母&gt; 向前搜索字母，并跳转到第一个匹配的位置 复制 yy y0 y^ y$ yw yG y1G 粘贴 p P 上下行交换 ddp 替换 r 替换当前光标位置 R 连续替换 cc 替换当前行 cw 替换一个单词 C 替换到行尾 ~ 反转大小写 u 撤销一次 U 撤销当前行的所有更改 Ctrl + r 取消撤销 文本位置 ce 居中 ri 居右 le 居左 查找 ?&lt;单词&gt; 向上查找word /&lt;单词&gt; 向下查找word n 下一个 N 上一个 \* 向下查找光标所在单词 \# 向上查找鼠标所在单词 多文件编辑 vim 1.txt 2.txt 同时打开两个文件 :n 编辑下一个文件 :N 编辑上一个文件 :e 3.txt 打开3.txt :e# 回到前一个文件 :ls 列出已打开的文件 :b 2.txt 编辑2.txt :bd 2.txt 删除已打开的文件列表中的2.txt e! 4.txt 强制打开4.txt :f 显示正在编辑的文件名 :f 5.txt 另存为5.txt 恢复文件 vim -r filename 可视模式 v 字符选择 Shift + v 行选择 Ctrl + v 区域选择 缩进 &gt;&gt; 向右缩进 &lt;&lt; 向左缩进 视窗操作 :new 水平分屏 :sp 水平分屏 :vsp 垂直分屏 Ctrl + w s 水平分屏 Ctrl + w v 垂直分屏 Ctrl + w q 关闭当前分屏 Ctrl + w o 打开新视窗，并隐藏之前的所有视窗 Ctrl + w h 切换到左侧分屏 Ctrl + w j 切换到下面分屏 Ctrl + w k 切换到上面分屏 Ctrl + w l 切换到下册分屏 Ctrl + w H 移动视窗到左侧 Ctrl + w J 移动视窗值下面 Ctrl + w K 移动视窗至上面 Ctrl + w L 移动视窗至右侧 Ctrl + w - 减小视窗高度 Ctrl + w + 增加视窗高度 文档加密 vim -x file 设置 :set 显示所有修改过的配置 :set all 显示所有的设定值 :set option? 显示option的设定值 :set nooption 取消当前设定值 :set autoindent(ai) 设置自动缩进 :set autowrite(aw) 设置自动保存，默认未打开 :set background=dark 设置背景风格 :set backup(bk) 设置自动备份，默认未打开]]></content>
       <categories>
         <category>vim</category>
       </categories>
@@ -157,7 +168,7 @@
   <entry>
     <title><![CDATA[博客计划 · 2018年]]></title>
     <url>%2F2018%2F11%2F13%2Fplan-blog-0811%2F</url>
-    <content type="text"><![CDATA[git 命令行简易教程 eslint es6 Proxy es6 Reflect es6 Module es6 Class 基于 nodejs 的爬虫 css flex vim vim plugin sftp webpack nginx shell编程]]></content>
+    <content type="text"><![CDATA[博客计划 · 2018年 git 命令行简易教程 eslint es6 Proxy es6 Reflect es6 Module es6 Class 基于 nodejs 的爬虫 css flex vim vim plugin sftp webpack nginx shell编程 python]]></content>
       <categories>
         <category>plan</category>
       </categories>
