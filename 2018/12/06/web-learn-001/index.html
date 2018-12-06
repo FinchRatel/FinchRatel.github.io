@@ -140,18 +140,20 @@
 
 
 
-  <meta name="description" content="VIM · 小结03">
-<meta name="keywords" content="vim-study">
+  <meta name="description" content="CSS · Flex">
+<meta name="keywords" content="flex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VIM · 小结03">
-<meta property="og:url" content="https://finchratel.github.io/2018/11/29/vim-study-003/index.html">
+<meta property="og:title" content="CSS · Flex">
+<meta property="og:url" content="https://finchratel.github.io/2018/12/06/web-learn-001/index.html">
 <meta property="og:site_name" content="远上寒山石径斜">
-<meta property="og:description" content="VIM · 小结03">
+<meta property="og:description" content="CSS · Flex">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-29T03:55:24.416Z">
+<meta property="og:image" content="https://finchratel.github.io/images/flex-layout.png">
+<meta property="og:updated_time" content="2018-12-06T08:08:11.773Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VIM · 小结03">
-<meta name="twitter:description" content="VIM · 小结03">
+<meta name="twitter:title" content="CSS · Flex">
+<meta name="twitter:description" content="CSS · Flex">
+<meta name="twitter:image" content="https://finchratel.github.io/images/flex-layout.png">
 
 
 
@@ -160,7 +162,7 @@
 
 
 
-  <link rel="canonical" href="https://finchratel.github.io/2018/11/29/vim-study-003/">
+  <link rel="canonical" href="https://finchratel.github.io/2018/12/06/web-learn-001/">
 
 
 
@@ -170,7 +172,7 @@
   };
 </script>
 
-  <title>VIM · 小结03 | 远上寒山石径斜</title>
+  <title>CSS · Flex | 远上寒山石径斜</title>
   
 
 
@@ -420,7 +422,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/11/29/vim-study-003/">
+    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2018/12/06/web-learn-001/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Finch Ratel">
@@ -437,7 +439,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VIM · 小结03
+          <h1 class="post-title" itemprop="name headline">CSS · Flex
               
             
           </h1>
@@ -462,7 +464,7 @@
                 
               
 
-              <time title="创建时间：2018-11-29 11:49:37 / 修改时间：11:55:24" itemprop="dateCreated datePublished" datetime="2018-11-29T11:49:37+08:00">2018-11-29</time>
+              <time title="创建时间：2018-12-06 15:53:15 / 修改时间：16:08:11" itemprop="dateCreated datePublished" datetime="2018-12-06T15:53:15+08:00">2018-12-06</time>
             
 
             
@@ -484,7 +486,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/vim/" itemprop="url" rel="index"><span itemprop="name">vim</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a></span>
 
                 
                 
@@ -518,16 +520,91 @@
       
 
       
-        <p><strong>VIM · 小结03</strong></p>
+        <p><strong>CSS · Flex</strong></p>
 <a id="more"></a>
-<h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><ul>
-<li><code>expandtab</code> 是否将tab转化为空格</li>
-<li><code>shfitwidth</code> &gt;&gt;或&lt;&lt;时缩进的列数</li>
-<li><code>tabstop</code> 一个tab键所占的列数</li>
-<li><code>softtabstop</code> tab实际占的列数</li>
-<li><code>autoindent(ai)</code> 自动换行<figure class="highlight bash"><figcaption><span>.vimrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> autoindent</span><br><span class="line"><span class="built_in">set</span> expandtab</span><br><span class="line"><span class="built_in">set</span> shiftwidth=4</span><br><span class="line"><span class="built_in">set</span> tabstop=4</span><br><span class="line"><span class="built_in">set</span> softtabstop=4</span><br></pre></td></tr></table></figure></li>
+<p><code>main axis</code> 主轴<br><code>main start</code> 主轴起点<br><code>main end</code> 主轴终点<br><code>main size</code> 主轴方向大小</p>
+<p><code>cross axis</code> 交叉轴<br><code>cross start</code> 交叉轴起点<br><code>cross end</code> 交叉轴终点<br><code>cross size</code> 交叉轴方向大小</p>
+<h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3><p><code>display: flex</code></p>
+<ul>
+<li>指定flex布局，此时<code>float</code>、<code>clear</code>、<code>vertical-align</code>属性将失效</li>
 </ul>
-
+<p><code>flex-direction</code> 主轴方向</p>
+<ul>
+<li><code>row</code> 默认 主轴为水平方向，起点在左端</li>
+<li><code>row-reverse</code> 主轴为水平方向，起点在右端</li>
+<li><code>column</code> 主轴为垂直方向，起点在上端</li>
+<li><code>column-reverse</code> 主轴为垂直方向，起点在下端</li>
+</ul>
+<p><code>flex-wrap</code> 是否换行</p>
+<ul>
+<li><code>nowrap</code> 默认 不换行</li>
+<li><code>wrap</code> 换行</li>
+<li><code>wrap-reverse</code> 换行</li>
+</ul>
+<p><code>flex-flow</code> 主轴方向和是否换行</p>
+<ul>
+<li><code>row nowrap</code> 默认</li>
+<li><code>flex-direction</code> 和 <code>flex-wrap</code> 的缩写</li>
+</ul>
+<p><code>justify-content</code> 主轴对齐方式</p>
+<ul>
+<li><code>flex-start</code> 默认 主轴起点对齐</li>
+<li><code>flex-end</code> 主轴终点对齐</li>
+<li><code>center</code> 主轴居中对齐</li>
+<li><code>space-between</code> 主轴两端对齐</li>
+<li><code>space-around</code> 间隔相等</li>
+</ul>
+<p><code>align-items</code> 交叉轴对齐方式</p>
+<ul>
+<li><code>stretch</code> 默认 拉伸 如果未设置高度或设置为auto，将占满整个高度</li>
+<li><code>flex-start</code> 交叉轴起点对齐</li>
+<li><code>flex-end</code> 交叉轴终点对齐</li>
+<li><code>center</code> 交叉轴居中对齐</li>
+<li><code>baseline</code> 第一行文字的基线对齐</li>
+</ul>
+<p><code>align-content</code> 多根轴线的对齐方式，一根轴线时不生效</p>
+<ul>
+<li><code>stretch</code> 默认 拉伸 占满整个交叉轴</li>
+<li><code>flex-start</code> 与交叉轴的起点对齐</li>
+<li><code>flex-end</code> 与交叉轴的终点对齐</li>
+<li><code>center</code> 与交叉轴的中点对齐</li>
+<li><code>space-between</code> 交叉轴两端对齐</li>
+<li><code>space-around</code> 间隔相等</li>
+</ul>
+<h3 id="子项"><a href="#子项" class="headerlink" title="子项"></a>子项</h3><p><code>order</code></p>
+<ul>
+<li>0 默认</li>
+<li>子项的排列顺序，数字越小越靠前</li>
+</ul>
+<p><code>flex-grow</code></p>
+<ul>
+<li>子项放大比例</li>
+<li>0 默认 不放大</li>
+</ul>
+<p><code>flex-shirnk</code></p>
+<ul>
+<li>子项缩小比例</li>
+<li>1 默认</li>
+<li>0 不缩小</li>
+</ul>
+<p><code>flex-basis</code></p>
+<ul>
+<li>在分配多余空间之前，子项占据的主轴空间(main size)</li>
+<li>auto 默认</li>
+</ul>
+<p><code>flex</code></p>
+<ul>
+<li><code>flex-grow</code> <code>flex-shirnk</code> <code>flex-basis</code>的简写</li>
+<li><code>0 1 auto</code> 默认</li>
+</ul>
+<p><code>align-self</code></p>
+<ul>
+<li>子项对齐方式，覆盖<code>align-items</code></li>
+<li>auto 默认 继承父元素的<code>align-items</code></li>
+</ul>
+<h3 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h3><p>一种常见的页面布局，顶部<code>header</code>，左侧<code>nav</code>，右侧<code>content</code><br><img src="/images/flex-layout.png" alt="img"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>flex<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/style.css"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"nav"</span>&gt;</span>nav<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span>content<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.header</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">56px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">56px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#cfcfcf</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.nav</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#dfdfdf</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">200px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.content</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#efefef</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -579,7 +656,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/vim-study/" rel="tag"># vim-study</a>
+            <a href="/tags/flex/" rel="tag"># flex</a>
           
         </div>
       
@@ -646,8 +723,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/28/vim-study-002/" rel="next" title="VIM · 小结02">
-                <i class="fa fa-chevron-left"></i> VIM · 小结02
+              <a href="/2018/12/04/es6-learn-006/" rel="next" title="ES6 · Reflect">
+                <i class="fa fa-chevron-left"></i> ES6 · Reflect
               </a>
             
           </div>
@@ -655,10 +732,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/30/es6-learn-004/" rel="prev" title="ES6 · Class基础">
-                ES6 · Class基础 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -872,7 +945,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#缩进"><span class="nav-number">1.</span> <span class="nav-text">缩进</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#容器"><span class="nav-number">1.</span> <span class="nav-text">容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子项"><span class="nav-number">2.</span> <span class="nav-text">子项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面布局"><span class="nav-number">3.</span> <span class="nav-text">页面布局</span></a></li></ol></div>
             
 
           </div>
