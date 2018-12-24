@@ -148,7 +148,7 @@
 <meta property="og:site_name" content="远上寒山石径斜">
 <meta property="og:description" content="VIM · 小结02">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-04T02:49:52.503Z">
+<meta property="og:updated_time" content="2018-12-24T03:35:40.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VIM · 小结02">
 <meta name="twitter:description" content="VIM · 小结02">
@@ -301,7 +301,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">15</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">16</span></a>
 
   </li>
         
@@ -320,7 +320,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">10</span></a>
 
   </li>
         
@@ -339,7 +339,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">38</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">39</span></a>
 
   </li>
 
@@ -479,7 +479,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-04 10:49:52" itemprop="dateModified" datetime="2018-12-04T10:49:52+08:00">2018-12-04</time>
+                <time title="修改时间：2018-12-24 11:35:40" itemprop="dateModified" datetime="2018-12-24T11:35:40+08:00">2018-12-24</time>
               
             
           </span>
@@ -540,12 +540,12 @@
 <li><code>:</code></li>
 </ul>
 <h3 id="进入插入模式-Insert-mode"><a href="#进入插入模式-Insert-mode" class="headerlink" title="进入插入模式(Insert mode)"></a>进入插入模式(Insert mode)</h3><ul>
-<li><code>i</code></li>
-<li><code>I</code></li>
-<li><code>a</code></li>
-<li><code>A</code></li>
-<li><code>o</code></li>
-<li><code>O</code></li>
+<li><code>i</code> 在光标前插入</li>
+<li><code>I</code> 在行首插入</li>
+<li><code>a</code> 在光标后插入</li>
+<li><code>A</code> 在行尾插入</li>
+<li><code>o</code> 在下方插入一行</li>
+<li><code>O</code> 在上方插入一行</li>
 </ul>
 <h3 id="进入可视模式-Visual-mode"><a href="#进入可视模式-Visual-mode" class="headerlink" title="进入可视模式(Visual mode)"></a>进入可视模式(Visual mode)</h3><ul>
 <li><code>v</code></li>
@@ -598,6 +598,10 @@
 <li><code>p</code></li>
 <li><code>P</code></li>
 </ul>
+<h3 id="change"><a href="#change" class="headerlink" title="change"></a>change</h3><ul>
+<li>c [number] motion<h3 id="delete"><a href="#delete" class="headerlink" title="delete"></a>delete</h3></li>
+<li>d [number] motion</li>
+</ul>
 <h3 id="上下行交换"><a href="#上下行交换" class="headerlink" title="上下行交换"></a>上下行交换</h3><ul>
 <li><code>ddp</code></li>
 </ul>
@@ -611,6 +615,13 @@
 <li><code>u</code> 撤销一次</li>
 <li><code>U</code> 撤销当前行的所有更改</li>
 <li><code>Ctrl + r</code> 取消撤销</li>
+<li><code>:s/old/new/g</code> 替换当前行所有的old为new</li>
+<li><code>:#,#s/old/new/g</code> 替换#行到#行的所有的old为new</li>
+<li><code>:%s/old/new/g</code> 替换整个文档所有的old为new</li>
+</ul>
+<h3 id="提取内容"><a href="#提取内容" class="headerlink" title="提取内容"></a>提取内容</h3><ul>
+<li><code>:r file</code> 提取file文件内容，插入光标所在位置</li>
+<li><code>:r !ls</code> 提取ls命令输入内容，插入光标所在位置</li>
 </ul>
 <h3 id="文本位置"><a href="#文本位置" class="headerlink" title="文本位置"></a>文本位置</h3><ul>
 <li><code>ce</code> 居中</li>
@@ -622,8 +633,11 @@
 <li><code>/&lt;单词&gt;</code> 向下查找word</li>
 <li><code>n</code> 下一个</li>
 <li><code>N</code> 上一个</li>
+<li><code>CTRL + O</code> 回到较旧的位置</li>
+<li><code>CTRL + I9j</code> 回到较新的位置</li>
 <li><code>\*</code> 向下查找光标所在单词</li>
 <li><code>\#</code> 向上查找鼠标所在单词</li>
+<li><code>%</code> 查找配对括号</li>
 </ul>
 <h3 id="多文件编辑"><a href="#多文件编辑" class="headerlink" title="多文件编辑"></a>多文件编辑</h3><ul>
 <li><code>vim 1.txt 2.txt</code> 同时打开两个文件</li>
@@ -672,6 +686,14 @@
 <h3 id="文档加密"><a href="#文档加密" class="headerlink" title="文档加密"></a>文档加密</h3><ul>
 <li><code>vim -x file</code></li>
 </ul>
+<h3 id="执行shell命令"><a href="#执行shell命令" class="headerlink" title="执行shell命令"></a>执行shell命令</h3><ul>
+<li><code>:!ls</code> 暂时退出vim并执行ls命令</li>
+</ul>
+<h3 id="选择性保存"><a href="#选择性保存" class="headerlink" title="选择性保存"></a>选择性保存</h3><ul>
+<li><code>v</code> 进入可视模式</li>
+<li><code>{move cursor}</code> 移动光标选择文本</li>
+<li><code>:w</code> 保存</li>
+</ul>
 <h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><ul>
 <li><code>:set</code> 显示所有修改过的配置</li>
 <li><code>:set all</code> 显示所有的设定值</li>
@@ -681,6 +703,7 @@
 <li><code>:set autowrite(aw)</code> 设置自动保存，默认未打开</li>
 <li><code>:set background=dark</code> 设置背景风格</li>
 <li><code>:set backup(bk)</code> 设置自动备份，默认未打开</li>
+<li><code>:set hlsearch(hls)</code> 高亮搜索匹配项</li>
 </ul>
 
       
@@ -885,7 +908,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -916,7 +939,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">分类</span>
                   
                 </div>
@@ -959,7 +984,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">15</span>
+                      
+                    
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
@@ -1027,7 +1054,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入普通模式-Normal-mode"><span class="nav-number">1.</span> <span class="nav-text">进入普通模式(Normal mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入命令模式-Commant-line-mode"><span class="nav-number">2.</span> <span class="nav-text">进入命令模式(Commant line mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入插入模式-Insert-mode"><span class="nav-number">3.</span> <span class="nav-text">进入插入模式(Insert mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入可视模式-Visual-mode"><span class="nav-number">4.</span> <span class="nav-text">进入可视模式(Visual mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#退出"><span class="nav-number">5.</span> <span class="nav-text">退出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令一览"><span class="nav-number">6.</span> <span class="nav-text">常用命令一览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制"><span class="nav-number">7.</span> <span class="nav-text">复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#粘贴"><span class="nav-number">8.</span> <span class="nav-text">粘贴</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上下行交换"><span class="nav-number">9.</span> <span class="nav-text">上下行交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换"><span class="nav-number">10.</span> <span class="nav-text">替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本位置"><span class="nav-number">11.</span> <span class="nav-text">文本位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找"><span class="nav-number">12.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多文件编辑"><span class="nav-number">13.</span> <span class="nav-text">多文件编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#恢复文件"><span class="nav-number">14.</span> <span class="nav-text">恢复文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可视模式"><span class="nav-number">15.</span> <span class="nav-text">可视模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缩进"><span class="nav-number">16.</span> <span class="nav-text">缩进</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视窗操作"><span class="nav-number">17.</span> <span class="nav-text">视窗操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档加密"><span class="nav-number">18.</span> <span class="nav-text">文档加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置"><span class="nav-number">19.</span> <span class="nav-text">设置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入普通模式-Normal-mode"><span class="nav-number">1.</span> <span class="nav-text">进入普通模式(Normal mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入命令模式-Commant-line-mode"><span class="nav-number">2.</span> <span class="nav-text">进入命令模式(Commant line mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入插入模式-Insert-mode"><span class="nav-number">3.</span> <span class="nav-text">进入插入模式(Insert mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入可视模式-Visual-mode"><span class="nav-number">4.</span> <span class="nav-text">进入可视模式(Visual mode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#退出"><span class="nav-number">5.</span> <span class="nav-text">退出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令一览"><span class="nav-number">6.</span> <span class="nav-text">常用命令一览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制"><span class="nav-number">7.</span> <span class="nav-text">复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#粘贴"><span class="nav-number">8.</span> <span class="nav-text">粘贴</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#change"><span class="nav-number">9.</span> <span class="nav-text">change</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete"><span class="nav-number">10.</span> <span class="nav-text">delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上下行交换"><span class="nav-number">11.</span> <span class="nav-text">上下行交换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换"><span class="nav-number">12.</span> <span class="nav-text">替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提取内容"><span class="nav-number">13.</span> <span class="nav-text">提取内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本位置"><span class="nav-number">14.</span> <span class="nav-text">文本位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找"><span class="nav-number">15.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多文件编辑"><span class="nav-number">16.</span> <span class="nav-text">多文件编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#恢复文件"><span class="nav-number">17.</span> <span class="nav-text">恢复文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可视模式"><span class="nav-number">18.</span> <span class="nav-text">可视模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缩进"><span class="nav-number">19.</span> <span class="nav-text">缩进</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视窗操作"><span class="nav-number">20.</span> <span class="nav-text">视窗操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档加密"><span class="nav-number">21.</span> <span class="nav-text">文档加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#执行shell命令"><span class="nav-number">22.</span> <span class="nav-text">执行shell命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择性保存"><span class="nav-number">23.</span> <span class="nav-text">选择性保存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置"><span class="nav-number">24.</span> <span class="nav-text">设置</span></a></li></ol></div>
             
 
           </div>
