@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[nginx-learn-001]]></title>
-    <url>%2F2018%2F12%2F18%2Fnginx-learn-001%2F</url>
-    <content type="text"><![CDATA[参考资料 官网 官网文档 中文官网 中文文档]]></content>
+    <title><![CDATA[JavaScript · String]]></title>
+    <url>%2F2019%2F01%2F02%2Fjs-learn-002%2F</url>
+    <content type="text"><![CDATA[ES5 String APIES6 String API参考文档 ES5 String API sub() sup() big() small() strike() bold() italics() blink() link() anchor() fixed() fontsize() fontcolor() charAt() charCodeAt() fromCharCode() indexOf() lastIndexOf() match() replace() search() localCompare() split() concat() substr(start, length) substring(start, end) slice(start, end) 接收负参数 toLocaleLowerCase() toLocaleUpperCase() toLowerCase() toUpperCase() toSource() toString() valueOf() ES6 String API 字符串的Unicode表示法 codePointAt() &amp;&amp; charCodeAt() fromCodePoint() &amp;&amp; fromCharCode() for…of遍历 normalize() includes() startWith() endsWith() repeat() padStart() padEnd() matchAll() 模板字符串 `` String.raw() 参考文档 ES5 String 参考文档 ES6 String 参考文档]]></content>
       <categories>
-        <category>nginx</category>
+        <category>javascript</category>
       </categories>
       <tags>
-        <tag>nginx</tag>
+        <tag>string</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript · Array]]></title>
+    <url>%2F2019%2F01%2F02%2Fjs-learn-001%2F</url>
+    <content type="text"><![CDATA[ES5 Array APIES6 Array APIJS Array 遍历参考文档 ES5 Array API concat(p1[array or number], p2…) join(separator) push() pop() shift() unshift() reverse() slice(start, end) splice(start, number, item1,…,itemx) sort(sortBy) toSource() toString() toLocaleString() valueOf() ES6 Array API 扩展云算符 … Array.from() Array.of() copyWithin(target, start = 0, end = this.length) find() findIndex() fill() keys() values() entries() includes() flat() flatMap() JS Array 遍历 for…in for…of forEach() reduce() map() flatMap() find() 返回符合条件的第一个子元素 findIndex() filter() 返回包含所有符合条件的子元素的数组 every() some() keys() values() entries() 参考文档 ES5 Array 参考文档 ES6 Array 参考文档]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>array</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6 · Number]]></title>
+    <url>%2F2018%2F12%2F25%2Fes6-learn-007%2F</url>
+    <content type="text"><![CDATA[Number Number 0b11 //3 0B11 //3 0o11 //9 0O11 //9 toSting([2, 8, 10, 16]) //转为二进制、八进制、十进制、十六进制字符串 Number(0b11) //转十进制 Number.isFinate() Number.isNaN() Number.parseInt() Number.parseFloat() Number.isInteger() //由于 JavaScript 采用 IEEE 754 标准，数值存储为64位双精度格式，数值精度最多可以达到 53 个二进制位（1 个隐藏位与 52 个有效位）。如果数值的精度超过这个限度，第54位及后面的位就会被丢弃，这种情况下，Number.isInteger可能会误判。 Number.EPSILON === Math.pow(2, -52) //表示 1 与大于 1 的最小浮点数之间的差。 Number.MAX_SAFE_INTEGER === Math.pow(2, 53) Number.MIN_SAFE_INTEGER === Math.pow(2, -53) Number.isSafeInteger(n) //Number.MIN_SAFE_INTEGER &lt; n &lt; Number.MAX_SAFE_INTEGER Math.trunc(3.14) //3 返回整数部分 Math.sign() Math.cbrt() //返回立方根 Math.hypot() //返回参数平方和的平方根]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>number</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[博客计划 · 2019年]]></title>
+    <url>%2F2018%2F12%2F25%2Fplan-blog-2019%2F</url>
+    <content type="text"><![CDATA[博客计划 · 2019年 es6 vue nodejs webpack vscode nodejs]]></content>
+      <categories>
+        <category>plan</category>
+      </categories>
+      <tags>
+        <tag>plan-blod</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[CSS · Flex]]></title>
     <url>%2F2018%2F12%2F06%2Fweb-learn-001%2F</url>
-    <content type="text"><![CDATA[CSS · Flex main axis 主轴main start 主轴起点main end 主轴终点main size 主轴方向大小 cross axis 交叉轴cross start 交叉轴起点cross end 交叉轴终点cross size 交叉轴方向大小 容器display: flex 指定flex布局，此时float、clear、vertical-align属性将失效 flex-direction 主轴方向 row 默认 主轴为水平方向，起点在左端 row-reverse 主轴为水平方向，起点在右端 column 主轴为垂直方向，起点在上端 column-reverse 主轴为垂直方向，起点在下端 flex-wrap 是否换行 nowrap 默认 不换行 wrap 换行 wrap-reverse 换行 flex-flow 主轴方向和是否换行 row nowrap 默认 flex-direction 和 flex-wrap 的缩写 justify-content 主轴对齐方式 flex-start 默认 主轴起点对齐 flex-end 主轴终点对齐 center 主轴居中对齐 space-between 主轴两端对齐 space-around 间隔相等 align-items 交叉轴对齐方式 stretch 默认 拉伸 如果未设置高度或设置为auto，将占满整个高度 flex-start 交叉轴起点对齐 flex-end 交叉轴终点对齐 center 交叉轴居中对齐 baseline 第一行文字的基线对齐 align-content 多根轴线的对齐方式，一根轴线时不生效 stretch 默认 拉伸 占满整个交叉轴 flex-start 与交叉轴的起点对齐 flex-end 与交叉轴的终点对齐 center 与交叉轴的中点对齐 space-between 交叉轴两端对齐 space-around 间隔相等 子项order 0 默认 子项的排列顺序，数字越小越靠前 flex-grow 子项放大比例 0 默认 不放大 flex-shirnk 子项缩小比例 1 默认 0 不缩小 flex-basis 在分配多余空间之前，子项占据的主轴空间(main size) auto 默认 flex flex-grow flex-shirnk flex-basis的简写 0 1 auto 默认 align-self 子项对齐方式，覆盖align-items auto 默认 继承父元素的align-items 页面布局一种常见的页面布局，顶部header，左侧nav，右侧content 123456789101112131415&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset="utf-8" /&gt; &lt;title&gt;flex&lt;/title&gt; &lt;link rel="stylesheet" href="css/style.css"&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="header"&gt;header&lt;/div&gt; &lt;div class="container"&gt; &lt;div class="nav"&gt;nav&lt;/div&gt; &lt;div class="content"&gt;content&lt;div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt; 1234567891011121314151617181920212223242526html, body &#123; height: 100%; margin: 0; padding: 0; overflow: hidden;&#125;.header &#123; height: 56px; line-height: 56px; text-align: center; background: #cfcfcf;&#125;.container &#123; height: 100%; display: flex;&#125;.nav &#123; background: #dfdfdf; text-align: center; flex: 0 0 200px;&#125;.content &#123; background: #efefef; text-align: center; width: 100%;&#125;]]></content>
+    <content type="text"><![CDATA[CSS · Flex main axis 主轴 cross axis 交叉轴 main start 主轴起点 cross start 交叉轴起点 main end 主轴终点 cross end 交叉轴终点 main size 主轴方向大小 cross size 交叉轴方向大小 容器属性display: flex 指定flex布局，此时float、clear、vertical-align属性将失效 flex-direction 主轴方向 row 默认 主轴为水平方向，起点在左端 row-reverse 主轴为水平方向，起点在右端 column 主轴为垂直方向，起点在上端 column-reverse 主轴为垂直方向，起点在下端 flex-wrap 是否换行 nowrap 默认 不换行 wrap 换行 wrap-reverse 反向换行 flex-flow 主轴方向和是否换行 row nowrap 默认 flex-direction 和 flex-wrap 的缩写 justify-content 主轴对齐方式 flex-start 默认 主轴起点对齐 flex-end 主轴终点对齐 center 主轴居中对齐 space-between 主轴两端对齐 space-around 间隔相等 align-items 交叉轴对齐方式 stretch 默认 拉伸 如果未设置高度或设置为auto，将占满整个高度 flex-start 交叉轴起点对齐 flex-end 交叉轴终点对齐 center 交叉轴居中对齐 baseline 第一行文字的基线对齐 align-content 多根轴线的对齐方式，一根轴线时不生效 stretch 默认 拉伸 占满整个交叉轴 flex-start 与交叉轴的起点对齐 flex-end 与交叉轴的终点对齐 center 与交叉轴的中点对齐 space-between 交叉轴两端对齐 space-around 间隔相等 子项属性order 0 默认 子项的排列顺序，数字越小越靠前 flex-grow 子项放大比例 0 默认 不放大 flex-shrink 子项缩小比例 1 默认 0 不缩小 flex-basis 在分配多余空间之前，子项占据的主轴空间(main size) auto 默认 flex flex-grow flex-shrink flex-basis的简写 0 1 auto 默认 align-self 子项对齐方式，覆盖align-items auto 默认 继承父元素的align-items 页面布局圣杯布局 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;flex test&lt;/title&gt; &lt;style type="text/css"&gt; body &#123; padding: 0; margin: 0; &#125; .container &#123; display: flex; flex-flow: column nowrap; &#125; .header, .footer &#123; background: #eee; flex: 0 0 56px; text-align: center; line-height: 56px; &#125; .main &#123; height: 400px; background: #ddd; display: flex; line-height: 400px; text-align: center; &#125; .left &#123; flex: 0 0 160px; background: #ccc; &#125; .center &#123; flex: 1; &#125; .right &#123; flex: 0 0 160px; background: #bbb; align-self: flex-end; &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="container"&gt; &lt;div class="header"&gt;HEADER&lt;/div&gt; &lt;div class="main"&gt; &lt;div class="left"&gt;LEFT&lt;/div&gt; &lt;div class="center"&gt;CENTER&lt;/div&gt; &lt;div class="right"&gt;RIGHT&lt;/div&gt; &lt;/div&gt; &lt;div class="footer"&gt;FOOTER&lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
       <categories>
         <category>web</category>
       </categories>
@@ -36,7 +69,7 @@
   <entry>
     <title><![CDATA[ES6 · Class继承]]></title>
     <url>%2F2018%2F11%2F30%2Fes6-learn-005%2F</url>
-    <content type="text"><![CDATA[ES6 · Class继承 参考文档：阮一峰 ECMAScript 6 入门 extends12class Line &#123;&#125;class ColorLine extends Line &#123;&#125; 子类必须在constructor方法中调用super方法如果子类没有constructor方法，constructor会被默认添加在constructor方法中，只有调用super方法后，才能使用this可继承原生构造函数(String/Number/Boolean/Array/Date/Error/Regexp/Function/Object) Object.getPrototypeOf判断一个类是否继承自另一个类1Object.getPrototypeOf(ColorLine) === Line //true 每个对象都有一个名为proto的属性 每个构造函数都有一个名为prototype的方法 每个对象的proto指向自身构造函数的prototype123456789101112131415161718192021class Line &#123; constructor(length) &#123; this.length = length; &#125;&#125;const line = new Line(12);console.log(line.__proto__ === Line.prototype); //trueconsole.log(line.__proto__.__proto__ === Object.prototype); //trueconsole.log(line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Line &lt;= lineconsole.log(Line.__proto__ === Function.prototype); //trueconsole.log(Line.__proto__.__proto__ === Object.prototype); //trueconsole.log(Line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Function &lt;= Lineconsole.log(Function.__proto__ === Function.prototype);console.log(Object.__proto__ === Function.prototype);console.log(Object.__proto__ === Function.__proto__); super 作为函数 super()只能在子类的constructor方法中调用子类constructor方法中必须调用一次super方法 用作对象普通方法中，指向父类的原型对象静态方法中，指向父类]]></content>
+    <content type="text"><![CDATA[ES6 · Class继承 参考文档：阮一峰 ECMAScript 6 入门 – Class的继承 extends12class Line &#123;&#125;class ColorLine extends Line &#123;&#125; 子类必须在constructor方法中调用super方法如果子类没有constructor方法，constructor会被默认添加在constructor方法中，只有调用super方法后，才能使用this可继承原生构造函数(String/Number/Boolean/Array/Date/Error/Regexp/Function/Object) Object.getPrototypeOf() &amp;&amp; Reflect.getPrototypeOf()判断一个类是否继承自另一个类 12Object.getPrototypeOf(ColorLine) === Line //trueReflect.getPrototypeOf(ColorLine) === Line //true 每个对象都有一个名为proto的属性 每个构造函数都有一个名为prototype的方法 每个对象的proto指向自身构造函数的prototype 1234567891011121314151617181920212223class Line &#123; constructor(length) &#123; this.length = length; &#125;&#125;const line = new Line(12);console.log(line.__proto__ === Line.prototype); //trueconsole.log(line.__proto__.__proto__ === Object.prototype); //trueconsole.log(line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Line &lt;= lineconsole.log(Line.__proto__ === Function.prototype); //trueconsole.log(Line.__proto__.__proto__ === Object.prototype); //trueconsole.log(Line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Function &lt;= Lineconsole.log(Function.__proto__ === Function.prototype); //trueconsole.log(Object.__proto__ === Function.prototype); //trueconsole.log(Object.__proto__ === Function.__proto__); //true// Function &lt;= Object// Function &lt;= Function super 作为函数 super()只能在子类的constructor方法中调用子类constructor方法中必须调用一次super方法 用作对象普通方法中，指向父类的原型对象静态方法中，指向父类]]></content>
       <categories>
         <category>es6</category>
       </categories>
@@ -47,7 +80,7 @@
   <entry>
     <title><![CDATA[ES6 · Class基础]]></title>
     <url>%2F2018%2F11%2F30%2Fes6-learn-004%2F</url>
-    <content type="text"><![CDATA[ES6 · Class基础 构造函数12345678910111213function Rectangle (width, height) &#123; this.width = width; this.height = height; this.area = this.width * this.height;&#125;Rectangle.prototype.getArea = function() &#123; return this.width * this.height;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 ES61234567891011121314class Rectangle &#123; constructor(width, height) &#123; this.width = width; this.height = height; &#125; getArea() &#123; return this.width * this.height; &#125;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 constructor类的构造函数，实例化(new)时自动调用 static静态方法，通过类调用，不会被实例继承，会被子类继承this指向类，而不是实例 name返回类的名称 new.target返回实例化时调用的类子类继承父类时，会返回子类 类 类的所有方法都在原型上 类内部的方法，都是不可枚举的 类的属性名和方法名可以用表达式 类的内部默认启用严格模式 类不存在变量提升 实例 实例的属性，除非定义在this对象上，否则都定义在原型上类的所有实例共享一个原型对象]]></content>
+    <content type="text"><![CDATA[ES6 · Class基础 构造函数123456789101112function Rectangle (width, height) &#123; this.width = width; this.height = height;&#125;Rectangle.prototype.getArea = function() &#123; return this.width * this.height;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 ES61234567891011121314class Rectangle &#123; constructor(width, height) &#123; this.width = width; this.height = height; &#125; getArea() &#123; return this.width * this.height; &#125;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 constructor类的构造函数，实例化(new)时自动调用 static静态方法类可以调用，会被子类继承，子类也可以调用不会被类的实例继承，类的实例无法调用也不会被子类的实例继承，子类的实例也无法调用this指向类，而不是实例 name返回类的名称 new.target返回实例化时调用的类子类继承父类时，会返回子类 类 类的所有方法都在原型上 类内部的方法，都是不可枚举的 类的属性名和方法名可以用表达式 类的内部默认启用严格模式 类不存在变量提升 实例 实例的属性，除非定义在this对象上，否则都定义在原型上类的所有实例共享一个原型对象]]></content>
       <categories>
         <category>es6</category>
       </categories>
@@ -179,7 +212,7 @@
   <entry>
     <title><![CDATA[Git · 简易教程]]></title>
     <url>%2F2018%2F11%2F15%2Fgit-learn-001%2F</url>
-    <content type="text"><![CDATA[1. clone2. branch3. checkout4. status5. add6. commit7. push8. 示例 clone 克隆远程仓库到本地1234567$ git clone ssh://git@git.moyuqingpen.com.cn:7999/~zhanghao30/playground.gitCloning into 'playground'...remote: 对象计数中: 155, 完成.remote: 压缩对象中: 100% (133/133), 完成.remote: Total 155 (delta 52), reused 0 (delta 0)Receiving objects: 100% (155/155), 392.57 KiB | 1.86 MiB/s, done.Resolving deltas: 100% (52/52), done. branch 查看分支 12$ git branch* master 创建分支 1$ git branch develop checkout 检出分支12$ git checkout developSwitched to branch 'develop' status 显示工作目录和暂存区状态123456$ git statusOn branch developUntracked files: (use "git add &lt;file&gt;..." to include in what will be committed) readme.mdnothing added to commit but untracked files present (use "git add" to track) add 添加到暂存区123$ git add .warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory commit 提交变动123456$ git commit . -m "add readme"warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory[develop dbe505a] add readme 1 file changed, 1 insertion(+) create mode 100644 readme.md push 推送到远程分支12345678910111213$ git pushEnumerating objects: 5, done.Counting objects: 100% (5/5), done.Delta compression using up to 8 threadsCompressing objects: 100% (2/2), done.Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.Total 3 (delta 1), reused 0 (delta 0)remote:remote: Create pull request for develop:remote: https://git.moyuqingpen.com.cn/users/zhanghao30/repos/playground/compare/commits?sourceBranch=refs/heads/developremote:To ssh://git.moyuqingpen.com.cn:7999/~zhanghao30/playground.git dbe505a..dcf6cc8 develop -&gt; develop 示例 克隆-修改-提交 123456789# 克隆仓库$ git clone ssh://git.moyuqingpen.com.cn:7999/~zhanghao30/playground.git# do some change here ...# 添加到索引$ git add .# 记录变动$ git commit . -m "tips"# 推送到远程分支$ git push 新建本地develop分支，并提交到远程 1234567$ git branch develop$ git branch --set-upstream-to=/origin/develop$ git pull# do some change here$ git add .$ git commit . -m "tips"$ git push 删除远程develop分支 12$ git checkout master$ git branch -d -r origin/develop 注：以上只是 git 命令行的简单教程，具体的用法请参考 git &lt;command&gt; --help，或git book]]></content>
+    <content type="text"><![CDATA[1. clone2. branch3. checkout4. status5. add6. commit7. push8. 示例 clone 克隆远程仓库到本地1234567$ git clone ssh://git@git.moyuqingpen.com.cn:7999/~zhanghao/playground.gitCloning into 'playground'...remote: 对象计数中: 155, 完成.remote: 压缩对象中: 100% (133/133), 完成.remote: Total 155 (delta 52), reused 0 (delta 0)Receiving objects: 100% (155/155), 392.57 KiB | 1.86 MiB/s, done.Resolving deltas: 100% (52/52), done. branch 查看分支 12$ git branch* master 创建分支 1$ git branch develop checkout 检出分支12$ git checkout developSwitched to branch 'develop' status 显示工作目录和暂存区状态123456$ git statusOn branch developUntracked files: (use "git add &lt;file&gt;..." to include in what will be committed) readme.mdnothing added to commit but untracked files present (use "git add" to track) add 添加到暂存区123$ git add .warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory commit 提交变动123456$ git commit . -m "add readme"warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory[develop dbe505a] add readme 1 file changed, 1 insertion(+) create mode 100644 readme.md push 推送到远程分支12345678910111213$ git pushEnumerating objects: 5, done.Counting objects: 100% (5/5), done.Delta compression using up to 8 threadsCompressing objects: 100% (2/2), done.Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.Total 3 (delta 1), reused 0 (delta 0)remote:remote: Create pull request for develop:remote: https://git.moyuqingpen.com.cn/users/zhanghao/repos/playground/compare/commits?sourceBranch=refs/heads/developremote:To ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git dbe505a..dcf6cc8 develop -&gt; develop 示例 克隆-修改-提交 123456789# 克隆仓库$ git clone ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git# do some change here ...# 添加到索引$ git add .# 记录变动$ git commit . -m "tips"# 推送到远程分支$ git push 新建本地develop分支，并提交到远程 1234567$ git branch develop$ git branch --set-upstream-to=/origin/develop$ git pull# do some change here$ git add .$ git commit . -m "tips"$ git push 删除远程develop分支 12$ git checkout master$ git branch -d -r origin/develop 注：以上只是 git 命令行的简单教程，具体的用法请参考 git &lt;command&gt; --help，或git book]]></content>
       <categories>
         <category>git</category>
       </categories>
@@ -189,8 +222,8 @@
   </entry>
   <entry>
     <title><![CDATA[博客计划 · 2018年]]></title>
-    <url>%2F2018%2F11%2F13%2Fplan-blog-0811%2F</url>
-    <content type="text"><![CDATA[博客计划 · 2018年 git 命令行简易教程 eslint es6 Proxy es6 Reflect es6 Module es6 Class 基于 nodejs 的爬虫 css flex vim vim plugin sftp webpack nginx shell编程 c python 数据结构与算法]]></content>
+    <url>%2F2018%2F11%2F13%2Fplan-blog-2018%2F</url>
+    <content type="text"><![CDATA[博客计划 · 2018年 git 命令行简易教程 eslint es6 Proxy es6 Reflect es6 Module es6 Class 基于 nodejs 的爬虫 css flex vim sftp webpack nginx shell编程 c python 数据结构与算法]]></content>
       <categories>
         <category>plan</category>
       </categories>
