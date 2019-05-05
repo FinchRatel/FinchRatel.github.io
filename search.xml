@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[localStorage && sessionStorage]]></title>
+    <url>%2F2019%2F05%2F05%2Fjs-learn-03%2F</url>
+    <content type="text"><![CDATA[API123456789const storage = localStorage // or sessionStorage// 增 改storage.setItem('version', '0.2.0')// 查storage.getItem('version')// 删storage.removeItem('version')// 删storage.clear() 参考MDN web docs – Window​.local​StorageMDN web docs – Window​.session​StoragelocalStorage使用总结]]></content>
+      <categories>
+        <category>h5</category>
+      </categories>
+      <tags>
+        <tag>h5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[typescript001]]></title>
+    <url>%2F2019%2F04%2F08%2Ftypescript001%2F</url>
+    <content type="text"><![CDATA[类型注解 TypeScript里的类型注解是一种轻量级的为函数或变量添加约束的方式 12345function greeter(person: string) &#123; return "Hello, " + person;&#125;let user = "Jane User";greeter(user); 接口interface1234567interface Person &#123; firstName: string; lastName: string;&#125;function greeter(person: Person) &#123; return "Hello, " + person.firstName + " " + person.lastName;&#125; 类123456789101112131415class Student &#123; fullName: string; constructor(public firstName: string, public middleInitial: string, public lastName: string) &#123; this.fullName = firstName + " " + middleInitial + " " + lastName; &#125;&#125;interface Person &#123; firstName: string; lastName: string;&#125;function greeter(person : Person) &#123; return "Hello, " + person.firstName + " " + person.lastName;&#125;let user = new Student("Jane", "M.", "User");greeter(user);]]></content>
+      <categories>
+        <category>typescript</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[JavaScript · String]]></title>
     <url>%2F2019%2F01%2F02%2Fjs-learn-002%2F</url>
-    <content type="text"><![CDATA[ES5 String APIES6 String API参考文档 ES5 String API sub() sup() big() small() strike() bold() italics() blink() link() anchor() fixed() fontsize() fontcolor() charAt() charCodeAt() fromCharCode() indexOf() lastIndexOf() match() replace() search() localCompare() split() concat() substr(start, length) substring(start, end) slice(start, end) 接收负参数 toLocaleLowerCase() toLocaleUpperCase() toLowerCase() toUpperCase() toSource() toString() valueOf() ES6 String API 字符串的Unicode表示法 codePointAt() &amp;&amp; charCodeAt() fromCodePoint() &amp;&amp; fromCharCode() for…of遍历 normalize() includes() startWith() endsWith() repeat() padStart() padEnd() matchAll() 模板字符串 `` String.raw() 参考文档 ES5 String 参考文档 ES6 String 参考文档]]></content>
+    <content type="text"><![CDATA[ES5 String APIES6 String API ES5 String API sub() sup() big() small() strike() bold() italics() blink() link() anchor() fixed() fontsize() fontcolor() charAt() charCodeAt() fromCharCode() indexOf() lastIndexOf() match() replace() search() localCompare() split() concat() substr(start, length) substring(start, end) slice(start, end) 接收负参数 toLocaleLowerCase() toLocaleUpperCase() toLowerCase() toUpperCase() toSource() toString() valueOf() 参考文档 ES6 String API 字符串的Unicode表示法 codePointAt() &amp;&amp; charCodeAt() fromCodePoint() &amp;&amp; fromCharCode() for…of遍历 normalize() includes() startWith() endsWith() repeat() padStart() padEnd() matchAll() 模板字符串 `` String.raw() 参考文档]]></content>
       <categories>
         <category>javascript</category>
       </categories>

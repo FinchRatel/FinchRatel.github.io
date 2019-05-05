@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://finchratel.github.io/"/>
-  <updated>2019-01-03T03:15:29.127Z</updated>
+  <updated>2019-05-05T08:42:50.457Z</updated>
   <id>https://finchratel.github.io/</id>
   
   <author>
@@ -17,17 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>localStorage &amp;&amp; sessionStorage</title>
+    <link href="https://finchratel.github.io/2019/05/05/js-learn-03/"/>
+    <id>https://finchratel.github.io/2019/05/05/js-learn-03/</id>
+    <published>2019-05-05T08:34:10.000Z</published>
+    <updated>2019-05-05T08:42:50.457Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> storage = localStorage <span class="comment">// or sessionStorage</span></span><br><span class="line"><span class="comment">// 增 改</span></span><br><span class="line">storage.setItem(<span class="string">'version'</span>, <span class="string">'0.2.0'</span>)</span><br><span class="line"><span class="comment">// 查</span></span><br><span class="line">storage.getItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.removeItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.clear()</span><br></pre></td></tr></table></figure><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN web docs – Window​.local​Storage</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage" target="_blank" rel="noopener">MDN web docs – Window​.session​Storage</a><br><a href="https://www.cnblogs.com/st-leslie/p/5617130.html" target="_blank" rel="noopener">localStorage使用总结</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;API&quot;&gt;&lt;a href=&quot;#API&quot; class=&quot;headerlink&quot; title=&quot;API&quot;&gt;&lt;/a&gt;API&lt;/h3&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+      
+    
+    </summary>
+    
+      <category term="h5" scheme="https://finchratel.github.io/categories/h5/"/>
+    
+    
+      <category term="h5" scheme="https://finchratel.github.io/tags/h5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>typescript001</title>
+    <link href="https://finchratel.github.io/2019/04/08/typescript001/"/>
+    <id>https://finchratel.github.io/2019/04/08/typescript001/</id>
+    <published>2019-04-08T06:17:37.000Z</published>
+    <updated>2019-05-05T08:45:21.642Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h3><blockquote><p>TypeScript里的类型注解是一种轻量级的为函数或变量添加约束的方式</p></blockquote><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person: <span class="built_in">string</span></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="string">"Jane User"</span>;</span><br><span class="line">greeter(user);</span><br></pre></td></tr></table></figure><h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><p>interface<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> Person &#123;</span><br><span class="line">    firstName: <span class="built_in">string</span>;</span><br><span class="line">    lastName: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person: Person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person.firstName + <span class="string">" "</span> + person.lastName;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Student &#123;</span><br><span class="line">    fullName: <span class="built_in">string</span>;</span><br><span class="line">    <span class="keyword">constructor</span>(<span class="params"><span class="keyword">public</span> firstName: <span class="built_in">string</span>, <span class="keyword">public</span> middleInitial: <span class="built_in">string</span>, <span class="keyword">public</span> lastName: <span class="built_in">string</span></span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.fullName = firstName + <span class="string">" "</span> + middleInitial + <span class="string">" "</span> + lastName;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> Person &#123;</span><br><span class="line">    firstName: <span class="built_in">string</span>;</span><br><span class="line">    lastName: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person : Person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person.firstName + <span class="string">" "</span> + person.lastName;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="keyword">new</span> Student(<span class="string">"Jane"</span>, <span class="string">"M."</span>, <span class="string">"User"</span>);</span><br><span class="line">greeter(user);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;类型注解&quot;&gt;&lt;a href=&quot;#类型注解&quot; class=&quot;headerlink&quot; title=&quot;类型注解&quot;&gt;&lt;/a&gt;类型注解&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;TypeScript里的类型注解是一种轻量级的为函数或变量添加约束的方式&lt;/p&gt;
+&lt;/blockq
+      
+    
+    </summary>
+    
+      <category term="typescript" scheme="https://finchratel.github.io/categories/typescript/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript · String</title>
     <link href="https://finchratel.github.io/2019/01/02/js-learn-002/"/>
     <id>https://finchratel.github.io/2019/01/02/js-learn-002/</id>
     <published>2019-01-02T08:33:25.000Z</published>
-    <updated>2019-01-03T03:15:29.127Z</updated>
+    <updated>2019-03-07T03:53:07.397Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>ES5 String API</strong><br><strong>ES6 String API</strong><br><strong>参考文档</strong></p><a id="more"></a><h3 id="ES5-String-API"><a href="#ES5-String-API" class="headerlink" title="ES5 String API"></a>ES5 String API</h3><ol><li>sub()</li><li>sup()</li><li>big()</li><li>small()</li><li>strike()</li><li>bold()</li><li>italics()</li><li>blink()</li><li>link()</li><li>anchor()</li><li>fixed()</li><li>fontsize()</li><li>fontcolor()</li><li>charAt()</li><li>charCodeAt()</li><li>fromCharCode()</li><li>indexOf()</li><li>lastIndexOf()</li><li>match()</li><li>replace()</li><li>search()</li><li>localCompare()</li><li>split()</li><li>concat()</li><li>substr(start, length)</li><li>substring(start, end)</li><li>slice(start, end) 接收负参数</li><li>toLocaleLowerCase()</li><li>toLocaleUpperCase()</li><li>toLowerCase()</li><li>toUpperCase()</li><li>toSource()</li><li>toString()</li><li>valueOf()</li></ol><h3 id="ES6-String-API"><a href="#ES6-String-API" class="headerlink" title="ES6 String API"></a>ES6 String API</h3><ol><li>字符串的Unicode表示法</li><li>codePointAt() &amp;&amp; charCodeAt()</li><li>fromCodePoint() &amp;&amp; fromCharCode()</li><li>for…of遍历</li><li>normalize()</li><li>includes()</li><li>startWith()</li><li>endsWith()</li><li>repeat()</li><li>padStart()</li><li>padEnd()</li><li>matchAll()</li><li>模板字符串 ``</li><li>String.raw()</li></ol><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><ol><li><a href="http://www.w3school.com.cn/jsref/jsref_obj_string.asp" target="_blank" rel="noopener">ES5 String 参考文档</a></li><li><a href="http://es6.ruanyifeng.com/#docs/string" target="_blank" rel="noopener">ES6 String 参考文档</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<p><strong>ES5 String API</strong><br><strong>ES6 String API</strong></p><a id="more"></a><h3 id="ES5-String-API"><a href="#ES5-String-API" class="headerlink" title="ES5 String API"></a>ES5 String API</h3><ol><li>sub()</li><li>sup()</li><li>big()</li><li>small()</li><li>strike()</li><li>bold()</li><li>italics()</li><li>blink()</li><li>link()</li><li>anchor()</li><li>fixed()</li><li>fontsize()</li><li>fontcolor()</li><li>charAt()</li><li>charCodeAt()</li><li>fromCharCode()</li><li>indexOf()</li><li>lastIndexOf()</li><li>match()</li><li>replace()</li><li>search()</li><li>localCompare()</li><li>split()</li><li>concat()</li><li>substr(start, length)</li><li>substring(start, end)</li><li>slice(start, end) 接收负参数</li><li>toLocaleLowerCase()</li><li>toLocaleUpperCase()</li><li>toLowerCase()</li><li>toUpperCase()</li><li>toSource()</li><li>toString()</li><li>valueOf()</li></ol><blockquote><p><a href="http://www.w3school.com.cn/jsref/jsref_obj_string.asp" target="_blank" rel="noopener">参考文档</a></p></blockquote><hr><h3 id="ES6-String-API"><a href="#ES6-String-API" class="headerlink" title="ES6 String API"></a>ES6 String API</h3><ol><li>字符串的Unicode表示法</li><li>codePointAt() &amp;&amp; charCodeAt()</li><li>fromCodePoint() &amp;&amp; fromCharCode()</li><li>for…of遍历</li><li>normalize()</li><li>includes()</li><li>startWith()</li><li>endsWith()</li><li>repeat()</li><li>padStart()</li><li>padEnd()</li><li>matchAll()</li><li>模板字符串 ``</li><li>String.raw()</li></ol><blockquote><p><a href="http://es6.ruanyifeng.com/#docs/string" target="_blank" rel="noopener">参考文档</a></p></blockquote>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;ES5 String API&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;ES6 String API&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;参考文档&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;ES5 String API&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;ES6 String API&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
     
@@ -409,50 +459,6 @@
     
     
       <category term="vim-tutor" scheme="https://finchratel.github.io/tags/vim-tutor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VIM · 基础01</title>
-    <link href="https://finchratel.github.io/2018/11/16/vim-learn-001/"/>
-    <id>https://finchratel.github.io/2018/11/16/vim-learn-001/</id>
-    <published>2018-11-16T06:02:35.000Z</published>
-    <updated>2018-11-28T11:27:30.691Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>VIM · 基础01</strong></p><a id="more"></a><ul><li><p>移动光标</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    k上</span><br><span class="line">h左     l右</span><br><span class="line">    j下</span><br></pre></td></tr></table></figure></li><li><p>打开/创建<br><code>vim filename</code><br><code>:e path/to/file</code></p></li><li><p>退出（不保存）<br><code>q</code></p></li><li><p>强制退出（不保存）<br><code>q!</code></p></li><li><p>保存<br><code>w</code></p></li><li><p>保存并退出<br><code>wq</code></p></li><li><p>强制保存并退出<br><code>wq!</code></p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;VIM · 基础01&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="vim" scheme="https://finchratel.github.io/categories/vim/"/>
-    
-    
-      <category term="vim-tutor" scheme="https://finchratel.github.io/tags/vim-tutor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git · 简易教程</title>
-    <link href="https://finchratel.github.io/2018/11/15/git-learn-001/"/>
-    <id>https://finchratel.github.io/2018/11/15/git-learn-001/</id>
-    <published>2018-11-15T08:58:33.000Z</published>
-    <updated>2019-01-03T03:28:54.803Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>1. clone</strong><br><strong>2. branch</strong><br><strong>3. checkout</strong><br><strong>4. status</strong><br><strong>5. add</strong><br><strong>6. commit</strong><br><strong>7. push</strong><br><strong>8. 示例</strong></p><a id="more"></a><h3 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h3><ul><li>克隆远程仓库到本地<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> ssh://git@git.moyuqingpen.com.cn:7999/~zhanghao/playground.git</span><br><span class="line">Cloning into <span class="string">'playground'</span>...</span><br><span class="line">remote: 对象计数中: 155, 完成.</span><br><span class="line">remote: 压缩对象中: 100% (133/133), 完成.</span><br><span class="line">remote: Total 155 (delta 52), reused 0 (delta 0)</span><br><span class="line">Receiving objects: 100% (155/155), 392.57 KiB | 1.86 MiB/s, <span class="keyword">done</span>.</span><br><span class="line">Resolving deltas: 100% (52/52), <span class="keyword">done</span>.</span><br></pre></td></tr></table></figure></li></ul><h3 id="branch"><a href="#branch" class="headerlink" title="branch"></a>branch</h3><ul><li><p>查看分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* master</span><br></pre></td></tr></table></figure></li><li><p>创建分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch develop</span><br></pre></td></tr></table></figure></li></ul><h3 id="checkout"><a href="#checkout" class="headerlink" title="checkout"></a>checkout</h3><ul><li>检出分支<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout develop</span><br><span class="line">Switched to branch <span class="string">'develop'</span></span><br></pre></td></tr></table></figure></li></ul><h3 id="status"><a href="#status" class="headerlink" title="status"></a>status</h3><ul><li>显示工作目录和暂存区状态<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch develop</span><br><span class="line">Untracked files:</span><br><span class="line">  (use <span class="string">"git add &lt;file&gt;..."</span> to include <span class="keyword">in</span> what will be committed)</span><br><span class="line">        readme.md</span><br><span class="line">nothing added to commit but untracked files present (use <span class="string">"git add"</span> to track)</span><br></pre></td></tr></table></figure></li></ul><h3 id="add"><a href="#add" class="headerlink" title="add"></a>add</h3><ul><li>添加到暂存区<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">warning: LF will be replaced by CRLF <span class="keyword">in</span> readme.md.</span><br><span class="line">The file will have its original line endings <span class="keyword">in</span> your working directory</span><br></pre></td></tr></table></figure></li></ul><h3 id="commit"><a href="#commit" class="headerlink" title="commit"></a>commit</h3><ul><li>提交变动<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git commit . -m <span class="string">"add readme"</span></span><br><span class="line">warning: LF will be replaced by CRLF <span class="keyword">in</span> readme.md.</span><br><span class="line">The file will have its original line endings <span class="keyword">in</span> your working directory</span><br><span class="line">[develop dbe505a] add readme</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 readme.md</span><br></pre></td></tr></table></figure></li></ul><h3 id="push"><a href="#push" class="headerlink" title="push"></a>push</h3><ul><li>推送到远程分支<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ git push</span><br><span class="line">Enumerating objects: 5, <span class="keyword">done</span>.</span><br><span class="line">Counting objects: 100% (5/5), <span class="keyword">done</span>.</span><br><span class="line">Delta compression using up to 8 threads</span><br><span class="line">Compressing objects: 100% (2/2), <span class="keyword">done</span>.</span><br><span class="line">Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, <span class="keyword">done</span>.</span><br><span class="line">Total 3 (delta 1), reused 0 (delta 0)</span><br><span class="line">remote:</span><br><span class="line">remote: Create pull request <span class="keyword">for</span> develop:</span><br><span class="line">remote:   https://git.moyuqingpen.com.cn/users/zhanghao/repos/playground/compare/commits?sourceBranch=refs/heads/develop</span><br><span class="line">remote:</span><br><span class="line">To ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git</span><br><span class="line">   dbe505a..dcf6cc8  develop -&gt; develop</span><br></pre></td></tr></table></figure></li></ul><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><ul><li><p>克隆-修改-提交</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">$ git <span class="built_in">clone</span> ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git</span><br><span class="line"><span class="comment"># do some change here ...</span></span><br><span class="line"><span class="comment"># 添加到索引</span></span><br><span class="line">$ git add .</span><br><span class="line"><span class="comment"># 记录变动</span></span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line"><span class="comment"># 推送到远程分支</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure></li><li><p>新建本地develop分支，并提交到远程</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git branch develop</span><br><span class="line">$ git branch --<span class="built_in">set</span>-upstream-to=/origin/develop</span><br><span class="line">$ git pull</span><br><span class="line"><span class="comment"># do some change here</span></span><br><span class="line">$ git add .</span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure></li><li><p>删除远程develop分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git branch -d -r origin/develop</span><br></pre></td></tr></table></figure></li></ul><p>注：以上只是 <code>git</code> 命令行的简单教程，具体的用法请参考 <code>git &lt;command&gt; --help</code>，或<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">git book</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;1. clone&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;2. branch&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;3. checkout&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;4. status&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;5. add&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;6. commit&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;7. push&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;8. 示例&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="git" scheme="https://finchratel.github.io/categories/git/"/>
-    
-    
-      <category term="git" scheme="https://finchratel.github.io/tags/git/"/>
     
   </entry>
   
