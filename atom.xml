@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://finchratel.github.io/"/>
-  <updated>2019-05-05T08:42:50.457Z</updated>
+  <updated>2019-05-10T08:43:43.327Z</updated>
   <id>https://finchratel.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网摘</title>
+    <link href="https://finchratel.github.io/2019/05/10/other-001/"/>
+    <id>https://finchratel.github.io/2019/05/10/other-001/</id>
+    <published>2019-05-10T08:38:54.000Z</published>
+    <updated>2019-05-10T08:43:43.327Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="码农"><a href="#码农" class="headerlink" title="码农"></a>码农</h2><p>前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？</p><p>这个问题很容易回答，答案就是不能。出租车司机的收入，主要由营业时间的长短决定。基本上，一天开12个小时，就是比开6个小时，收入高出一倍。每天只有24个小时，因此收入存在上限，不可能偏离平均水平很远。</p><p>出租车是“时间换收入”的典型行业，投入的时间越多，收入越高，在家休息就没收入。很多行业都属于“时间换收入”，所有此类行业都赚不到大钱。因为你能用来交换的时间是有限的，而且进入中年以后，你就拿不出更多的时间来交换。开出租车赚零花钱，或者作为短期过渡，这是没问题的，但作为终身职业是很糟糕的。</p><p>我觉得，越来越多的程序员正在落入这个陷井，用编码的时间换取收入。只有不停地做项目，才能拿到钱。项目做得越多，收入越高。这个项目开发完了，公司又让他去干下一个项目。 忙了好几年，项目完成了一大堆，但是自己什么也没留下，以后的收入还要取决于从零开始的新项目。这样的话，你跟出租车司机有何两样，哪一天你不写代码了，不是照样没收入。</p><p>那些赚到大钱的人，没有一个是靠时间换取收入的。他们要么通过积累资产致富，要么购买他人的时间，为自己创造财富。你应该警惕，不要落入“时间换取收入”的陷井，不要只顾着为别人生产代码，而要注意积累自己的资产，以及适时开展属于自己的业务。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;码农&quot;&gt;&lt;a href=&quot;#码农&quot; class=&quot;headerlink&quot; title=&quot;码农&quot;&gt;&lt;/a&gt;码农&lt;/h2&gt;&lt;p&gt;前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？&lt;/p&gt;
+&lt;p&gt;这个问题很容易回答，答案就是不能。出
+      
+    
+    </summary>
+    
+      <category term="excerpt" scheme="https://finchratel.github.io/categories/excerpt/"/>
+    
+    
+      <category term="excerpt" scheme="https://finchratel.github.io/tags/excerpt/"/>
+    
+  </entry>
   
   <entry>
     <title>localStorage &amp;&amp; sessionStorage</title>
@@ -430,28 +456,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;VIM · 基础03&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="vim" scheme="https://finchratel.github.io/categories/vim/"/>
-    
-    
-      <category term="vim-tutor" scheme="https://finchratel.github.io/tags/vim-tutor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VIM · 基础02</title>
-    <link href="https://finchratel.github.io/2018/11/16/vim-learn-002/"/>
-    <id>https://finchratel.github.io/2018/11/16/vim-learn-002/</id>
-    <published>2018-11-16T06:56:24.000Z</published>
-    <updated>2018-11-28T03:41:13.750Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>VIM · 基础02</strong></p><a id="more"></a><ul><li><p>删除（光标所在字符）<br><code>x</code></p></li><li><p>删除（光标所在前一个字符）<br><code>X</code></p></li><li><p>删除<br><code>d [number] motion</code></p></li><li><p>删除 从光标到单词的末尾<br><code>de</code></p></li><li><p>删除 从光标到下一个单词的开始<br><code>dw</code></p></li><li><p>删除 从光标到行尾<br><code>d$</code><br><code>D</code></p></li><li><p>删除 从光标到行首<br><code>d^</code></p></li><li><p>删除 整行<br><code>dd</code></p></li><li><p>删除 从当前行到文档结尾处<br><code>dG</code></p></li><li><p>删除 从当前行到文档开始处<br><code>d1G</code></p></li><li><p>光标移动到下一个单词的开头<br><code>w</code></p></li><li><p>光标移动到单词的末尾，如果已经在单词的末尾或空格处，则移动到下一个单词的末尾。<br><code>e</code></p></li><li><p>光标移动到行首<br><code>0</code><br><code>^</code></p></li><li><p>光标移动到行尾<br><code>$</code></p></li><li><p>撤销一步<br><code>u</code></p></li><li><p>撤销一行<br><code>U</code></p></li><li><p>取消撤销<br><code>CTRL + R</code></p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;VIM · 基础02&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
     
