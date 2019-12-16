@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://finchratel.github.io/"/>
-  <updated>2019-05-10T08:43:43.327Z</updated>
+  <updated>2019-12-16T06:44:55.646Z</updated>
   <id>https://finchratel.github.io/</id>
   
   <author>
@@ -17,21 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>git-learn-002</title>
+    <link href="https://finchratel.github.io/2019/12/16/git-learn-002/"/>
+    <id>https://finchratel.github.io/2019/12/16/git-learn-002/</id>
+    <published>2019-12-16T06:10:21.000Z</published>
+    <updated>2019-12-16T06:44:55.646Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>分享一个git的在线学习网站</strong><br><strong>每个命令都有动画演示，还有沙盒模式，可以自由操练</strong><br><strong>每个关卡都有练习题目，每个题目都有最少的完成步骤</strong><br><strong>教程比较基础，适合新手，学完大约需要花费半天时间</strong></p><a id="more"></a><h3 id="Learn-Git-Branching"><a href="#Learn-Git-Branching" class="headerlink" title="Learn Git Branching"></a>Learn Git Branching</h3><ol><li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">官网</a></li><li><a href="https://github.com/pcottle/learnGitBranching" target="_blank" rel="noopener">github</a></li><li><a href="https://learngitbranching.js.org/?NODEMO" target="_blank" rel="noopener">sand box</a></li></ol><h3 id="几个常用的命令"><a href="#几个常用的命令" class="headerlink" title="几个常用的命令"></a>几个常用的命令</h3><ol><li><code>undo</code> 撤销一步</li><li><code>reset</code> 重新开始关卡</li><li><code>levels</code> 重新选择关卡</li><li><code>show solution</code> 显示答案</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;分享一个git的在线学习网站&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;每个命令都有动画演示，还有沙盒模式，可以自由操练&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;每个关卡都有练习题目，每个题目都有最少的完成步骤&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;教程比较基础，适合新手，学完大约需要花费半天时间&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="git" scheme="https://finchratel.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://finchratel.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>网摘</title>
     <link href="https://finchratel.github.io/2019/05/10/other-001/"/>
     <id>https://finchratel.github.io/2019/05/10/other-001/</id>
     <published>2019-05-10T08:38:54.000Z</published>
-    <updated>2019-05-10T08:43:43.327Z</updated>
+    <updated>2019-12-16T06:07:00.050Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="码农"><a href="#码农" class="headerlink" title="码农"></a>码农</h2><p>前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？</p><p>这个问题很容易回答，答案就是不能。出租车司机的收入，主要由营业时间的长短决定。基本上，一天开12个小时，就是比开6个小时，收入高出一倍。每天只有24个小时，因此收入存在上限，不可能偏离平均水平很远。</p><p>出租车是“时间换收入”的典型行业，投入的时间越多，收入越高，在家休息就没收入。很多行业都属于“时间换收入”，所有此类行业都赚不到大钱。因为你能用来交换的时间是有限的，而且进入中年以后，你就拿不出更多的时间来交换。开出租车赚零花钱，或者作为短期过渡，这是没问题的，但作为终身职业是很糟糕的。</p><p>我觉得，越来越多的程序员正在落入这个陷井，用编码的时间换取收入。只有不停地做项目，才能拿到钱。项目做得越多，收入越高。这个项目开发完了，公司又让他去干下一个项目。 忙了好几年，项目完成了一大堆，但是自己什么也没留下，以后的收入还要取决于从零开始的新项目。这样的话，你跟出租车司机有何两样，哪一天你不写代码了，不是照样没收入。</p><p>那些赚到大钱的人，没有一个是靠时间换取收入的。他们要么通过积累资产致富，要么购买他人的时间，为自己创造财富。你应该警惕，不要落入“时间换取收入”的陷井，不要只顾着为别人生产代码，而要注意积累自己的资产，以及适时开展属于自己的业务。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="码农"><a href="#码农" class="headerlink" title="码农"></a>码农</h2><p>  前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？</p><a id="more"></a><p>  这个问题很容易回答，答案就是不能。出租车司机的收入，主要由营业时间的长短决定。基本上，一天开12个小时，就是比开6个小时，收入高出一倍。每天只有24个小时，因此收入存在上限，不可能偏离平均水平很远。</p><p>  出租车是“时间换收入”的典型行业，投入的时间越多，收入越高，在家休息就没收入。很多行业都属于“时间换收入”，所有此类行业都赚不到大钱。因为你能用来交换的时间是有限的，而且进入中年以后，你就拿不出更多的时间来交换。开出租车赚零花钱，或者作为短期过渡，这是没问题的，但作为终身职业是很糟糕的。</p><p>  我觉得，越来越多的程序员正在落入这个陷井，用编码的时间换取收入。只有不停地做项目，才能拿到钱。项目做得越多，收入越高。这个项目开发完了，公司又让他去干下一个项目。 忙了好几年，项目完成了一大堆，但是自己什么也没留下，以后的收入还要取决于从零开始的新项目。这样的话，你跟出租车司机有何两样，哪一天你不写代码了，不是照样没收入。</p><p>  那些赚到大钱的人，没有一个是靠时间换取收入的。他们要么通过积累资产致富，要么购买他人的时间，为自己创造财富。你应该警惕，不要落入“时间换取收入”的陷井，不要只顾着为别人生产代码，而要注意积累自己的资产，以及适时开展属于自己的业务。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;码农&quot;&gt;&lt;a href=&quot;#码农&quot; class=&quot;headerlink&quot; title=&quot;码农&quot;&gt;&lt;/a&gt;码农&lt;/h2&gt;&lt;p&gt;前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？&lt;/p&gt;
-&lt;p&gt;这个问题很容易回答，答案就是不能。出
-      
+      &lt;h2 id=&quot;码农&quot;&gt;&lt;a href=&quot;#码农&quot; class=&quot;headerlink&quot; title=&quot;码农&quot;&gt;&lt;/a&gt;码农&lt;/h2&gt;&lt;p&gt;  前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？&lt;/p&gt;
     
     </summary>
     
@@ -44,8 +62,8 @@
   
   <entry>
     <title>localStorage &amp;&amp; sessionStorage</title>
-    <link href="https://finchratel.github.io/2019/05/05/js-learn-03/"/>
-    <id>https://finchratel.github.io/2019/05/05/js-learn-03/</id>
+    <link href="https://finchratel.github.io/2019/05/05/js-learn-003/"/>
+    <id>https://finchratel.github.io/2019/05/05/js-learn-003/</id>
     <published>2019-05-05T08:34:10.000Z</published>
     <updated>2019-05-05T08:42:50.457Z</updated>
     
@@ -68,11 +86,36 @@
   </entry>
   
   <entry>
-    <title>typescript001</title>
-    <link href="https://finchratel.github.io/2019/04/08/typescript001/"/>
-    <id>https://finchratel.github.io/2019/04/08/typescript001/</id>
+    <title>魔术字符串</title>
+    <link href="https://finchratel.github.io/2019/05/05/js-learn-004/"/>
+    <id>https://finchratel.github.io/2019/05/05/js-learn-004/</id>
+    <published>2019-05-05T08:34:10.000Z</published>
+    <updated>2019-05-16T01:55:26.718Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="魔术字符串"><a href="#魔术字符串" class="headerlink" title="魔术字符串"></a>魔术字符串</h2><p>在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。风格良好的代码，应该尽量消除魔术字符串，改由含义清晰的变量代替。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;魔术字符串&quot;&gt;&lt;a href=&quot;#魔术字符串&quot; class=&quot;headerlink&quot; title=&quot;魔术字符串&quot;&gt;&lt;/a&gt;魔术字符串&lt;/h2&gt;&lt;p&gt;在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。风格良好的代码，应该尽量消除魔术字符串，改由含义清
+      
+    
+    </summary>
+    
+      <category term="h5" scheme="https://finchratel.github.io/categories/h5/"/>
+    
+    
+      <category term="h5" scheme="https://finchratel.github.io/tags/h5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>typescript</title>
+    <link href="https://finchratel.github.io/2019/04/08/typescript-learn-001/"/>
+    <id>https://finchratel.github.io/2019/04/08/typescript-learn-001/</id>
     <published>2019-04-08T06:17:37.000Z</published>
-    <updated>2019-05-05T08:45:21.642Z</updated>
+    <updated>2019-05-10T08:51:09.963Z</updated>
     
     <content type="html"><![CDATA[<h3 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h3><blockquote><p>TypeScript里的类型注解是一种轻量级的为函数或变量添加约束的方式</p></blockquote><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person: <span class="built_in">string</span></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="string">"Jane User"</span>;</span><br><span class="line">greeter(user);</span><br></pre></td></tr></table></figure><h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><p>interface<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> Person &#123;</span><br><span class="line">    firstName: <span class="built_in">string</span>;</span><br><span class="line">    lastName: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person: Person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person.firstName + <span class="string">" "</span> + person.lastName;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Student &#123;</span><br><span class="line">    fullName: <span class="built_in">string</span>;</span><br><span class="line">    <span class="keyword">constructor</span>(<span class="params"><span class="keyword">public</span> firstName: <span class="built_in">string</span>, <span class="keyword">public</span> middleInitial: <span class="built_in">string</span>, <span class="keyword">public</span> lastName: <span class="built_in">string</span></span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.fullName = firstName + <span class="string">" "</span> + middleInitial + <span class="string">" "</span> + lastName;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> Person &#123;</span><br><span class="line">    firstName: <span class="built_in">string</span>;</span><br><span class="line">    lastName: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person : Person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person.firstName + <span class="string">" "</span> + person.lastName;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="keyword">new</span> Student(<span class="string">"Jane"</span>, <span class="string">"M."</span>, <span class="string">"User"</span>);</span><br><span class="line">greeter(user);</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -273,9 +316,9 @@
     <link href="https://finchratel.github.io/2018/11/29/vim-study-003/"/>
     <id>https://finchratel.github.io/2018/11/29/vim-study-003/</id>
     <published>2018-11-29T03:49:37.000Z</published>
-    <updated>2018-11-29T03:55:24.416Z</updated>
+    <updated>2019-09-03T13:10:21.836Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>VIM · 小结03</strong></p><a id="more"></a><h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><ul><li><code>expandtab</code> 是否将tab转化为空格</li><li><code>shfitwidth</code> &gt;&gt;或&lt;&lt;时缩进的列数</li><li><code>tabstop</code> 一个tab键所占的列数</li><li><code>softtabstop</code> tab实际占的列数</li><li><code>autoindent(ai)</code> 自动换行<figure class="highlight bash"><figcaption><span>.vimrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> autoindent</span><br><span class="line"><span class="built_in">set</span> expandtab</span><br><span class="line"><span class="built_in">set</span> shiftwidth=4</span><br><span class="line"><span class="built_in">set</span> tabstop=4</span><br><span class="line"><span class="built_in">set</span> softtabstop=4</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><strong>VIM · 小结03</strong></p><a id="more"></a><h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><ul><li><code>expandtab</code> 是否将tab转化为空格</li><li><code>shfitwidth</code> &gt;&gt;或&lt;&lt;时缩进的列数</li><li><code>tabstop</code> 一个tab键所占的列数</li><li><code>softtabstop</code> tab实际占的列数</li><li><code>autoindent(ai)</code> 自动换行<figure class="highlight bash"><figcaption><span>.vimrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> autoindent</span><br><span class="line"><span class="built_in">set</span> expandtab</span><br><span class="line"><span class="built_in">set</span> shiftwidth=4</span><br><span class="line"><span class="built_in">set</span> tabstop=4</span><br><span class="line"><span class="built_in">set</span> softtabstop=4</span><br></pre></td></tr></table></figure></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 对应简写</span></span><br><span class="line"><span class="built_in">set</span> ai</span><br><span class="line"><span class="built_in">set</span> et</span><br><span class="line"><span class="built_in">set</span> sw=4</span><br><span class="line"><span class="built_in">set</span> ts=4</span><br><span class="line"><span class="built_in">set</span> sts=4</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -295,7 +338,7 @@
     <link href="https://finchratel.github.io/2018/11/28/vim-study-002/"/>
     <id>https://finchratel.github.io/2018/11/28/vim-study-002/</id>
     <published>2018-11-28T05:57:43.000Z</published>
-    <updated>2018-12-24T03:35:40.575Z</updated>
+    <updated>2019-09-03T13:11:07.021Z</updated>
     
     <content type="html"><![CDATA[<p><strong>VIM · 小结02</strong></p><a id="more"></a><h3 id="进入普通模式-Normal-mode"><a href="#进入普通模式-Normal-mode" class="headerlink" title="进入普通模式(Normal mode)"></a>进入普通模式(Normal mode)</h3><ul><li><code>Esc</code></li><li><code>CTRL + [</code></li></ul><h3 id="进入命令模式-Commant-line-mode"><a href="#进入命令模式-Commant-line-mode" class="headerlink" title="进入命令模式(Commant line mode)"></a>进入命令模式(Commant line mode)</h3><ul><li><code>:</code></li></ul><h3 id="进入插入模式-Insert-mode"><a href="#进入插入模式-Insert-mode" class="headerlink" title="进入插入模式(Insert mode)"></a>进入插入模式(Insert mode)</h3><ul><li><code>i</code> 在光标前插入</li><li><code>I</code> 在行首插入</li><li><code>a</code> 在光标后插入</li><li><code>A</code> 在行尾插入</li><li><code>o</code> 在下方插入一行</li><li><code>O</code> 在上方插入一行</li></ul><h3 id="进入可视模式-Visual-mode"><a href="#进入可视模式-Visual-mode" class="headerlink" title="进入可视模式(Visual mode)"></a>进入可视模式(Visual mode)</h3><ul><li><code>v</code></li></ul><h3 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h3><ul><li><code>q</code></li><li><code>ZZ</code></li></ul><h3 id="常用命令一览"><a href="#常用命令一览" class="headerlink" title="常用命令一览"></a>常用命令一览</h3><table><thead><tr><th>模式</th><th>命令</th><th>说明</th></tr></thead><tbody><tr><td>正常模式</td><td><code>b</code></td><td>跳转到前一个单词的开头</td></tr><tr><td>正常模式</td><td><code>ge</code></td><td>跳转到前一个单词的结尾</td></tr><tr><td>正常模式</td><td><code>f&lt;字母&gt;</code></td><td>向后搜索字母，并跳转到第一个匹配的位置</td></tr><tr><td>正常模式</td><td><code>F&lt;字母&gt;</code></td><td>向前搜索字母，并跳转到第一个匹配的位置</td></tr></tbody></table><h3 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h3><ul><li><code>yy</code></li><li><code>y0</code></li><li><code>y^</code></li><li><code>y$</code></li><li><code>yw</code></li><li><code>yG</code></li><li><code>y1G</code></li></ul><h3 id="粘贴"><a href="#粘贴" class="headerlink" title="粘贴"></a>粘贴</h3><ul><li><code>p</code></li><li><code>P</code></li></ul><h3 id="change"><a href="#change" class="headerlink" title="change"></a>change</h3><ul><li>c [number] motion<h3 id="delete"><a href="#delete" class="headerlink" title="delete"></a>delete</h3></li><li>d [number] motion</li></ul><h3 id="上下行交换"><a href="#上下行交换" class="headerlink" title="上下行交换"></a>上下行交换</h3><ul><li><code>ddp</code></li></ul><h3 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h3><ul><li><code>r</code> 替换当前光标位置</li><li><code>R</code> 连续替换</li><li><code>cc</code> 替换当前行</li><li><code>cw</code> 替换一个单词</li><li><code>C</code> 替换到行尾</li><li><code>~</code> 反转大小写</li><li><code>u</code> 撤销一次</li><li><code>U</code> 撤销当前行的所有更改</li><li><code>Ctrl + r</code> 取消撤销</li><li><code>:s/old/new/g</code> 替换当前行所有的old为new</li><li><code>:#,#s/old/new/g</code> 替换#行到#行的所有的old为new</li><li><code>:%s/old/new/g</code> 替换整个文档所有的old为new</li></ul><h3 id="提取内容"><a href="#提取内容" class="headerlink" title="提取内容"></a>提取内容</h3><ul><li><code>:r file</code> 提取file文件内容，插入光标所在位置</li><li><code>:r !ls</code> 提取ls命令输入内容，插入光标所在位置</li></ul><h3 id="文本位置"><a href="#文本位置" class="headerlink" title="文本位置"></a>文本位置</h3><ul><li><code>ce</code> 居中</li><li><code>ri</code> 居右</li><li><code>le</code> 居左</li></ul><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><ul><li><code>?&lt;单词&gt;</code> 向上查找word</li><li><code>/&lt;单词&gt;</code> 向下查找word</li><li><code>n</code> 下一个</li><li><code>N</code> 上一个</li><li><code>CTRL + O</code> 回到较旧的位置</li><li><code>CTRL + I9j</code> 回到较新的位置</li><li><code>\*</code> 向下查找光标所在单词</li><li><code>\#</code> 向上查找鼠标所在单词</li><li><code>%</code> 查找配对括号</li></ul><h3 id="多文件编辑"><a href="#多文件编辑" class="headerlink" title="多文件编辑"></a>多文件编辑</h3><ul><li><code>vim 1.txt 2.txt</code> 同时打开两个文件</li><li><code>:n</code> 编辑下一个文件</li><li><code>:N</code> 编辑上一个文件</li><li><code>:e 3.txt</code> 打开3.txt</li><li><code>:e#</code> 回到前一个文件</li><li><code>:ls</code> 列出已打开的文件</li><li><code>:b 2.txt</code> 编辑2.txt</li><li><code>:bd 2.txt</code> 删除已打开的文件列表中的2.txt</li><li><code>e! 4.txt</code> 强制打开4.txt</li><li><code>:f</code> 显示正在编辑的文件名</li><li><code>:f 5.txt</code> 另存为5.txt</li></ul><h3 id="恢复文件"><a href="#恢复文件" class="headerlink" title="恢复文件"></a>恢复文件</h3><ul><li><code>vim -r filename</code></li></ul><h3 id="可视模式"><a href="#可视模式" class="headerlink" title="可视模式"></a>可视模式</h3><ul><li><code>v</code> 字符选择</li><li><code>Shift + v</code> 行选择</li><li><code>Ctrl + v</code> 区域选择</li></ul><h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><ul><li><code>&gt;&gt;</code> 向右缩进</li><li><code>&lt;&lt;</code> 向左缩进</li></ul><h3 id="视窗操作"><a href="#视窗操作" class="headerlink" title="视窗操作"></a>视窗操作</h3><ul><li><code>:new</code> 水平分屏</li><li><code>:sp</code> 水平分屏</li><li><code>:vsp</code> 垂直分屏</li><li><code>Ctrl + w s</code> 水平分屏</li><li><code>Ctrl + w v</code> 垂直分屏</li><li><code>Ctrl + w q</code> 关闭当前分屏</li><li><code>Ctrl + w o</code> 打开新视窗，并隐藏之前的所有视窗</li><li><code>Ctrl + w h</code> 切换到左侧分屏</li><li><code>Ctrl + w j</code> 切换到下面分屏</li><li><code>Ctrl + w k</code> 切换到上面分屏</li><li><code>Ctrl + w l</code> 切换到下册分屏</li><li><code>Ctrl + w H</code> 移动视窗到左侧</li><li><code>Ctrl + w J</code> 移动视窗值下面</li><li><code>Ctrl + w K</code> 移动视窗至上面</li><li><code>Ctrl + w L</code> 移动视窗至右侧</li><li><code>Ctrl + w -</code> 减小视窗高度</li><li><code>Ctrl + w +</code> 增加视窗高度</li></ul><h3 id="文档加密"><a href="#文档加密" class="headerlink" title="文档加密"></a>文档加密</h3><ul><li><code>vim -x file</code></li></ul><h3 id="执行shell命令"><a href="#执行shell命令" class="headerlink" title="执行shell命令"></a>执行shell命令</h3><ul><li><code>:!ls</code> 暂时退出vim并执行ls命令</li></ul><h3 id="选择性保存"><a href="#选择性保存" class="headerlink" title="选择性保存"></a>选择性保存</h3><ul><li><code>v</code> 进入可视模式</li><li><code>{move cursor}</code> 移动光标选择文本</li><li><code>:w</code> 保存</li></ul><h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><ul><li><code>:set</code> 显示所有修改过的配置</li><li><code>:set all</code> 显示所有的设定值</li><li><code>:set option?</code> 显示option的设定值</li><li><code>:set nooption</code> 取消当前设定值</li><li><code>:set autoindent(ai)</code> 设置自动缩进</li><li><code>:set autowrite(aw)</code> 设置自动保存，默认未打开</li><li><code>:set background=dark</code> 设置背景风格</li><li><code>:set backup(bk)</code> 设置自动备份，默认未打开</li><li><code>:set hlsearch(hls)</code> 高亮搜索匹配项</li></ul>]]></content>
     
@@ -412,50 +455,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;VIM · 基础05&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="vim" scheme="https://finchratel.github.io/categories/vim/"/>
-    
-    
-      <category term="vim-tutor" scheme="https://finchratel.github.io/tags/vim-tutor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VIM · 基础04</title>
-    <link href="https://finchratel.github.io/2018/11/20/vim-learn-004/"/>
-    <id>https://finchratel.github.io/2018/11/20/vim-learn-004/</id>
-    <published>2018-11-20T08:53:44.000Z</published>
-    <updated>2018-11-21T08:58:21.022Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>VIM · 基础04</strong></p><a id="more"></a><ul><li><p>显示光标位置和文件状态<br><code>CTRL + g</code></p></li><li><p>跳转 到最后一行<br><code>G</code></p></li><li><p>跳转 到第一行<br><code>gg</code></p></li><li><p>跳转 到指定行<br><code>[number] G</code></p></li><li><p>向下查找<br><code>/word</code></p></li><li><p>向上查找<br><code>?word</code></p></li><li><p>查找下一个<br><code>n</code></p></li><li><p>查找上一个<br><code>N</code></p></li><li><p>回到上一个匹配项<br><code>CTRL + o</code></p></li><li><p>回到下一个匹配项<br><code>CTRL + i</code></p></li><li><p>查找匹配的括号 () [] {}<br><code>%</code></p></li><li><p>替换 光标所在行第一个匹配项<br><code>:s/old/new</code></p></li><li><p>替换 光标所在行所有匹配项<br><code>:s/old/new/g</code></p></li><li><p>替换 指定行的匹配项<br><code>:#,#s/old/new/g</code>  #,#分别代表起始行和结束行</p></li><li><p>替换 文件中所有匹配项<br><code>:%s/old/new/g</code></p></li><li><p>替换 替换时询问<br><code>:s/old/new/gc</code></p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;VIM · 基础04&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="vim" scheme="https://finchratel.github.io/categories/vim/"/>
-    
-    
-      <category term="vim-tutor" scheme="https://finchratel.github.io/tags/vim-tutor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VIM · 基础03</title>
-    <link href="https://finchratel.github.io/2018/11/19/vim-learn-003/"/>
-    <id>https://finchratel.github.io/2018/11/19/vim-learn-003/</id>
-    <published>2018-11-19T09:47:33.000Z</published>
-    <updated>2018-11-21T08:58:27.762Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>VIM · 基础03</strong></p><a id="more"></a><ul><li><p>粘贴 寄存器内的文本<br><code>p</code></p></li><li><p>替换 光标所在位置的一个字符<br><code>r</code></p></li><li><p>更改<br><code>c [number] motion</code></p></li><li><p>更改 从光标到词尾<br><code>ce</code></p></li><li><p>更改 从光标到下一个单词的起始<br><code>cw</code></p></li><li><p>更改 从光标到行尾<br><code>c$</code></p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;VIM · 基础03&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
     

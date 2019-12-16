@@ -1,248 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[网摘]]></title>
-    <url>%2F2019%2F05%2F10%2Fother-001%2F</url>
-    <content type="text"><![CDATA[码农前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？ 这个问题很容易回答，答案就是不能。出租车司机的收入，主要由营业时间的长短决定。基本上，一天开12个小时，就是比开6个小时，收入高出一倍。每天只有24个小时，因此收入存在上限，不可能偏离平均水平很远。 出租车是“时间换收入”的典型行业，投入的时间越多，收入越高，在家休息就没收入。很多行业都属于“时间换收入”，所有此类行业都赚不到大钱。因为你能用来交换的时间是有限的，而且进入中年以后，你就拿不出更多的时间来交换。开出租车赚零花钱，或者作为短期过渡，这是没问题的，但作为终身职业是很糟糕的。 我觉得，越来越多的程序员正在落入这个陷井，用编码的时间换取收入。只有不停地做项目，才能拿到钱。项目做得越多，收入越高。这个项目开发完了，公司又让他去干下一个项目。 忙了好几年，项目完成了一大堆，但是自己什么也没留下，以后的收入还要取决于从零开始的新项目。这样的话，你跟出租车司机有何两样，哪一天你不写代码了，不是照样没收入。 那些赚到大钱的人，没有一个是靠时间换取收入的。他们要么通过积累资产致富，要么购买他人的时间，为自己创造财富。你应该警惕，不要落入“时间换取收入”的陷井，不要只顾着为别人生产代码，而要注意积累自己的资产，以及适时开展属于自己的业务。]]></content>
-      <categories>
-        <category>excerpt</category>
-      </categories>
-      <tags>
-        <tag>excerpt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[localStorage && sessionStorage]]></title>
-    <url>%2F2019%2F05%2F05%2Fjs-learn-03%2F</url>
-    <content type="text"><![CDATA[API123456789const storage = localStorage // or sessionStorage// 增 改storage.setItem('version', '0.2.0')// 查storage.getItem('version')// 删storage.removeItem('version')// 删storage.clear() 参考MDN web docs – Window​.local​StorageMDN web docs – Window​.session​StoragelocalStorage使用总结]]></content>
-      <categories>
-        <category>h5</category>
-      </categories>
-      <tags>
-        <tag>h5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[typescript001]]></title>
-    <url>%2F2019%2F04%2F08%2Ftypescript001%2F</url>
-    <content type="text"><![CDATA[类型注解 TypeScript里的类型注解是一种轻量级的为函数或变量添加约束的方式 12345function greeter(person: string) &#123; return "Hello, " + person;&#125;let user = "Jane User";greeter(user); 接口interface1234567interface Person &#123; firstName: string; lastName: string;&#125;function greeter(person: Person) &#123; return "Hello, " + person.firstName + " " + person.lastName;&#125; 类123456789101112131415class Student &#123; fullName: string; constructor(public firstName: string, public middleInitial: string, public lastName: string) &#123; this.fullName = firstName + " " + middleInitial + " " + lastName; &#125;&#125;interface Person &#123; firstName: string; lastName: string;&#125;function greeter(person : Person) &#123; return "Hello, " + person.firstName + " " + person.lastName;&#125;let user = new Student("Jane", "M.", "User");greeter(user);]]></content>
-      <categories>
-        <category>typescript</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[JavaScript · String]]></title>
-    <url>%2F2019%2F01%2F02%2Fjs-learn-002%2F</url>
-    <content type="text"><![CDATA[ES5 String APIES6 String API ES5 String API sub() sup() big() small() strike() bold() italics() blink() link() anchor() fixed() fontsize() fontcolor() charAt() charCodeAt() fromCharCode() indexOf() lastIndexOf() match() replace() search() localCompare() split() concat() substr(start, length) substring(start, end) slice(start, end) 接收负参数 toLocaleLowerCase() toLocaleUpperCase() toLowerCase() toUpperCase() toSource() toString() valueOf() 参考文档 ES6 String API 字符串的Unicode表示法 codePointAt() &amp;&amp; charCodeAt() fromCodePoint() &amp;&amp; fromCharCode() for…of遍历 normalize() includes() startWith() endsWith() repeat() padStart() padEnd() matchAll() 模板字符串 `` String.raw() 参考文档]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>string</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[JavaScript · Array]]></title>
-    <url>%2F2019%2F01%2F02%2Fjs-learn-001%2F</url>
-    <content type="text"><![CDATA[ES5 Array APIES6 Array APIJS Array 遍历参考文档 ES5 Array API concat(p1[array or number], p2…) join(separator) push() pop() shift() unshift() reverse() slice(start, end) splice(start, number, item1,…,itemx) sort(sortBy) toSource() toString() toLocaleString() valueOf() ES6 Array API 扩展云算符 … Array.from() Array.of() copyWithin(target, start = 0, end = this.length) find() findIndex() fill() keys() values() entries() includes() flat() flatMap() JS Array 遍历 for…in for…of forEach() reduce() map() flatMap() find() 返回符合条件的第一个子元素 findIndex() filter() 返回包含所有符合条件的子元素的数组 every() some() keys() values() entries() 参考文档 ES5 Array 参考文档 ES6 Array 参考文档]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>array</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ES6 · Number]]></title>
-    <url>%2F2018%2F12%2F25%2Fes6-learn-007%2F</url>
-    <content type="text"><![CDATA[Number Number 0b11 //3 0B11 //3 0o11 //9 0O11 //9 toSting([2, 8, 10, 16]) //转为二进制、八进制、十进制、十六进制字符串 Number(0b11) //转十进制 Number.isFinate() Number.isNaN() Number.parseInt() Number.parseFloat() Number.isInteger() //由于 JavaScript 采用 IEEE 754 标准，数值存储为64位双精度格式，数值精度最多可以达到 53 个二进制位（1 个隐藏位与 52 个有效位）。如果数值的精度超过这个限度，第54位及后面的位就会被丢弃，这种情况下，Number.isInteger可能会误判。 Number.EPSILON === Math.pow(2, -52) //表示 1 与大于 1 的最小浮点数之间的差。 Number.MAX_SAFE_INTEGER === Math.pow(2, 53) Number.MIN_SAFE_INTEGER === Math.pow(2, -53) Number.isSafeInteger(n) //Number.MIN_SAFE_INTEGER &lt; n &lt; Number.MAX_SAFE_INTEGER Math.trunc(3.14) //3 返回整数部分 Math.sign() Math.cbrt() //返回立方根 Math.hypot() //返回参数平方和的平方根]]></content>
-      <categories>
-        <category>es6</category>
-      </categories>
-      <tags>
-        <tag>number</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[博客计划 · 2019年]]></title>
-    <url>%2F2018%2F12%2F25%2Fplan-blog-2019%2F</url>
-    <content type="text"><![CDATA[博客计划 · 2019年 es6 vue nodejs webpack vscode nodejs]]></content>
-      <categories>
-        <category>plan</category>
-      </categories>
-      <tags>
-        <tag>plan-blod</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[CSS · Flex]]></title>
-    <url>%2F2018%2F12%2F06%2Fweb-learn-001%2F</url>
-    <content type="text"><![CDATA[CSS · Flex main axis 主轴 cross axis 交叉轴 main start 主轴起点 cross start 交叉轴起点 main end 主轴终点 cross end 交叉轴终点 main size 主轴方向大小 cross size 交叉轴方向大小 容器属性display: flex 指定flex布局，此时float、clear、vertical-align属性将失效 flex-direction 主轴方向 row 默认 主轴为水平方向，起点在左端 row-reverse 主轴为水平方向，起点在右端 column 主轴为垂直方向，起点在上端 column-reverse 主轴为垂直方向，起点在下端 flex-wrap 是否换行 nowrap 默认 不换行 wrap 换行 wrap-reverse 反向换行 flex-flow 主轴方向和是否换行 row nowrap 默认 flex-direction 和 flex-wrap 的缩写 justify-content 主轴对齐方式 flex-start 默认 主轴起点对齐 flex-end 主轴终点对齐 center 主轴居中对齐 space-between 主轴两端对齐 space-around 间隔相等 align-items 交叉轴对齐方式 stretch 默认 拉伸 如果未设置高度或设置为auto，将占满整个高度 flex-start 交叉轴起点对齐 flex-end 交叉轴终点对齐 center 交叉轴居中对齐 baseline 第一行文字的基线对齐 align-content 多根轴线的对齐方式，一根轴线时不生效 stretch 默认 拉伸 占满整个交叉轴 flex-start 与交叉轴的起点对齐 flex-end 与交叉轴的终点对齐 center 与交叉轴的中点对齐 space-between 交叉轴两端对齐 space-around 间隔相等 子项属性order 0 默认 子项的排列顺序，数字越小越靠前 flex-grow 子项放大比例 0 默认 不放大 flex-shrink 子项缩小比例 1 默认 0 不缩小 flex-basis 在分配多余空间之前，子项占据的主轴空间(main size) auto 默认 flex flex-grow flex-shrink flex-basis的简写 0 1 auto 默认 align-self 子项对齐方式，覆盖align-items auto 默认 继承父元素的align-items 页面布局圣杯布局 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;flex test&lt;/title&gt; &lt;style type="text/css"&gt; body &#123; padding: 0; margin: 0; &#125; .container &#123; display: flex; flex-flow: column nowrap; &#125; .header, .footer &#123; background: #eee; flex: 0 0 56px; text-align: center; line-height: 56px; &#125; .main &#123; height: 400px; background: #ddd; display: flex; line-height: 400px; text-align: center; &#125; .left &#123; flex: 0 0 160px; background: #ccc; &#125; .center &#123; flex: 1; &#125; .right &#123; flex: 0 0 160px; background: #bbb; align-self: flex-end; &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="container"&gt; &lt;div class="header"&gt;HEADER&lt;/div&gt; &lt;div class="main"&gt; &lt;div class="left"&gt;LEFT&lt;/div&gt; &lt;div class="center"&gt;CENTER&lt;/div&gt; &lt;div class="right"&gt;RIGHT&lt;/div&gt; &lt;/div&gt; &lt;div class="footer"&gt;FOOTER&lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
-      <categories>
-        <category>web</category>
-      </categories>
-      <tags>
-        <tag>flex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ES6 · Reflect]]></title>
-    <url>%2F2018%2F12%2F04%2Fes6-learn-006%2F</url>
-    <content type="text"><![CDATA[Reflect.get()Reflect.set()Reflect.has()Reflect.deleteProperty()Reflect.construct()Reflect.getPrototypeOf()Reflect.setPrototypeOf()Reflect.apply()Reflect.defineProperty()Reflect.getOwnPropertyDescriptor()Reflect.isExtensible()Reflect.preventExtensions()Reflect.ownKeys() Reflect.get(target, name, receiver)查找并返回target.name如果name属性部署了getter，getter的this绑定receiver Reflect.set(target, name, value, receiver)设置target的name属性值为value如果name属性部署了setter，setter的this绑定receiver Reflect.has(obj, name)等同于 name in obj Reflect.deleteProperty(obj, name)等同于 delete obj.name Reflect.construct(target, args)等同于 new target(…args)不使用new调用构造函数的方式 Reflect.getPrototypeOf(obj)等同于 Object.getPrototypeOf(obj)读取obj的proto属性 Reflect.setPrototypeOf(obj, newProto)等同于 Object.setPrototypeOf(obj, newProto) Reflect.apply(func, thisArgs, args)等同于 Function.prototype.apply.call(func, thisArgs, args) Reflect.defineProperty(target, propertyKey, attributies)等同于 Object.defineProperty(target, propertyKey, attiruties) Reflect.getOwnPropertyDescriptor(target, propertyKey)等同于 Object.getOwnPropertyDescriptor(target, propertyKey) Reflect.isExtensible(target)等同于 Object.isExtensible(target)target是否可扩展，返回布尔值 Reflect.preventExtensible(target)等同于 Object.preventExtensible(target)让target不可扩展 Reflect.ownKeys(target)等同于 Object.ownKeys(target)返回一个对象的所有属性Object.getOwnPropertyNames + Object.getOwnPropertySymbols]]></content>
-      <categories>
-        <category>es6</category>
-      </categories>
-      <tags>
-        <tag>es6-reflect</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ES6 · Class继承]]></title>
-    <url>%2F2018%2F11%2F30%2Fes6-learn-005%2F</url>
-    <content type="text"><![CDATA[ES6 · Class继承 参考文档：阮一峰 ECMAScript 6 入门 – Class的继承 extends12class Line &#123;&#125;class ColorLine extends Line &#123;&#125; 子类必须在constructor方法中调用super方法如果子类没有constructor方法，constructor会被默认添加在constructor方法中，只有调用super方法后，才能使用this可继承原生构造函数(String/Number/Boolean/Array/Date/Error/Regexp/Function/Object) Object.getPrototypeOf() &amp;&amp; Reflect.getPrototypeOf()判断一个类是否继承自另一个类 12Object.getPrototypeOf(ColorLine) === Line //trueReflect.getPrototypeOf(ColorLine) === Line //true 每个对象都有一个名为proto的属性 每个构造函数都有一个名为prototype的方法 每个对象的proto指向自身构造函数的prototype 1234567891011121314151617181920212223class Line &#123; constructor(length) &#123; this.length = length; &#125;&#125;const line = new Line(12);console.log(line.__proto__ === Line.prototype); //trueconsole.log(line.__proto__.__proto__ === Object.prototype); //trueconsole.log(line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Line &lt;= lineconsole.log(Line.__proto__ === Function.prototype); //trueconsole.log(Line.__proto__.__proto__ === Object.prototype); //trueconsole.log(Line.__proto__.__proto__.__proto__ === null); //true// null &lt;= Object &lt;= Function &lt;= Lineconsole.log(Function.__proto__ === Function.prototype); //trueconsole.log(Object.__proto__ === Function.prototype); //trueconsole.log(Object.__proto__ === Function.__proto__); //true// Function &lt;= Object// Function &lt;= Function super 作为函数 super()只能在子类的constructor方法中调用子类constructor方法中必须调用一次super方法 用作对象普通方法中，指向父类的原型对象静态方法中，指向父类]]></content>
-      <categories>
-        <category>es6</category>
-      </categories>
-      <tags>
-        <tag>es6-class</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ES6 · Class基础]]></title>
-    <url>%2F2018%2F11%2F30%2Fes6-learn-004%2F</url>
-    <content type="text"><![CDATA[ES6 · Class基础 构造函数123456789101112function Rectangle (width, height) &#123; this.width = width; this.height = height;&#125;Rectangle.prototype.getArea = function() &#123; return this.width * this.height;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 ES61234567891011121314class Rectangle &#123; constructor(width, height) &#123; this.width = width; this.height = height; &#125; getArea() &#123; return this.width * this.height; &#125;&#125;const square = new Rectangle(4, 4);square.width //4square.height //4square.getArea() //16 constructor类的构造函数，实例化(new)时自动调用 static静态方法类可以调用，会被子类继承，子类也可以调用不会被类的实例继承，类的实例无法调用也不会被子类的实例继承，子类的实例也无法调用this指向类，而不是实例 name返回类的名称 new.target返回实例化时调用的类子类继承父类时，会返回子类 类 类的所有方法都在原型上 类内部的方法，都是不可枚举的 类的属性名和方法名可以用表达式 类的内部默认启用严格模式 类不存在变量提升 实例 实例的属性，除非定义在this对象上，否则都定义在原型上类的所有实例共享一个原型对象]]></content>
-      <categories>
-        <category>es6</category>
-      </categories>
-      <tags>
-        <tag>es6-class</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 小结03]]></title>
-    <url>%2F2018%2F11%2F29%2Fvim-study-003%2F</url>
-    <content type="text"><![CDATA[VIM · 小结03 缩进 expandtab 是否将tab转化为空格 shfitwidth &gt;&gt;或&lt;&lt;时缩进的列数 tabstop 一个tab键所占的列数 softtabstop tab实际占的列数 autoindent(ai) 自动换行.vimrc12345set autoindentset expandtabset shiftwidth=4set tabstop=4set softtabstop=4]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-study</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 小结02]]></title>
-    <url>%2F2018%2F11%2F28%2Fvim-study-002%2F</url>
-    <content type="text"><![CDATA[VIM · 小结02 进入普通模式(Normal mode) Esc CTRL + [ 进入命令模式(Commant line mode) : 进入插入模式(Insert mode) i 在光标前插入 I 在行首插入 a 在光标后插入 A 在行尾插入 o 在下方插入一行 O 在上方插入一行 进入可视模式(Visual mode) v 退出 q ZZ 常用命令一览 模式 命令 说明 正常模式 b 跳转到前一个单词的开头 正常模式 ge 跳转到前一个单词的结尾 正常模式 f&lt;字母&gt; 向后搜索字母，并跳转到第一个匹配的位置 正常模式 F&lt;字母&gt; 向前搜索字母，并跳转到第一个匹配的位置 复制 yy y0 y^ y$ yw yG y1G 粘贴 p P change c [number] motiondelete d [number] motion 上下行交换 ddp 替换 r 替换当前光标位置 R 连续替换 cc 替换当前行 cw 替换一个单词 C 替换到行尾 ~ 反转大小写 u 撤销一次 U 撤销当前行的所有更改 Ctrl + r 取消撤销 :s/old/new/g 替换当前行所有的old为new :#,#s/old/new/g 替换#行到#行的所有的old为new :%s/old/new/g 替换整个文档所有的old为new 提取内容 :r file 提取file文件内容，插入光标所在位置 :r !ls 提取ls命令输入内容，插入光标所在位置 文本位置 ce 居中 ri 居右 le 居左 查找 ?&lt;单词&gt; 向上查找word /&lt;单词&gt; 向下查找word n 下一个 N 上一个 CTRL + O 回到较旧的位置 CTRL + I9j 回到较新的位置 \* 向下查找光标所在单词 \# 向上查找鼠标所在单词 % 查找配对括号 多文件编辑 vim 1.txt 2.txt 同时打开两个文件 :n 编辑下一个文件 :N 编辑上一个文件 :e 3.txt 打开3.txt :e# 回到前一个文件 :ls 列出已打开的文件 :b 2.txt 编辑2.txt :bd 2.txt 删除已打开的文件列表中的2.txt e! 4.txt 强制打开4.txt :f 显示正在编辑的文件名 :f 5.txt 另存为5.txt 恢复文件 vim -r filename 可视模式 v 字符选择 Shift + v 行选择 Ctrl + v 区域选择 缩进 &gt;&gt; 向右缩进 &lt;&lt; 向左缩进 视窗操作 :new 水平分屏 :sp 水平分屏 :vsp 垂直分屏 Ctrl + w s 水平分屏 Ctrl + w v 垂直分屏 Ctrl + w q 关闭当前分屏 Ctrl + w o 打开新视窗，并隐藏之前的所有视窗 Ctrl + w h 切换到左侧分屏 Ctrl + w j 切换到下面分屏 Ctrl + w k 切换到上面分屏 Ctrl + w l 切换到下册分屏 Ctrl + w H 移动视窗到左侧 Ctrl + w J 移动视窗值下面 Ctrl + w K 移动视窗至上面 Ctrl + w L 移动视窗至右侧 Ctrl + w - 减小视窗高度 Ctrl + w + 增加视窗高度 文档加密 vim -x file 执行shell命令 :!ls 暂时退出vim并执行ls命令 选择性保存 v 进入可视模式 {move cursor} 移动光标选择文本 :w 保存 设置 :set 显示所有修改过的配置 :set all 显示所有的设定值 :set option? 显示option的设定值 :set nooption 取消当前设定值 :set autoindent(ai) 设置自动缩进 :set autowrite(aw) 设置自动保存，默认未打开 :set background=dark 设置背景风格 :set backup(bk) 设置自动备份，默认未打开 :set hlsearch(hls) 高亮搜索匹配项]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-study</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ES6 · Module]]></title>
-    <url>%2F2018%2F11%2F26%2Fes6-learn-003%2F</url>
-    <content type="text"><![CDATA[ES6 · Module CommonJS 运行时加载，在运行到的时候才能确定依赖关系，输出的是值的缓存，不能动态更新 ES6 编译时加载，编译时即可确定依赖关系，效率更高，输出的是值的引用，可以做静态优化，输出会动态更新 ES6模块自动启用严格模式，严格模式下： 变量必须声明后再使用 函数的参数不能有同名属性，否则报错 不能使用with语句 不能对只读属性赋值，否则报错 不能使用前缀 0 表示八进制数，否则报错 不能删除不可删除的属性，否则报错 不能删除变量delete prop，会报错，只能删除属性delete global[prop] eval不会在它的外层作用域引入变量 eval和arguments不能被重新赋值 arguments不会自动反映函数参数的变化 不能使用arguments.callee 不能使用arguments.caller 禁止this指向全局对象，顶层的this指向undefined 不能使用fn.caller和fn.arguments获取函数调用的堆栈 增加了保留字（比如protected、static和interface） export命令用于规定模块的对外接口import命令用于输入其他模块提供的功能as 重命名default 指定默认输出* 代表模块所有内容 一般用法module.js12let name = 'module';export &#123; name &#125;; main.js1import &#123; name &#125; from './module'; 使用default指定默认输出module.js12let name = 'module';export default name; main.js1import name from './module'; // name可以是任何合法变量名 使用 * 整体加载，使用as改名module.js123let name = 'module';let version = '1.0.0';export &#123; name, version &#125;; main.js1import * as module from './module'; 模块继承utils.js12let name = 'utils';export &#123;name&#125;; tools.js12export * from './utils';export let version = '1.0.0'; main.js123import * as tools from './tools';console.log(tools.name, tools.version);// utils 1.0.0 浏览器加载ES6模块&lt;script&gt;标签加入type=&quot;module&quot;属性表示是ES6模块12&lt;script src="path/to/myModule.js" defer&gt;&lt;/script&gt;&lt;script src="path/to/myModule.js" async&gt;&lt;/script&gt; 属性 加载方式 执行时间 defer 异步加载 渲染完再执行 async 异步加载 下载完就执行 123&lt;script type="module" src="./foo.js"&gt;&lt;/script&gt;&lt;!-- 等同于 --&gt;&lt;script type="module" src="./foo.js" defer&gt;&lt;/script&gt;]]></content>
-      <categories>
-        <category>es6</category>
-      </categories>
-      <tags>
-        <tag>es6-module</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[SFTP · 简易教程及示例]]></title>
-    <url>%2F2018%2F11%2F23%2Flinux-learn-002%2F</url>
-    <content type="text"><![CDATA[SFTP · 简易教程及示例 sftp 12345678[root@localhost ~]# sftpusage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher] [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l limit] [-o ssh_option] [-P port] [-R num_requests] [-S program] [-s subsystem | sftp_server] host sftp [user@]host[:file ...] sftp [user@]host[:dir[/]] sftp -b batchfile [user@]host 连接sftp 123456789[root@localhost ~]# sftp root@hostThe authenticity of host 'host (192.168.16.128)' can't be established.ECDSA key fingerprint is SHA256:t5KwBH+CBk7Emp24FI73Jr4IzVkD9VEUG9XIu86CvsE.ECDSA key fingerprint is MD5:3c:31:c4:06:8a:6a:a6:4d:9a:21:58:c0:bc:e1:eb:de.Are you sure you want to continue connecting (yes/no)? yesWarning: Permanently added 'host,192.168.16.128' (ECDSA) to the list of known hosts.root@host's password: Connected to host.sftp&gt; help 12345678910111213141516171819202122232425262728293031323334sftp&gt; helpAvailable commands:bye Quit sftpcd path Change remote directory to 'path'chgrp grp path Change group of file 'path' to 'grp'chmod mode path Change permissions of file 'path' to 'mode'chown own path Change owner of file 'path' to 'own'df [-hi] [path] Display statistics for current directory or filesystem containing 'path'exit Quit sftpget [-afPpRr] remote [local] Download filereget [-fPpRr] remote [local] Resume download filereput [-fPpRr] [local] remote Resume upload filehelp Display this help textlcd path Change local directory to 'path'lls [ls-options [path]] Display local directory listinglmkdir path Create local directoryln [-s] oldpath newpath Link remote file (-s for symlink)lpwd Print local working directoryls [-1afhlnrSt] [path] Display remote directory listinglumask umask Set local umask to 'umask'mkdir path Create remote directoryprogress Toggle display of progress meterput [-afPpRr] local [remote] Upload filepwd Display remote working directoryquit Quit sftprename oldpath newpath Rename remote filerm path Delete remote filermdir path Remove remote directorysymlink oldpath newpath Symlink remote fileversion Show SFTP version!command Execute 'command' in local shell! Escape to local shell? Synonym for help 常用命令一览 命令 说明 bye 退出 quit 退出 cd path 切换远程目录 lcd path 切换本地目录 pwd 展示远程当前路径 lpwd 展示本地当前路径 ls 列出远程目录信息 lls 列出本地目录信息 mkdir 创建远程目录 lmkdir 创建本地目录 progress 是否展示进度 put 上传 get 下载 df 查看磁盘信息 !command 在本地shell执行命令 ! 退出到本地shell help 查看帮助信息 ? 查看帮助信息 上传下载示例1234567891011121314sftp&gt; pwdRemote working directory: /rootsftp&gt; lpwdLocal working directory: /c/Users/zhanghao30/Desktop/tempsftp&gt; lsanaconda-ks.cfgsftp&gt; llsnote.txtsftp&gt; put note.txtUploading note.txt to /root/note.txtnote.txt 100% 1781 175.3KB/s 00:00sftp&gt; get anaconda-ks.cfgFetching /root/anaconda-ks.cfg to anaconda-ks.cfg/root/anaconda-ks.cfg 100% 1421 157.1KB/s 00:00]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>sftp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 小结01]]></title>
-    <url>%2F2018%2F11%2F23%2Fvim-study-001%2F</url>
-    <content type="text"><![CDATA[VIM · 小结01 操作 模式 命令 说明 打开 命令行 vim 打开VIM 打开 命令行 vim [path/to/file] 打开file文件，若不存在，则新建file并打开 打开 VIM正常模式 :e [path/to/file] 打开file文件，若不存在，则新建file并打开 保存 VIM正常模式 :w 保存 保存 VIM正常模式 :w! 强制保存 保存 VIM正常模式 :w [path/to/file] 保存到file中 保存 VIM正常模式 :w! [path/to/file] 强制保存到file中 保存 VIM正常模式 :sav [path/to/file] 另存为file 退出 VIM正常模式 :q 退出 退出 VIM正常模式 :q! 强制退出]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-study</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 基础06]]></title>
-    <url>%2F2018%2F11%2F21%2Fvim-learn-006%2F</url>
-    <content type="text"><![CDATA[VIM · 基础06 进入插入模式 在光标前插入i 进入插入模式 在光标所在行首插入I 进入插入模式 在光标后插入a 进入插入模式 在光标所在行尾插入A 在光标下方新建一行，并进入插入模式o 在光标上方新建一行，并进入插入模式O 替换模式 连续替换R 复制y 粘贴p 复制粘贴 v 进入可视模式 移动光标，选择文本 y 复制 p 粘贴 窗口切换CTRL + W; CTRL + W 自动补全CTRL + DTAB]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-tutor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 基础05]]></title>
-    <url>%2F2018%2F11%2F21%2Fvim-learn-005%2F</url>
-    <content type="text"><![CDATA[VIM · 基础05 执行外部命令:!ls 保存到文件中:w [filename] 选择性保存 v 进入可视模式 选择文本 :w 保存 提取内容:r [filename]:r !tree]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-tutor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 基础04]]></title>
-    <url>%2F2018%2F11%2F20%2Fvim-learn-004%2F</url>
-    <content type="text"><![CDATA[VIM · 基础04 显示光标位置和文件状态CTRL + g 跳转 到最后一行G 跳转 到第一行gg 跳转 到指定行[number] G 向下查找/word 向上查找?word 查找下一个n 查找上一个N 回到上一个匹配项CTRL + o 回到下一个匹配项CTRL + i 查找匹配的括号 () [] {}% 替换 光标所在行第一个匹配项:s/old/new 替换 光标所在行所有匹配项:s/old/new/g 替换 指定行的匹配项:#,#s/old/new/g #,#分别代表起始行和结束行 替换 文件中所有匹配项:%s/old/new/g 替换 替换时询问:s/old/new/gc]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-tutor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 基础03]]></title>
-    <url>%2F2018%2F11%2F19%2Fvim-learn-003%2F</url>
-    <content type="text"><![CDATA[VIM · 基础03 粘贴 寄存器内的文本p 替换 光标所在位置的一个字符r 更改c [number] motion 更改 从光标到词尾ce 更改 从光标到下一个单词的起始cw 更改 从光标到行尾c$]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-tutor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 基础02]]></title>
-    <url>%2F2018%2F11%2F16%2Fvim-learn-002%2F</url>
-    <content type="text"><![CDATA[VIM · 基础02 删除（光标所在字符）x 删除（光标所在前一个字符）X 删除d [number] motion 删除 从光标到单词的末尾de 删除 从光标到下一个单词的开始dw 删除 从光标到行尾d$D 删除 从光标到行首d^ 删除 整行dd 删除 从当前行到文档结尾处dG 删除 从当前行到文档开始处d1G 光标移动到下一个单词的开头w 光标移动到单词的末尾，如果已经在单词的末尾或空格处，则移动到下一个单词的末尾。e 光标移动到行首0^ 光标移动到行尾$ 撤销一步u 撤销一行U 取消撤销CTRL + R]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-tutor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VIM · 基础01]]></title>
-    <url>%2F2018%2F11%2F16%2Fvim-learn-001%2F</url>
-    <content type="text"><![CDATA[VIM · 基础01 移动光标 123 k上h左 l右 j下 打开/创建vim filename:e path/to/file 退出（不保存）q 强制退出（不保存）q! 保存w 保存并退出wq 强制保存并退出wq!]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim-tutor</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Git · 简易教程]]></title>
-    <url>%2F2018%2F11%2F15%2Fgit-learn-001%2F</url>
-    <content type="text"><![CDATA[1. clone2. branch3. checkout4. status5. add6. commit7. push8. 示例 clone 克隆远程仓库到本地1234567$ git clone ssh://git@git.moyuqingpen.com.cn:7999/~zhanghao/playground.gitCloning into 'playground'...remote: 对象计数中: 155, 完成.remote: 压缩对象中: 100% (133/133), 完成.remote: Total 155 (delta 52), reused 0 (delta 0)Receiving objects: 100% (155/155), 392.57 KiB | 1.86 MiB/s, done.Resolving deltas: 100% (52/52), done. branch 查看分支 12$ git branch* master 创建分支 1$ git branch develop checkout 检出分支12$ git checkout developSwitched to branch 'develop' status 显示工作目录和暂存区状态123456$ git statusOn branch developUntracked files: (use "git add &lt;file&gt;..." to include in what will be committed) readme.mdnothing added to commit but untracked files present (use "git add" to track) add 添加到暂存区123$ git add .warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory commit 提交变动123456$ git commit . -m "add readme"warning: LF will be replaced by CRLF in readme.md.The file will have its original line endings in your working directory[develop dbe505a] add readme 1 file changed, 1 insertion(+) create mode 100644 readme.md push 推送到远程分支12345678910111213$ git pushEnumerating objects: 5, done.Counting objects: 100% (5/5), done.Delta compression using up to 8 threadsCompressing objects: 100% (2/2), done.Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.Total 3 (delta 1), reused 0 (delta 0)remote:remote: Create pull request for develop:remote: https://git.moyuqingpen.com.cn/users/zhanghao/repos/playground/compare/commits?sourceBranch=refs/heads/developremote:To ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git dbe505a..dcf6cc8 develop -&gt; develop 示例 克隆-修改-提交 123456789# 克隆仓库$ git clone ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git# do some change here ...# 添加到索引$ git add .# 记录变动$ git commit . -m "tips"# 推送到远程分支$ git push 新建本地develop分支，并提交到远程 1234567$ git branch develop$ git branch --set-upstream-to=/origin/develop$ git pull# do some change here$ git add .$ git commit . -m "tips"$ git push 删除远程develop分支 12$ git checkout master$ git branch -d -r origin/develop 注：以上只是 git 命令行的简单教程，具体的用法请参考 git &lt;command&gt; --help，或git book]]></content>
+    <title>git-learn-002</title>
+    <url>/2019/12/16/git-learn-002/</url>
+    <content><![CDATA[<p><strong>分享一个git的在线学习网站</strong><br><strong>每个命令都有动画演示，还有沙盒模式，可以自由操练</strong><br><strong>每个关卡都有练习题目，每个题目都有最少的完成步骤</strong><br><strong>教程比较基础，适合新手，学完大约需要花费半天时间</strong></p>
+<a id="more"></a>
+<h3 id="Learn-Git-Branching"><a href="#Learn-Git-Branching" class="headerlink" title="Learn Git Branching"></a>Learn Git Branching</h3><ol>
+<li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">官网</a></li>
+<li><a href="https://github.com/pcottle/learnGitBranching" target="_blank" rel="noopener">github</a></li>
+<li><a href="https://learngitbranching.js.org/?NODEMO" target="_blank" rel="noopener">sand box</a></li>
+</ol>
+<h3 id="几个常用的命令"><a href="#几个常用的命令" class="headerlink" title="几个常用的命令"></a>几个常用的命令</h3><ol>
+<li><code>undo</code> 撤销一步</li>
+<li><code>reset</code> 重新开始关卡</li>
+<li><code>levels</code> 重新选择关卡</li>
+<li><code>show solution</code> 显示答案</li>
+</ol>
+]]></content>
       <categories>
         <category>git</category>
       </categories>
@@ -251,9 +25,1250 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[博客计划 · 2018年]]></title>
-    <url>%2F2018%2F11%2F13%2Fplan-blog-2018%2F</url>
-    <content type="text"><![CDATA[博客计划 · 2018年 git 命令行简易教程 eslint es6 Proxy es6 Reflect es6 Module es6 Class 基于 nodejs 的爬虫 css flex vim sftp webpack nginx shell编程 c python 数据结构与算法]]></content>
+    <title>网摘</title>
+    <url>/2019/05/10/other-001/</url>
+    <content><![CDATA[<h2 id="码农"><a href="#码农" class="headerlink" title="码农"></a>码农</h2><p>  前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？</p>
+<a id="more"></a>
+<p>  这个问题很容易回答，答案就是不能。出租车司机的收入，主要由营业时间的长短决定。基本上，一天开12个小时，就是比开6个小时，收入高出一倍。每天只有24个小时，因此收入存在上限，不可能偏离平均水平很远。</p>
+<p>  出租车是“时间换收入”的典型行业，投入的时间越多，收入越高，在家休息就没收入。很多行业都属于“时间换收入”，所有此类行业都赚不到大钱。因为你能用来交换的时间是有限的，而且进入中年以后，你就拿不出更多的时间来交换。开出租车赚零花钱，或者作为短期过渡，这是没问题的，但作为终身职业是很糟糕的。</p>
+<p>  我觉得，越来越多的程序员正在落入这个陷井，用编码的时间换取收入。只有不停地做项目，才能拿到钱。项目做得越多，收入越高。这个项目开发完了，公司又让他去干下一个项目。 忙了好几年，项目完成了一大堆，但是自己什么也没留下，以后的收入还要取决于从零开始的新项目。这样的话，你跟出租车司机有何两样，哪一天你不写代码了，不是照样没收入。</p>
+<p>  那些赚到大钱的人，没有一个是靠时间换取收入的。他们要么通过积累资产致富，要么购买他人的时间，为自己创造财富。你应该警惕，不要落入“时间换取收入”的陷井，不要只顾着为别人生产代码，而要注意积累自己的资产，以及适时开展属于自己的业务。</p>
+]]></content>
+      <categories>
+        <category>excerpt</category>
+      </categories>
+      <tags>
+        <tag>excerpt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>localStorage &amp;&amp; sessionStorage</title>
+    <url>/2019/05/05/js-learn-003/</url>
+    <content><![CDATA[<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> storage = localStorage <span class="comment">// or sessionStorage</span></span><br><span class="line"><span class="comment">// 增 改</span></span><br><span class="line">storage.setItem(<span class="string">'version'</span>, <span class="string">'0.2.0'</span>)</span><br><span class="line"><span class="comment">// 查</span></span><br><span class="line">storage.getItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.removeItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.clear()</span><br></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN web docs – Window​.local​Storage</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage" target="_blank" rel="noopener">MDN web docs – Window​.session​Storage</a><br><a href="https://www.cnblogs.com/st-leslie/p/5617130.html" target="_blank" rel="noopener">localStorage使用总结</a></p>
+]]></content>
+      <categories>
+        <category>h5</category>
+      </categories>
+      <tags>
+        <tag>h5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>魔术字符串</title>
+    <url>/2019/05/05/js-learn-004/</url>
+    <content><![CDATA[<h2 id="魔术字符串"><a href="#魔术字符串" class="headerlink" title="魔术字符串"></a>魔术字符串</h2><p>在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。风格良好的代码，应该尽量消除魔术字符串，改由含义清晰的变量代替。</p>
+]]></content>
+      <categories>
+        <category>h5</category>
+      </categories>
+      <tags>
+        <tag>h5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>typescript</title>
+    <url>/2019/04/08/typescript-learn-001/</url>
+    <content><![CDATA[<h3 id="类型注解"><a href="#类型注解" class="headerlink" title="类型注解"></a>类型注解</h3><blockquote>
+<p>TypeScript里的类型注解是一种轻量级的为函数或变量添加约束的方式</p>
+</blockquote>
+<figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person: <span class="built_in">string</span></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="string">"Jane User"</span>;</span><br><span class="line">greeter(user);</span><br></pre></td></tr></table></figure>
+<h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><p>interface<br><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">interface</span> Person &#123;</span><br><span class="line">    firstName: <span class="built_in">string</span>;</span><br><span class="line">    lastName: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person: Person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person.firstName + <span class="string">" "</span> + person.lastName;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> Student &#123;</span><br><span class="line">    fullName: <span class="built_in">string</span>;</span><br><span class="line">    <span class="keyword">constructor</span>(<span class="params"><span class="keyword">public</span> firstName: <span class="built_in">string</span>, <span class="keyword">public</span> middleInitial: <span class="built_in">string</span>, <span class="keyword">public</span> lastName: <span class="built_in">string</span></span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.fullName = firstName + <span class="string">" "</span> + middleInitial + <span class="string">" "</span> + lastName;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">interface</span> Person &#123;</span><br><span class="line">    firstName: <span class="built_in">string</span>;</span><br><span class="line">    lastName: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greeter</span>(<span class="params">person : Person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello, "</span> + person.firstName + <span class="string">" "</span> + person.lastName;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="keyword">new</span> Student(<span class="string">"Jane"</span>, <span class="string">"M."</span>, <span class="string">"User"</span>);</span><br><span class="line">greeter(user);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>typescript</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>JavaScript · String</title>
+    <url>/2019/01/02/js-learn-002/</url>
+    <content><![CDATA[<p><strong>ES5 String API</strong><br><strong>ES6 String API</strong></p>
+<a id="more"></a>
+<h3 id="ES5-String-API"><a href="#ES5-String-API" class="headerlink" title="ES5 String API"></a>ES5 String API</h3><ol>
+<li>sub()</li>
+<li>sup()</li>
+<li>big()</li>
+<li>small()</li>
+<li>strike()</li>
+<li>bold()</li>
+<li>italics()</li>
+<li>blink()</li>
+<li>link()</li>
+<li>anchor()</li>
+<li>fixed()</li>
+<li>fontsize()</li>
+<li>fontcolor()</li>
+<li>charAt()</li>
+<li>charCodeAt()</li>
+<li>fromCharCode()</li>
+<li>indexOf()</li>
+<li>lastIndexOf()</li>
+<li>match()</li>
+<li>replace()</li>
+<li>search()</li>
+<li>localCompare()</li>
+<li>split()</li>
+<li>concat()</li>
+<li>substr(start, length)</li>
+<li>substring(start, end)</li>
+<li>slice(start, end) 接收负参数</li>
+<li>toLocaleLowerCase()</li>
+<li>toLocaleUpperCase()</li>
+<li>toLowerCase()</li>
+<li>toUpperCase()</li>
+<li>toSource()</li>
+<li>toString()</li>
+<li>valueOf()</li>
+</ol>
+<blockquote>
+<p><a href="http://www.w3school.com.cn/jsref/jsref_obj_string.asp" target="_blank" rel="noopener">参考文档</a></p>
+</blockquote>
+<hr>
+<h3 id="ES6-String-API"><a href="#ES6-String-API" class="headerlink" title="ES6 String API"></a>ES6 String API</h3><ol>
+<li>字符串的Unicode表示法</li>
+<li>codePointAt() &amp;&amp; charCodeAt()</li>
+<li>fromCodePoint() &amp;&amp; fromCharCode()</li>
+<li>for…of遍历</li>
+<li>normalize()</li>
+<li>includes()</li>
+<li>startWith()</li>
+<li>endsWith()</li>
+<li>repeat()</li>
+<li>padStart()</li>
+<li>padEnd()</li>
+<li>matchAll()</li>
+<li>模板字符串 ``</li>
+<li>String.raw()</li>
+</ol>
+<blockquote>
+<p><a href="http://es6.ruanyifeng.com/#docs/string" target="_blank" rel="noopener">参考文档</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>string</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript · Array</title>
+    <url>/2019/01/02/js-learn-001/</url>
+    <content><![CDATA[<p><strong>ES5 Array API</strong><br><strong>ES6 Array API</strong><br><strong>JS Array 遍历</strong><br><strong>参考文档</strong></p>
+<a id="more"></a>
+<h3 id="ES5-Array-API"><a href="#ES5-Array-API" class="headerlink" title="ES5 Array API"></a>ES5 Array API</h3><ol>
+<li>concat(p1[array or number], p2…)</li>
+<li>join(separator)</li>
+<li>push()</li>
+<li>pop()</li>
+<li>shift()</li>
+<li>unshift()</li>
+<li>reverse()</li>
+<li>slice(start, end)</li>
+<li>splice(start, number, item1,…,itemx)</li>
+<li>sort(sortBy)</li>
+<li>toSource()</li>
+<li>toString()</li>
+<li>toLocaleString()</li>
+<li>valueOf()</li>
+</ol>
+<h3 id="ES6-Array-API"><a href="#ES6-Array-API" class="headerlink" title="ES6 Array API"></a>ES6 Array API</h3><ol>
+<li>扩展云算符 …</li>
+<li>Array.from()</li>
+<li>Array.of()</li>
+<li>copyWithin(target, start = 0, end = this.length)</li>
+<li>find()</li>
+<li>findIndex()</li>
+<li>fill()</li>
+<li>keys()</li>
+<li>values()</li>
+<li>entries()</li>
+<li>includes()</li>
+<li>flat()</li>
+<li>flatMap()</li>
+</ol>
+<h3 id="JS-Array-遍历"><a href="#JS-Array-遍历" class="headerlink" title="JS Array 遍历"></a>JS Array 遍历</h3><ol>
+<li>for…in</li>
+<li>for…of</li>
+<li>forEach()</li>
+<li>reduce()</li>
+<li>map()</li>
+<li>flatMap()</li>
+<li>find() 返回符合条件的第一个子元素</li>
+<li>findIndex()</li>
+<li>filter() 返回包含所有符合条件的子元素的数组</li>
+<li>every()</li>
+<li>some()</li>
+<li>keys()</li>
+<li>values()</li>
+<li>entries()</li>
+</ol>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><ol>
+<li><a href="http://www.w3school.com.cn/jsref/jsref_obj_array.asp" target="_blank" rel="noopener">ES5 Array 参考文档</a></li>
+<li><a href="http://es6.ruanyifeng.com/#docs/array" target="_blank" rel="noopener">ES6 Array 参考文档</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>array</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES6 · Number</title>
+    <url>/2018/12/25/es6-learn-007/</url>
+    <content><![CDATA[<p><strong>Number</strong></p>
+<a id="more"></a>
+<h3 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h3><ul>
+<li>0b11 //3</li>
+<li>0B11 //3</li>
+<li>0o11 //9</li>
+<li>0O11 //9</li>
+<li>toSting([2, 8, 10, 16]) //转为二进制、八进制、十进制、十六进制字符串</li>
+<li>Number(0b11) //转十进制</li>
+<li>Number.isFinate() </li>
+<li>Number.isNaN()</li>
+<li>Number.parseInt()</li>
+<li>Number.parseFloat()</li>
+<li>Number.isInteger() //由于 JavaScript 采用 IEEE 754 标准，数值存储为64位双精度格式，数值精度最多可以达到 53 个二进制位（1 个隐藏位与 52 个有效位）。如果数值的精度超过这个限度，第54位及后面的位就会被丢弃，这种情况下，Number.isInteger可能会误判。</li>
+<li>Number.EPSILON === Math.pow(2, -52) //表示 1 与大于 1 的最小浮点数之间的差。</li>
+<li>Number.MAX_SAFE_INTEGER === Math.pow(2, 53)</li>
+<li>Number.MIN_SAFE_INTEGER === Math.pow(2, -53)</li>
+<li><p>Number.isSafeInteger(n) //Number.MIN_SAFE_INTEGER &lt; n &lt; Number.MAX_SAFE_INTEGER</p>
+</li>
+<li><p>Math.trunc(3.14) //3 返回整数部分</p>
+</li>
+<li>Math.sign()</li>
+<li>Math.cbrt() //返回立方根</li>
+<li>Math.hypot() //返回参数平方和的平方根</li>
+</ul>
+]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>number</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客计划 · 2019年</title>
+    <url>/2018/12/25/plan-blog-2019/</url>
+    <content><![CDATA[<p><strong>博客计划 · 2019年</strong></p>
+<a id="more"></a>
+<ul>
+<li style="list-style: none"><input type="checkbox"> <code>es6</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>vue</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>nodejs</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>webpack</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>vscode</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>nodejs</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>plan</category>
+      </categories>
+      <tags>
+        <tag>plan-blod</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS · Flex</title>
+    <url>/2018/12/06/web-learn-001/</url>
+    <content><![CDATA[<p><strong>CSS · Flex</strong></p>
+<a id="more"></a>
+<table>
+<thead>
+<tr>
+<th><code>main axis</code> 主轴</th>
+<th><code>cross axis</code> 交叉轴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>main start</code> 主轴起点</td>
+<td><code>cross start</code> 交叉轴起点</td>
+</tr>
+<tr>
+<td><code>main end</code> 主轴终点</td>
+<td><code>cross end</code> 交叉轴终点</td>
+</tr>
+<tr>
+<td><code>main size</code> 主轴方向大小</td>
+<td><code>cross size</code> 交叉轴方向大小</td>
+</tr>
+</tbody>
+</table>
+<h3 id="容器属性"><a href="#容器属性" class="headerlink" title="容器属性"></a>容器属性</h3><p><code>display: flex</code></p>
+<ul>
+<li>指定flex布局，此时<code>float</code>、<code>clear</code>、<code>vertical-align</code>属性将失效</li>
+</ul>
+<p><code>flex-direction</code> 主轴方向</p>
+<ul>
+<li><code>row</code> 默认 主轴为水平方向，起点在左端</li>
+<li><code>row-reverse</code> 主轴为水平方向，起点在右端</li>
+<li><code>column</code> 主轴为垂直方向，起点在上端</li>
+<li><code>column-reverse</code> 主轴为垂直方向，起点在下端</li>
+</ul>
+<p><code>flex-wrap</code> 是否换行</p>
+<ul>
+<li><code>nowrap</code> 默认 不换行</li>
+<li><code>wrap</code> 换行</li>
+<li><code>wrap-reverse</code> 反向换行</li>
+</ul>
+<p><code>flex-flow</code> 主轴方向和是否换行</p>
+<ul>
+<li><code>row nowrap</code> 默认</li>
+<li><code>flex-direction</code> 和 <code>flex-wrap</code> 的缩写</li>
+</ul>
+<p><code>justify-content</code> 主轴对齐方式</p>
+<ul>
+<li><code>flex-start</code> 默认 主轴起点对齐</li>
+<li><code>flex-end</code> 主轴终点对齐</li>
+<li><code>center</code> 主轴居中对齐</li>
+<li><code>space-between</code> 主轴两端对齐</li>
+<li><code>space-around</code> 间隔相等</li>
+</ul>
+<p><code>align-items</code> 交叉轴对齐方式</p>
+<ul>
+<li><code>stretch</code> 默认 拉伸 如果未设置高度或设置为auto，将占满整个高度</li>
+<li><code>flex-start</code> 交叉轴起点对齐</li>
+<li><code>flex-end</code> 交叉轴终点对齐</li>
+<li><code>center</code> 交叉轴居中对齐</li>
+<li><code>baseline</code> 第一行文字的基线对齐</li>
+</ul>
+<p><code>align-content</code> 多根轴线的对齐方式，一根轴线时不生效</p>
+<ul>
+<li><code>stretch</code> 默认 拉伸 占满整个交叉轴</li>
+<li><code>flex-start</code> 与交叉轴的起点对齐</li>
+<li><code>flex-end</code> 与交叉轴的终点对齐</li>
+<li><code>center</code> 与交叉轴的中点对齐</li>
+<li><code>space-between</code> 交叉轴两端对齐</li>
+<li><code>space-around</code> 间隔相等</li>
+</ul>
+<h3 id="子项属性"><a href="#子项属性" class="headerlink" title="子项属性"></a>子项属性</h3><p><code>order</code></p>
+<ul>
+<li>0 默认</li>
+<li>子项的排列顺序，数字越小越靠前</li>
+</ul>
+<p><code>flex-grow</code></p>
+<ul>
+<li>子项放大比例</li>
+<li>0 默认 不放大</li>
+</ul>
+<p><code>flex-shrink</code></p>
+<ul>
+<li>子项缩小比例</li>
+<li>1 默认</li>
+<li>0 不缩小</li>
+</ul>
+<p><code>flex-basis</code></p>
+<ul>
+<li>在分配多余空间之前，子项占据的主轴空间(main size)</li>
+<li>auto 默认</li>
+</ul>
+<p><code>flex</code></p>
+<ul>
+<li><code>flex-grow</code> <code>flex-shrink</code> <code>flex-basis</code>的简写</li>
+<li><code>0 1 auto</code> 默认</li>
+</ul>
+<p><code>align-self</code></p>
+<ul>
+<li>子项对齐方式，覆盖<code>align-items</code></li>
+<li>auto 默认 继承父元素的<code>align-items</code></li>
+</ul>
+<h3 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h3><h4 id="圣杯布局"><a href="#圣杯布局" class="headerlink" title="圣杯布局"></a>圣杯布局</h4><p><img src="/images/holy_grail_layout.png" alt="img"></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>flex test<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    body &#123;</span></span><br><span class="line"><span class="undefined">      padding: 0;</span></span><br><span class="line"><span class="undefined">      margin: 0;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .container &#123;</span></span><br><span class="line"><span class="undefined">      display: flex;</span></span><br><span class="line"><span class="undefined">      flex-flow: column nowrap;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .header,</span></span><br><span class="line"><span class="undefined">    .footer &#123;</span></span><br><span class="line"><span class="undefined">      background: #eee;</span></span><br><span class="line"><span class="undefined">      flex: 0 0 56px;</span></span><br><span class="line"><span class="undefined">      text-align: center;</span></span><br><span class="line"><span class="undefined">      line-height: 56px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .main &#123;</span></span><br><span class="line"><span class="undefined">      height: 400px;</span></span><br><span class="line"><span class="undefined">      background: #ddd;</span></span><br><span class="line"><span class="undefined">      display: flex;</span></span><br><span class="line"><span class="undefined">      line-height: 400px;</span></span><br><span class="line"><span class="undefined">      text-align: center;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .left &#123;</span></span><br><span class="line"><span class="undefined">      flex: 0 0 160px;</span></span><br><span class="line"><span class="undefined">      background: #ccc;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .center &#123;</span></span><br><span class="line"><span class="undefined">      flex: 1;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .right &#123;</span></span><br><span class="line"><span class="undefined">      flex: 0 0 160px;</span></span><br><span class="line"><span class="undefined">      background: #bbb;</span></span><br><span class="line"><span class="undefined">      align-self: flex-end;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>HEADER<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>LEFT<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>CENTER<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>RIGHT<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>FOOTER<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>flex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES6 · Reflect</title>
+    <url>/2018/12/04/es6-learn-006/</url>
+    <content><![CDATA[<p>Reflect.get()<br>Reflect.set()<br>Reflect.has()<br>Reflect.deleteProperty()<br>Reflect.construct()<br>Reflect.getPrototypeOf()<br>Reflect.setPrototypeOf()<br>Reflect.apply()<br>Reflect.defineProperty()<br>Reflect.getOwnPropertyDescriptor()<br>Reflect.isExtensible()<br>Reflect.preventExtensions()<br>Reflect.ownKeys()</p>
+<a id="more"></a>
+<h3 id="Reflect-get-target-name-receiver"><a href="#Reflect-get-target-name-receiver" class="headerlink" title="Reflect.get(target, name, receiver)"></a>Reflect.get(target, name, receiver)</h3><p>查找并返回target.name<br>如果name属性部署了getter，getter的this绑定receiver</p>
+<h3 id="Reflect-set-target-name-value-receiver"><a href="#Reflect-set-target-name-value-receiver" class="headerlink" title="Reflect.set(target, name, value, receiver)"></a>Reflect.set(target, name, value, receiver)</h3><p>设置target的name属性值为value<br>如果name属性部署了setter，setter的this绑定receiver</p>
+<h3 id="Reflect-has-obj-name"><a href="#Reflect-has-obj-name" class="headerlink" title="Reflect.has(obj, name)"></a>Reflect.has(obj, name)</h3><p>等同于 name in obj</p>
+<h3 id="Reflect-deleteProperty-obj-name"><a href="#Reflect-deleteProperty-obj-name" class="headerlink" title="Reflect.deleteProperty(obj, name)"></a>Reflect.deleteProperty(obj, name)</h3><p>等同于 delete obj.name</p>
+<h3 id="Reflect-construct-target-args"><a href="#Reflect-construct-target-args" class="headerlink" title="Reflect.construct(target, args)"></a>Reflect.construct(target, args)</h3><p>等同于 new target(…args)<br>不使用new调用构造函数的方式</p>
+<h3 id="Reflect-getPrototypeOf-obj"><a href="#Reflect-getPrototypeOf-obj" class="headerlink" title="Reflect.getPrototypeOf(obj)"></a>Reflect.getPrototypeOf(obj)</h3><p>等同于 Object.getPrototypeOf(obj)<br>读取obj的<strong>proto</strong>属性</p>
+<h3 id="Reflect-setPrototypeOf-obj-newProto"><a href="#Reflect-setPrototypeOf-obj-newProto" class="headerlink" title="Reflect.setPrototypeOf(obj, newProto)"></a>Reflect.setPrototypeOf(obj, newProto)</h3><p>等同于 Object.setPrototypeOf(obj, newProto)</p>
+<h3 id="Reflect-apply-func-thisArgs-args"><a href="#Reflect-apply-func-thisArgs-args" class="headerlink" title="Reflect.apply(func, thisArgs, args)"></a>Reflect.apply(func, thisArgs, args)</h3><p>等同于 Function.prototype.apply.call(func, thisArgs, args)</p>
+<h3 id="Reflect-defineProperty-target-propertyKey-attributies"><a href="#Reflect-defineProperty-target-propertyKey-attributies" class="headerlink" title="Reflect.defineProperty(target, propertyKey, attributies)"></a>Reflect.defineProperty(target, propertyKey, attributies)</h3><p>等同于 Object.defineProperty(target, propertyKey, attiruties)</p>
+<h3 id="Reflect-getOwnPropertyDescriptor-target-propertyKey"><a href="#Reflect-getOwnPropertyDescriptor-target-propertyKey" class="headerlink" title="Reflect.getOwnPropertyDescriptor(target, propertyKey)"></a>Reflect.getOwnPropertyDescriptor(target, propertyKey)</h3><p>等同于 Object.getOwnPropertyDescriptor(target, propertyKey)</p>
+<h3 id="Reflect-isExtensible-target"><a href="#Reflect-isExtensible-target" class="headerlink" title="Reflect.isExtensible(target)"></a>Reflect.isExtensible(target)</h3><p>等同于 Object.isExtensible(target)<br>target是否可扩展，返回布尔值</p>
+<h3 id="Reflect-preventExtensible-target"><a href="#Reflect-preventExtensible-target" class="headerlink" title="Reflect.preventExtensible(target)"></a>Reflect.preventExtensible(target)</h3><p>等同于 Object.preventExtensible(target)<br>让target不可扩展</p>
+<h3 id="Reflect-ownKeys-target"><a href="#Reflect-ownKeys-target" class="headerlink" title="Reflect.ownKeys(target)"></a>Reflect.ownKeys(target)</h3><p>等同于 Object.ownKeys(target)<br>返回一个对象的所有属性<br>Object.getOwnPropertyNames + Object.getOwnPropertySymbols</p>
+]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-reflect</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES6 · Class继承</title>
+    <url>/2018/11/30/es6-learn-005/</url>
+    <content><![CDATA[<p><strong>ES6 · Class继承</strong></p>
+<a id="more"></a>
+<p>参考文档：<a href="http://es6.ruanyifeng.com/#docs/class-extends" target="_blank" rel="noopener">阮一峰 ECMAScript 6 入门 – Class的继承</a></p>
+<h3 id="extends"><a href="#extends" class="headerlink" title="extends"></a>extends</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Line</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ColorLine</span> <span class="keyword">extends</span> <span class="title">Line</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>子类必须在constructor方法中调用super方法<br>如果子类没有constructor方法，constructor会被默认添加<br>在constructor方法中，只有调用super方法后，才能使用this<br>可继承原生构造函数(String/Number/Boolean/Array/Date/Error/Regexp/Function/Object)</p>
+<h3 id="Object-getPrototypeOf-amp-amp-Reflect-getPrototypeOf"><a href="#Object-getPrototypeOf-amp-amp-Reflect-getPrototypeOf" class="headerlink" title="Object.getPrototypeOf() &amp;&amp; Reflect.getPrototypeOf()"></a>Object.getPrototypeOf() &amp;&amp; Reflect.getPrototypeOf()</h3><p>判断一个类是否继承自另一个类</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Object</span>.getPrototypeOf(ColorLine) === Line <span class="comment">//true</span></span><br><span class="line"><span class="built_in">Reflect</span>.getPrototypeOf(ColorLine) === Line <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>每个对象都有一个名为<strong>proto</strong>的属性</li>
+<li>每个构造函数都有一个名为prototype的方法</li>
+<li>每个对象的<strong>proto</strong>指向自身构造函数的prototype</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Line</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(length) &#123;</span><br><span class="line">    <span class="keyword">this</span>.length = length;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> line = <span class="keyword">new</span> Line(<span class="number">12</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(line.__proto__ === Line.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(line.__proto__.__proto__ === <span class="built_in">Object</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(line.__proto__.__proto__.__proto__ === <span class="literal">null</span>); <span class="comment">//true</span></span><br><span class="line"><span class="comment">// null &lt;= Object &lt;= Line &lt;= line</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(Line.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(Line.__proto__.__proto__ === <span class="built_in">Object</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(Line.__proto__.__proto__.__proto__ === <span class="literal">null</span>); <span class="comment">//true</span></span><br><span class="line"><span class="comment">// null &lt;= Object &lt;= Function &lt;= Line</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Function</span>.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.__proto__ === <span class="built_in">Function</span>.__proto__); <span class="comment">//true</span></span><br><span class="line"><span class="comment">// Function &lt;= Object</span></span><br><span class="line"><span class="comment">// Function &lt;= Function</span></span><br></pre></td></tr></table></figure>
+<h3 id="super"><a href="#super" class="headerlink" title="super"></a>super</h3><ul>
+<li>作为函数 <code>super()</code><br>只能在子类的constructor方法中调用<br>子类constructor方法中必须调用一次super方法</li>
+<li>用作对象<br>普通方法中，指向父类的原型对象<br>静态方法中，指向父类</li>
+</ul>
+]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-class</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES6 · Class基础</title>
+    <url>/2018/11/30/es6-learn-004/</url>
+    <content><![CDATA[<p><strong>ES6 · Class基础</strong></p>
+<a id="more"></a>
+<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> Rectangle (width, height) &#123;</span><br><span class="line">  this.width = width;</span><br><span class="line">  this.height = height;</span><br><span class="line">&#125;</span><br><span class="line">Rectangle.prototype.getArea = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  <span class="built_in">return</span> this.width * this.height;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const square = new Rectangle(4, 4);</span><br><span class="line">square.width //4</span><br><span class="line">square.height //4</span><br><span class="line">square.getArea() //16</span><br></pre></td></tr></table></figure>
+<h3 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">class Rectangle &#123;</span><br><span class="line">  constructor(width, height) &#123;</span><br><span class="line">    this.width = width;</span><br><span class="line">    this.height = height;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="title">getArea</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> this.width * this.height;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const square = new Rectangle(4, 4);</span><br><span class="line">square.width //4</span><br><span class="line">square.height //4</span><br><span class="line">square.getArea() //16</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><code>constructor</code><br>类的构造函数，实例化(new)时自动调用</p>
+</li>
+<li><p><code>static</code><br>静态方法<br>类可以调用，会被子类继承，子类也可以调用<br>不会被类的实例继承，类的实例无法调用<br>也不会被子类的实例继承，子类的实例也无法调用<br>this指向类，而不是实例</p>
+</li>
+<li><p><code>name</code><br>返回类的名称</p>
+</li>
+<li><p><code>new.target</code><br>返回实例化时调用的类<br>子类继承父类时，会返回子类</p>
+</li>
+</ul>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><ul>
+<li>类的所有方法都在原型上</li>
+<li>类内部的方法，都是不可枚举的</li>
+<li>类的属性名和方法名可以用表达式</li>
+<li>类的内部默认启用严格模式</li>
+<li>类不存在变量提升</li>
+</ul>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><blockquote>
+<p>实例的属性，除非定义在this对象上，否则都定义在原型上<br>类的所有实例共享一个原型对象</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-class</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 小结03</title>
+    <url>/2018/11/29/vim-study-003/</url>
+    <content><![CDATA[<p><strong>VIM · 小结03</strong></p>
+<a id="more"></a>
+<h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><ul>
+<li><code>expandtab</code> 是否将tab转化为空格</li>
+<li><code>shfitwidth</code> &gt;&gt;或&lt;&lt;时缩进的列数</li>
+<li><code>tabstop</code> 一个tab键所占的列数</li>
+<li><code>softtabstop</code> tab实际占的列数</li>
+<li><code>autoindent(ai)</code> 自动换行<figure class="highlight bash"><figcaption><span>.vimrc</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> autoindent</span><br><span class="line"><span class="built_in">set</span> expandtab</span><br><span class="line"><span class="built_in">set</span> shiftwidth=4</span><br><span class="line"><span class="built_in">set</span> tabstop=4</span><br><span class="line"><span class="built_in">set</span> softtabstop=4</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 对应简写</span></span><br><span class="line"><span class="built_in">set</span> ai</span><br><span class="line"><span class="built_in">set</span> et</span><br><span class="line"><span class="built_in">set</span> sw=4</span><br><span class="line"><span class="built_in">set</span> ts=4</span><br><span class="line"><span class="built_in">set</span> sts=4</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 小结02</title>
+    <url>/2018/11/28/vim-study-002/</url>
+    <content><![CDATA[<p><strong>VIM · 小结02</strong></p>
+<a id="more"></a>
+<h3 id="进入普通模式-Normal-mode"><a href="#进入普通模式-Normal-mode" class="headerlink" title="进入普通模式(Normal mode)"></a>进入普通模式(Normal mode)</h3><ul>
+<li><code>Esc</code></li>
+<li><code>CTRL + [</code></li>
+</ul>
+<h3 id="进入命令模式-Commant-line-mode"><a href="#进入命令模式-Commant-line-mode" class="headerlink" title="进入命令模式(Commant line mode)"></a>进入命令模式(Commant line mode)</h3><ul>
+<li><code>:</code></li>
+</ul>
+<h3 id="进入插入模式-Insert-mode"><a href="#进入插入模式-Insert-mode" class="headerlink" title="进入插入模式(Insert mode)"></a>进入插入模式(Insert mode)</h3><ul>
+<li><code>i</code> 在光标前插入</li>
+<li><code>I</code> 在行首插入</li>
+<li><code>a</code> 在光标后插入</li>
+<li><code>A</code> 在行尾插入</li>
+<li><code>o</code> 在下方插入一行</li>
+<li><code>O</code> 在上方插入一行</li>
+</ul>
+<h3 id="进入可视模式-Visual-mode"><a href="#进入可视模式-Visual-mode" class="headerlink" title="进入可视模式(Visual mode)"></a>进入可视模式(Visual mode)</h3><ul>
+<li><code>v</code></li>
+</ul>
+<h3 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h3><ul>
+<li><code>q</code></li>
+<li><code>ZZ</code></li>
+</ul>
+<h3 id="常用命令一览"><a href="#常用命令一览" class="headerlink" title="常用命令一览"></a>常用命令一览</h3><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>正常模式</td>
+<td><code>b</code></td>
+<td>跳转到前一个单词的开头</td>
+</tr>
+<tr>
+<td>正常模式</td>
+<td><code>ge</code></td>
+<td>跳转到前一个单词的结尾</td>
+</tr>
+<tr>
+<td>正常模式</td>
+<td><code>f&lt;字母&gt;</code></td>
+<td>向后搜索字母，并跳转到第一个匹配的位置</td>
+</tr>
+<tr>
+<td>正常模式</td>
+<td><code>F&lt;字母&gt;</code></td>
+<td>向前搜索字母，并跳转到第一个匹配的位置</td>
+</tr>
+</tbody>
+</table>
+<h3 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h3><ul>
+<li><code>yy</code></li>
+<li><code>y0</code></li>
+<li><code>y^</code></li>
+<li><code>y$</code></li>
+<li><code>yw</code></li>
+<li><code>yG</code></li>
+<li><code>y1G</code></li>
+</ul>
+<h3 id="粘贴"><a href="#粘贴" class="headerlink" title="粘贴"></a>粘贴</h3><ul>
+<li><code>p</code></li>
+<li><code>P</code></li>
+</ul>
+<h3 id="change"><a href="#change" class="headerlink" title="change"></a>change</h3><ul>
+<li>c [number] motion<h3 id="delete"><a href="#delete" class="headerlink" title="delete"></a>delete</h3></li>
+<li>d [number] motion</li>
+</ul>
+<h3 id="上下行交换"><a href="#上下行交换" class="headerlink" title="上下行交换"></a>上下行交换</h3><ul>
+<li><code>ddp</code></li>
+</ul>
+<h3 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h3><ul>
+<li><code>r</code> 替换当前光标位置</li>
+<li><code>R</code> 连续替换</li>
+<li><code>cc</code> 替换当前行</li>
+<li><code>cw</code> 替换一个单词</li>
+<li><code>C</code> 替换到行尾</li>
+<li><code>~</code> 反转大小写</li>
+<li><code>u</code> 撤销一次</li>
+<li><code>U</code> 撤销当前行的所有更改</li>
+<li><code>Ctrl + r</code> 取消撤销</li>
+<li><code>:s/old/new/g</code> 替换当前行所有的old为new</li>
+<li><code>:#,#s/old/new/g</code> 替换#行到#行的所有的old为new</li>
+<li><code>:%s/old/new/g</code> 替换整个文档所有的old为new</li>
+</ul>
+<h3 id="提取内容"><a href="#提取内容" class="headerlink" title="提取内容"></a>提取内容</h3><ul>
+<li><code>:r file</code> 提取file文件内容，插入光标所在位置</li>
+<li><code>:r !ls</code> 提取ls命令输入内容，插入光标所在位置</li>
+</ul>
+<h3 id="文本位置"><a href="#文本位置" class="headerlink" title="文本位置"></a>文本位置</h3><ul>
+<li><code>ce</code> 居中</li>
+<li><code>ri</code> 居右</li>
+<li><code>le</code> 居左</li>
+</ul>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><ul>
+<li><code>?&lt;单词&gt;</code> 向上查找word</li>
+<li><code>/&lt;单词&gt;</code> 向下查找word</li>
+<li><code>n</code> 下一个</li>
+<li><code>N</code> 上一个</li>
+<li><code>CTRL + O</code> 回到较旧的位置</li>
+<li><code>CTRL + I9j</code> 回到较新的位置</li>
+<li><code>\*</code> 向下查找光标所在单词</li>
+<li><code>\#</code> 向上查找鼠标所在单词</li>
+<li><code>%</code> 查找配对括号</li>
+</ul>
+<h3 id="多文件编辑"><a href="#多文件编辑" class="headerlink" title="多文件编辑"></a>多文件编辑</h3><ul>
+<li><code>vim 1.txt 2.txt</code> 同时打开两个文件</li>
+<li><code>:n</code> 编辑下一个文件</li>
+<li><code>:N</code> 编辑上一个文件</li>
+<li><code>:e 3.txt</code> 打开3.txt</li>
+<li><code>:e#</code> 回到前一个文件</li>
+<li><code>:ls</code> 列出已打开的文件</li>
+<li><code>:b 2.txt</code> 编辑2.txt</li>
+<li><code>:bd 2.txt</code> 删除已打开的文件列表中的2.txt</li>
+<li><code>e! 4.txt</code> 强制打开4.txt</li>
+<li><code>:f</code> 显示正在编辑的文件名</li>
+<li><code>:f 5.txt</code> 另存为5.txt</li>
+</ul>
+<h3 id="恢复文件"><a href="#恢复文件" class="headerlink" title="恢复文件"></a>恢复文件</h3><ul>
+<li><code>vim -r filename</code></li>
+</ul>
+<h3 id="可视模式"><a href="#可视模式" class="headerlink" title="可视模式"></a>可视模式</h3><ul>
+<li><code>v</code> 字符选择</li>
+<li><code>Shift + v</code> 行选择</li>
+<li><code>Ctrl + v</code> 区域选择</li>
+</ul>
+<h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><ul>
+<li><code>&gt;&gt;</code> 向右缩进</li>
+<li><code>&lt;&lt;</code> 向左缩进</li>
+</ul>
+<h3 id="视窗操作"><a href="#视窗操作" class="headerlink" title="视窗操作"></a>视窗操作</h3><ul>
+<li><code>:new</code> 水平分屏</li>
+<li><code>:sp</code> 水平分屏</li>
+<li><code>:vsp</code> 垂直分屏</li>
+<li><code>Ctrl + w s</code> 水平分屏</li>
+<li><code>Ctrl + w v</code> 垂直分屏</li>
+<li><code>Ctrl + w q</code> 关闭当前分屏</li>
+<li><code>Ctrl + w o</code> 打开新视窗，并隐藏之前的所有视窗</li>
+<li><code>Ctrl + w h</code> 切换到左侧分屏</li>
+<li><code>Ctrl + w j</code> 切换到下面分屏</li>
+<li><code>Ctrl + w k</code> 切换到上面分屏</li>
+<li><code>Ctrl + w l</code> 切换到下册分屏</li>
+<li><code>Ctrl + w H</code> 移动视窗到左侧</li>
+<li><code>Ctrl + w J</code> 移动视窗值下面</li>
+<li><code>Ctrl + w K</code> 移动视窗至上面</li>
+<li><code>Ctrl + w L</code> 移动视窗至右侧</li>
+<li><code>Ctrl + w -</code> 减小视窗高度</li>
+<li><code>Ctrl + w +</code> 增加视窗高度</li>
+</ul>
+<h3 id="文档加密"><a href="#文档加密" class="headerlink" title="文档加密"></a>文档加密</h3><ul>
+<li><code>vim -x file</code></li>
+</ul>
+<h3 id="执行shell命令"><a href="#执行shell命令" class="headerlink" title="执行shell命令"></a>执行shell命令</h3><ul>
+<li><code>:!ls</code> 暂时退出vim并执行ls命令</li>
+</ul>
+<h3 id="选择性保存"><a href="#选择性保存" class="headerlink" title="选择性保存"></a>选择性保存</h3><ul>
+<li><code>v</code> 进入可视模式</li>
+<li><code>{move cursor}</code> 移动光标选择文本</li>
+<li><code>:w</code> 保存</li>
+</ul>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><ul>
+<li><code>:set</code> 显示所有修改过的配置</li>
+<li><code>:set all</code> 显示所有的设定值</li>
+<li><code>:set option?</code> 显示option的设定值</li>
+<li><code>:set nooption</code> 取消当前设定值</li>
+<li><code>:set autoindent(ai)</code> 设置自动缩进</li>
+<li><code>:set autowrite(aw)</code> 设置自动保存，默认未打开</li>
+<li><code>:set background=dark</code> 设置背景风格</li>
+<li><code>:set backup(bk)</code> 设置自动备份，默认未打开</li>
+<li><code>:set hlsearch(hls)</code> 高亮搜索匹配项</li>
+</ul>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES6 · Module</title>
+    <url>/2018/11/26/es6-learn-003/</url>
+    <content><![CDATA[<p><strong>ES6 · Module</strong></p>
+<a id="more"></a>
+<p>CommonJS</p>
+<ul>
+<li>运行时加载，在运行到的时候才能确定依赖关系，输出的是值的缓存，不能动态更新</li>
+</ul>
+<p>ES6</p>
+<ul>
+<li>编译时加载，编译时即可确定依赖关系，效率更高，输出的是值的引用，可以做静态优化，输出会动态更新</li>
+</ul>
+<p>ES6模块自动启用严格模式，严格模式下：</p>
+<ul>
+<li>变量必须声明后再使用</li>
+<li>函数的参数不能有同名属性，否则报错</li>
+<li>不能使用with语句</li>
+<li>不能对只读属性赋值，否则报错</li>
+<li>不能使用前缀 0 表示八进制数，否则报错</li>
+<li>不能删除不可删除的属性，否则报错</li>
+<li>不能删除变量delete prop，会报错，只能删除属性delete global[prop]</li>
+<li>eval不会在它的外层作用域引入变量</li>
+<li>eval和arguments不能被重新赋值</li>
+<li>arguments不会自动反映函数参数的变化</li>
+<li>不能使用arguments.callee</li>
+<li>不能使用arguments.caller</li>
+<li>禁止this指向全局对象，顶层的this指向undefined</li>
+<li>不能使用fn.caller和fn.arguments获取函数调用的堆栈</li>
+<li>增加了保留字（比如protected、static和interface）</li>
+</ul>
+<blockquote>
+<p>export命令用于规定模块的对外接口<br>import命令用于输入其他模块提供的功能<br>as 重命名<br>default 指定默认输出<br>* 代表模块所有内容</p>
+</blockquote>
+<hr>
+<p><strong>一般用法</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123; name &#125;;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; name &#125; <span class="keyword">from</span> <span class="string">'./module'</span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>使用default指定默认输出</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> name;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> name <span class="keyword">from</span> <span class="string">'./module'</span>; <span class="comment">// name可以是任何合法变量名</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>使用 * 整体加载，使用as改名</strong><br><figure class="highlight js"><figcaption><span>module.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'module'</span>;</span><br><span class="line"><span class="keyword">let</span> version = <span class="string">'1.0.0'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123; name, version &#125;;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> <span class="built_in">module</span> <span class="keyword">from</span> <span class="string">'./module'</span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>模块继承</strong><br><figure class="highlight js"><figcaption><span>utils.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">'utils'</span>;</span><br><span class="line"><span class="keyword">export</span> &#123;name&#125;;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><figcaption><span>tools.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> * <span class="keyword">from</span> <span class="string">'./utils'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> version = <span class="string">'1.0.0'</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> tools <span class="keyword">from</span> <span class="string">'./tools'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(tools.name, tools.version);</span><br><span class="line"><span class="comment">// utils 1.0.0</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>浏览器加载ES6模块</strong><br><code>&lt;script&gt;</code>标签加入<code>type=&quot;module&quot;</code>属性表示是ES6模块<br><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"path/to/myModule.js"</span> <span class="attr">defer</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"path/to/myModule.js"</span> <span class="attr">async</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>加载方式</th>
+<th>执行时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defer</td>
+<td>异步加载</td>
+<td>渲染完再执行</td>
+</tr>
+<tr>
+<td>async</td>
+<td>异步加载</td>
+<td>下载完就执行</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"module"</span> <span class="attr">src</span>=<span class="string">"./foo.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 等同于 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"module"</span> <span class="attr">src</span>=<span class="string">"./foo.js"</span> <span class="attr">defer</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>es6-module</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SFTP · 简易教程及示例</title>
+    <url>/2018/11/23/linux-learn-002/</url>
+    <content><![CDATA[<p><strong>SFTP · 简易教程及示例</strong></p>
+<a id="more"></a>
+<ul>
+<li><p>sftp</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># sftp</span></span><br><span class="line">usage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]</span><br><span class="line">          [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l <span class="built_in">limit</span>]</span><br><span class="line">          [-o ssh_option] [-P port] [-R num_requests] [-S program]</span><br><span class="line">          [-s subsystem | sftp_server] host</span><br><span class="line">       sftp [user@]host[:file ...]</span><br><span class="line">       sftp [user@]host[:dir[/]]</span><br><span class="line">       sftp -b batchfile [user@]host</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>连接sftp</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># sftp root@host</span></span><br><span class="line">The authenticity of host <span class="string">'host (192.168.16.128)'</span> can<span class="string">'t be established.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is SHA256:t5KwBH+CBk7Emp24FI73Jr4IzVkD9VEUG9XIu86CvsE.</span></span><br><span class="line"><span class="string">ECDSA key fingerprint is MD5:3c:31:c4:06:8a:6a:a6:4d:9a:21:58:c0:bc:e1:eb:de.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)? yes</span></span><br><span class="line"><span class="string">Warning: Permanently added '</span>host,192.168.16.128<span class="string">' (ECDSA) to the list of known hosts.</span></span><br><span class="line"><span class="string">root@host'</span>s password: </span><br><span class="line">Connected to host.</span><br><span class="line">sftp&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>help</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sftp&gt; <span class="built_in">help</span></span><br><span class="line">Available commands:</span><br><span class="line"><span class="built_in">bye</span>                                Quit sftp</span><br><span class="line"><span class="built_in">cd</span> path                            Change remote directory to <span class="string">'path'</span></span><br><span class="line">chgrp grp path                     Change group of file <span class="string">'path'</span> to <span class="string">'grp'</span></span><br><span class="line">chmod mode path                    Change permissions of file <span class="string">'path'</span> to <span class="string">'mode'</span></span><br><span class="line">chown own path                     Change owner of file <span class="string">'path'</span> to <span class="string">'own'</span></span><br><span class="line">df [-hi] [path]                    Display statistics <span class="keyword">for</span> current directory or</span><br><span class="line">                                   filesystem containing <span class="string">'path'</span></span><br><span class="line"><span class="built_in">exit</span>                               Quit sftp</span><br><span class="line">get [-afPpRr] remote [<span class="built_in">local</span>]       Download file</span><br><span class="line">reget [-fPpRr] remote [<span class="built_in">local</span>]      Resume download file</span><br><span class="line">reput [-fPpRr] [<span class="built_in">local</span>] remote      Resume upload file</span><br><span class="line"><span class="built_in">help</span>                               Display this <span class="built_in">help</span> text</span><br><span class="line">lcd path                           Change <span class="built_in">local</span> directory to <span class="string">'path'</span></span><br><span class="line">lls [ls-options [path]]            Display <span class="built_in">local</span> directory listing</span><br><span class="line">lmkdir path                        Create <span class="built_in">local</span> directory</span><br><span class="line">ln [-s] oldpath newpath            Link remote file (-s <span class="keyword">for</span> symlink)</span><br><span class="line">lpwd                               Print <span class="built_in">local</span> working directory</span><br><span class="line">ls [-1afhlnrSt] [path]             Display remote directory listing</span><br><span class="line">lumask <span class="built_in">umask</span>                       Set <span class="built_in">local</span> <span class="built_in">umask</span> to <span class="string">'umask'</span></span><br><span class="line">mkdir path                         Create remote directory</span><br><span class="line">progress                           Toggle display of progress meter</span><br><span class="line">put [-afPpRr] <span class="built_in">local</span> [remote]       Upload file</span><br><span class="line"><span class="built_in">pwd</span>                                Display remote working directory</span><br><span class="line">quit                               Quit sftp</span><br><span class="line">rename oldpath newpath             Rename remote file</span><br><span class="line">rm path                            Delete remote file</span><br><span class="line">rmdir path                         Remove remote directory</span><br><span class="line">symlink oldpath newpath            Symlink remote file</span><br><span class="line">version                            Show SFTP version</span><br><span class="line">!<span class="built_in">command</span>                           Execute <span class="string">'command'</span> <span class="keyword">in</span> <span class="built_in">local</span> shell</span><br><span class="line">!                                  Escape to <span class="built_in">local</span> shell</span><br><span class="line">? 								   Synonym <span class="keyword">for</span> <span class="built_in">help</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常用命令一览  </p>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bye</code></td>
+<td>退出</td>
+</tr>
+<tr>
+<td><code>quit</code></td>
+<td>退出</td>
+</tr>
+<tr>
+<td><code>cd path</code></td>
+<td>切换远程目录</td>
+</tr>
+<tr>
+<td><code>lcd path</code></td>
+<td>切换本地目录</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>展示远程当前路径</td>
+</tr>
+<tr>
+<td><code>lpwd</code></td>
+<td>展示本地当前路径</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td>列出远程目录信息</td>
+</tr>
+<tr>
+<td><code>lls</code></td>
+<td>列出本地目录信息</td>
+</tr>
+<tr>
+<td><code>mkdir</code></td>
+<td>创建远程目录</td>
+</tr>
+<tr>
+<td><code>lmkdir</code></td>
+<td>创建本地目录</td>
+</tr>
+<tr>
+<td><code>progress</code></td>
+<td>是否展示进度</td>
+</tr>
+<tr>
+<td><code>put</code></td>
+<td>上传</td>
+</tr>
+<tr>
+<td><code>get</code></td>
+<td>下载</td>
+</tr>
+<tr>
+<td><code>df</code></td>
+<td>查看磁盘信息</td>
+</tr>
+<tr>
+<td><code>!command</code></td>
+<td>在本地shell执行命令</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>退出到本地shell</td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td>查看帮助信息</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>查看帮助信息</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</blockquote>
+<ul>
+<li>上传下载示例<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sftp&gt; <span class="built_in">pwd</span></span><br><span class="line">Remote working directory: /root</span><br><span class="line">sftp&gt; lpwd</span><br><span class="line">Local working directory: /c/Users/zhanghao30/Desktop/temp</span><br><span class="line">sftp&gt; ls</span><br><span class="line">anaconda-ks.cfg</span><br><span class="line">sftp&gt; lls</span><br><span class="line">note.txt</span><br><span class="line">sftp&gt; put note.txt</span><br><span class="line">Uploading note.txt to /root/note.txt</span><br><span class="line">note.txt                    100% 1781   175.3KB/s   00:00</span><br><span class="line">sftp&gt; get anaconda-ks.cfg</span><br><span class="line">Fetching /root/anaconda-ks.cfg to anaconda-ks.cfg</span><br><span class="line">/root/anaconda-ks.cfg       100% 1421   157.1KB/s   00:00</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>sftp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 小结01</title>
+    <url>/2018/11/23/vim-study-001/</url>
+    <content><![CDATA[<p><strong>VIM · 小结01</strong></p>
+<a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>模式</th>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开</td>
+<td>命令行</td>
+<td><code>vim</code></td>
+<td>打开VIM</td>
+</tr>
+<tr>
+<td>打开</td>
+<td>命令行</td>
+<td><code>vim [path/to/file]</code></td>
+<td>打开file文件，若不存在，则新建file并打开</td>
+</tr>
+<tr>
+<td>打开</td>
+<td>VIM正常模式</td>
+<td><code>:e [path/to/file]</code></td>
+<td>打开file文件，若不存在，则新建file并打开</td>
+</tr>
+<tr>
+<td>保存</td>
+<td>VIM正常模式</td>
+<td><code>:w</code></td>
+<td>保存</td>
+</tr>
+<tr>
+<td>保存</td>
+<td>VIM正常模式</td>
+<td><code>:w!</code></td>
+<td>强制保存</td>
+</tr>
+<tr>
+<td>保存</td>
+<td>VIM正常模式</td>
+<td><code>:w [path/to/file]</code></td>
+<td>保存到file中</td>
+</tr>
+<tr>
+<td>保存</td>
+<td>VIM正常模式</td>
+<td><code>:w! [path/to/file]</code></td>
+<td>强制保存到file中</td>
+</tr>
+<tr>
+<td>保存</td>
+<td>VIM正常模式</td>
+<td><code>:sav [path/to/file]</code></td>
+<td>另存为file</td>
+</tr>
+<tr>
+<td>退出</td>
+<td>VIM正常模式</td>
+<td><code>:q</code></td>
+<td>退出</td>
+</tr>
+<tr>
+<td>退出</td>
+<td>VIM正常模式</td>
+<td><code>:q!</code></td>
+<td>强制退出</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 基础06</title>
+    <url>/2018/11/21/vim-learn-006/</url>
+    <content><![CDATA[<p><strong>VIM · 基础06</strong></p>
+<a id="more"></a>
+<ul>
+<li><p>进入插入模式 在光标前插入<br><code>i</code></p>
+</li>
+<li><p>进入插入模式 在光标所在行首插入<br><code>I</code></p>
+</li>
+<li><p>进入插入模式 在光标后插入<br><code>a</code></p>
+</li>
+<li><p>进入插入模式 在光标所在行尾插入<br><code>A</code></p>
+</li>
+<li><p>在光标下方新建一行，并进入插入模式<br><code>o</code></p>
+</li>
+<li><p>在光标上方新建一行，并进入插入模式<br><code>O</code></p>
+</li>
+<li><p>替换模式 连续替换<br><code>R</code></p>
+</li>
+<li><p>复制<br><code>y</code></p>
+</li>
+<li><p>粘贴<br><code>p</code></p>
+</li>
+<li><p>复制粘贴</p>
+<ul>
+<li><code>v</code> 进入可视模式</li>
+<li>移动光标，选择文本</li>
+<li><code>y</code> 复制</li>
+<li><code>p</code> 粘贴</li>
+</ul>
+</li>
+<li><p>窗口切换<br><code>CTRL + W; CTRL + W</code></p>
+</li>
+<li><p>自动补全<br><code>CTRL + D</code><br><code>TAB</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 基础05</title>
+    <url>/2018/11/21/vim-learn-005/</url>
+    <content><![CDATA[<p><strong>VIM · 基础05</strong></p>
+<a id="more"></a>
+<ul>
+<li><p>执行外部命令<br><code>:!ls</code></p>
+</li>
+<li><p>保存到文件中<br><code>:w [filename]</code></p>
+</li>
+<li><p>选择性保存</p>
+<ul>
+<li><code>v</code> 进入可视模式</li>
+<li>选择文本</li>
+<li><code>:w</code> 保存</li>
+</ul>
+</li>
+<li><p>提取内容<br><code>:r [filename]</code><br><code>:r !tree</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 基础04</title>
+    <url>/2018/11/20/vim-learn-004/</url>
+    <content><![CDATA[<p><strong>VIM · 基础04</strong></p>
+<a id="more"></a>
+<ul>
+<li><p>显示光标位置和文件状态<br><code>CTRL + g</code></p>
+</li>
+<li><p>跳转 到最后一行<br><code>G</code></p>
+</li>
+<li><p>跳转 到第一行<br><code>gg</code></p>
+</li>
+<li><p>跳转 到指定行<br><code>[number] G</code></p>
+</li>
+<li><p>向下查找<br><code>/word</code></p>
+</li>
+<li><p>向上查找<br><code>?word</code></p>
+</li>
+<li><p>查找下一个<br><code>n</code></p>
+</li>
+<li><p>查找上一个<br><code>N</code></p>
+</li>
+<li><p>回到上一个匹配项<br><code>CTRL + o</code></p>
+</li>
+<li><p>回到下一个匹配项<br><code>CTRL + i</code></p>
+</li>
+<li><p>查找匹配的括号 () [] {}<br><code>%</code></p>
+</li>
+<li><p>替换 光标所在行第一个匹配项<br><code>:s/old/new</code></p>
+</li>
+<li><p>替换 光标所在行所有匹配项<br><code>:s/old/new/g</code></p>
+</li>
+<li><p>替换 指定行的匹配项<br><code>:#,#s/old/new/g</code>  #,#分别代表起始行和结束行</p>
+</li>
+<li><p>替换 文件中所有匹配项<br><code>:%s/old/new/g</code></p>
+</li>
+<li><p>替换 替换时询问<br><code>:s/old/new/gc</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 基础03</title>
+    <url>/2018/11/19/vim-learn-003/</url>
+    <content><![CDATA[<p><strong>VIM · 基础03</strong></p>
+<a id="more"></a>
+<ul>
+<li><p>粘贴 寄存器内的文本<br><code>p</code></p>
+</li>
+<li><p>替换 光标所在位置的一个字符<br><code>r</code></p>
+</li>
+<li><p>更改<br><code>c [number] motion</code></p>
+</li>
+<li><p>更改 从光标到词尾<br><code>ce</code></p>
+</li>
+<li><p>更改 从光标到下一个单词的起始<br><code>cw</code></p>
+</li>
+<li><p>更改 从光标到行尾<br><code>c$</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 基础02</title>
+    <url>/2018/11/16/vim-learn-002/</url>
+    <content><![CDATA[<p><strong>VIM · 基础02</strong></p>
+<a id="more"></a>
+<ul>
+<li><p>删除（光标所在字符）<br><code>x</code></p>
+</li>
+<li><p>删除（光标所在前一个字符）<br><code>X</code></p>
+</li>
+<li><p>删除<br><code>d [number] motion</code></p>
+</li>
+<li><p>删除 从光标到单词的末尾<br><code>de</code></p>
+</li>
+<li><p>删除 从光标到下一个单词的开始<br><code>dw</code></p>
+</li>
+<li><p>删除 从光标到行尾<br><code>d$</code><br><code>D</code></p>
+</li>
+<li><p>删除 从光标到行首<br><code>d^</code></p>
+</li>
+<li><p>删除 整行<br><code>dd</code></p>
+</li>
+<li><p>删除 从当前行到文档结尾处<br><code>dG</code></p>
+</li>
+<li><p>删除 从当前行到文档开始处<br><code>d1G</code></p>
+</li>
+<li><p>光标移动到下一个单词的开头<br><code>w</code></p>
+</li>
+<li><p>光标移动到单词的末尾，如果已经在单词的末尾或空格处，则移动到下一个单词的末尾。<br><code>e</code></p>
+</li>
+<li><p>光标移动到行首<br><code>0</code><br><code>^</code></p>
+</li>
+<li><p>光标移动到行尾<br><code>$</code></p>
+</li>
+<li><p>撤销一步<br><code>u</code></p>
+</li>
+<li><p>撤销一行<br><code>U</code></p>
+</li>
+<li><p>取消撤销<br><code>CTRL + R</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM · 基础01</title>
+    <url>/2018/11/16/vim-learn-001/</url>
+    <content><![CDATA[<p><strong>VIM · 基础01</strong></p>
+<a id="more"></a>
+<ul>
+<li><p>移动光标</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    k上</span><br><span class="line">h左     l右</span><br><span class="line">    j下</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开/创建<br><code>vim filename</code><br><code>:e path/to/file</code></p>
+</li>
+<li><p>退出（不保存）<br><code>q</code></p>
+</li>
+<li><p>强制退出（不保存）<br><code>q!</code></p>
+</li>
+<li><p>保存<br><code>w</code></p>
+</li>
+<li><p>保存并退出<br><code>wq</code></p>
+</li>
+<li><p>强制保存并退出<br><code>wq!</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim-tutor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git · 简易教程</title>
+    <url>/2018/11/15/git-learn-001/</url>
+    <content><![CDATA[<p><strong>1. clone</strong><br><strong>2. branch</strong><br><strong>3. checkout</strong><br><strong>4. status</strong><br><strong>5. add</strong><br><strong>6. commit</strong><br><strong>7. push</strong><br><strong>8. 示例</strong></p>
+<a id="more"></a>
+<h3 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h3><ul>
+<li>克隆远程仓库到本地<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> ssh://git@git.moyuqingpen.com.cn:7999/~zhanghao/playground.git</span><br><span class="line">Cloning into <span class="string">'playground'</span>...</span><br><span class="line">remote: 对象计数中: 155, 完成.</span><br><span class="line">remote: 压缩对象中: 100% (133/133), 完成.</span><br><span class="line">remote: Total 155 (delta 52), reused 0 (delta 0)</span><br><span class="line">Receiving objects: 100% (155/155), 392.57 KiB | 1.86 MiB/s, <span class="keyword">done</span>.</span><br><span class="line">Resolving deltas: 100% (52/52), <span class="keyword">done</span>.</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="branch"><a href="#branch" class="headerlink" title="branch"></a>branch</h3><ul>
+<li><p>查看分支</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建分支</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch develop</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="checkout"><a href="#checkout" class="headerlink" title="checkout"></a>checkout</h3><ul>
+<li>检出分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout develop</span><br><span class="line">Switched to branch <span class="string">'develop'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="status"><a href="#status" class="headerlink" title="status"></a>status</h3><ul>
+<li>显示工作目录和暂存区状态<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch develop</span><br><span class="line">Untracked files:</span><br><span class="line">  (use <span class="string">"git add &lt;file&gt;..."</span> to include <span class="keyword">in</span> what will be committed)</span><br><span class="line">        readme.md</span><br><span class="line">nothing added to commit but untracked files present (use <span class="string">"git add"</span> to track)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="add"><a href="#add" class="headerlink" title="add"></a>add</h3><ul>
+<li>添加到暂存区<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">warning: LF will be replaced by CRLF <span class="keyword">in</span> readme.md.</span><br><span class="line">The file will have its original line endings <span class="keyword">in</span> your working directory</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="commit"><a href="#commit" class="headerlink" title="commit"></a>commit</h3><ul>
+<li>提交变动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit . -m <span class="string">"add readme"</span></span><br><span class="line">warning: LF will be replaced by CRLF <span class="keyword">in</span> readme.md.</span><br><span class="line">The file will have its original line endings <span class="keyword">in</span> your working directory</span><br><span class="line">[develop dbe505a] add readme</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 readme.md</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="push"><a href="#push" class="headerlink" title="push"></a>push</h3><ul>
+<li>推送到远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push</span><br><span class="line">Enumerating objects: 5, <span class="keyword">done</span>.</span><br><span class="line">Counting objects: 100% (5/5), <span class="keyword">done</span>.</span><br><span class="line">Delta compression using up to 8 threads</span><br><span class="line">Compressing objects: 100% (2/2), <span class="keyword">done</span>.</span><br><span class="line">Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, <span class="keyword">done</span>.</span><br><span class="line">Total 3 (delta 1), reused 0 (delta 0)</span><br><span class="line">remote:</span><br><span class="line">remote: Create pull request <span class="keyword">for</span> develop:</span><br><span class="line">remote:   https://git.moyuqingpen.com.cn/users/zhanghao/repos/playground/compare/commits?sourceBranch=refs/heads/develop</span><br><span class="line">remote:</span><br><span class="line">To ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git</span><br><span class="line">   dbe505a..dcf6cc8  develop -&gt; develop</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><ul>
+<li><p>克隆-修改-提交</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">$ git <span class="built_in">clone</span> ssh://git.moyuqingpen.com.cn:7999/~zhanghao/playground.git</span><br><span class="line"><span class="comment"># do some change here ...</span></span><br><span class="line"><span class="comment"># 添加到索引</span></span><br><span class="line">$ git add .</span><br><span class="line"><span class="comment"># 记录变动</span></span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line"><span class="comment"># 推送到远程分支</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新建本地develop分支，并提交到远程</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch develop</span><br><span class="line">$ git branch --<span class="built_in">set</span>-upstream-to=/origin/develop</span><br><span class="line">$ git pull</span><br><span class="line"><span class="comment"># do some change here</span></span><br><span class="line">$ git add .</span><br><span class="line">$ git commit . -m <span class="string">"tips"</span></span><br><span class="line">$ git push</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除远程develop分支</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git branch -d -r origin/develop</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>注：以上只是 <code>git</code> 命令行的简单教程，具体的用法请参考 <code>git &lt;command&gt; --help</code>，或<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">git book</a></p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客计划 · 2018年</title>
+    <url>/2018/11/13/plan-blog-2018/</url>
+    <content><![CDATA[<p><strong>博客计划 · 2018年</strong></p>
+<a id="more"></a>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> <code>git</code> 命令行简易教程</li>
+<li style="list-style: none"><input type="checkbox"> <code>eslint</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>es6 Proxy</code></li>
+<li style="list-style: none"><input type="checkbox" checked> <code>es6 Reflect</code></li>
+<li style="list-style: none"><input type="checkbox" checked> <code>es6 Module</code></li>
+<li style="list-style: none"><input type="checkbox" checked> <code>es6 Class</code></li>
+<li style="list-style: none"><input type="checkbox"> 基于 <code>nodejs</code> 的爬虫</li>
+<li style="list-style: none"><input type="checkbox" checked> <code>css flex</code></li>
+<li style="list-style: none"><input type="checkbox" checked> <code>vim</code></li>
+<li style="list-style: none"><input type="checkbox" checked> <code>sftp</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>webpack</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>nginx</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>shell</code>编程</li>
+<li style="list-style: none"><input type="checkbox"> <code>c</code></li>
+<li style="list-style: none"><input type="checkbox"> <code>python</code></li>
+<li style="list-style: none"><input type="checkbox"> 数据结构与算法</li>
+</ul>
+]]></content>
       <categories>
         <category>plan</category>
       </categories>
@@ -262,9 +1277,42 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vue · 生命周期]]></title>
-    <url>%2F2018%2F11%2F09%2Fvue-learn-001%2F</url>
-    <content type="text"><![CDATA[1. beforeCreate2. created3. beforeMount4. mounted5. beforeUpdate6. updated7. beforeDestroy8. destroyed9. 示例 Vue生命周期图示 1. beforeCreate 在实例初始化之后，数据观测(data observer)和event/watcher事件配置之前被调用 2. created 在实例创建完成之后被立即调用在这一步，已完成一下的配置： 数据观测(data observer) 属性和方法的运算 watch/event事件回调挂载阶段还未开始，$el属性目前不可用 3. beforeMount 在挂载开始之前被调用该钩子在服务端渲染期间不被调用 4. mounted el被新创建的vm.$el替换，并挂载到实例上去之后调用该钩子mounted时，子组件未必已经被挂载若需要整个视图渲染完毕再执行，需要用vm.$nextTick()该钩子在服务端渲染期间不被调用 5. beforeUpdate 数据更新时调用，发生在虚拟 DOM 打补丁之前。这里适合在更新之前访问现有的 DOM，比如手动移除已添加的事件监听器。该钩子在服务器端渲染期间不被调用，因为只有初次渲染会在服务端进行。 6. updated 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态。如果要相应状态改变，通常最好使用计算属性或 watcher 取而代之。注意 updated 不会承诺所有的子组件也都一起被重绘。如果你希望等到整个视图都重绘完毕，可以用 vm.$nextTick该钩子在服务器端渲染期间不被调用。 7. beforeDestroy 实例销毁之前调用。在这一步，实例仍然完全可用。该钩子在服务器端渲染期间不被调用。 8. destroyed Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。该钩子在服务器端渲染期间不被调用。 9. 示例app.vue12345678910111213141516171819202122232425262728293031323334353637383940414243&lt;template&gt; &lt;div id=&quot;app&quot;&gt;hello, vue.&lt;/div&gt;&lt;/template&gt;&lt;script&gt;export default &#123; data() &#123; return &#123; time: new Date().getTime() &#125;; &#125;, beforeCreate() &#123; console.log(&apos;beforeCreate&apos;, new Date().getTime() - this.time); &#125;, created() &#123; console.log(&apos;created&apos;, new Date().getTime() - this.time); &#125;, beforeMount() &#123; console.log(&apos;beforeMount&apos;, new Date().getTime() - this.time); &#125;, mounted() &#123; console.log(&apos;mounted&apos;, new Date().getTime() - this.time); setTimeout(() =&gt; &#123; this.$forceUpdate(); &#125;, 1000); setTimeout(() =&gt; &#123; this.$destroy(); &#125;, 2000); &#125;, beforeUpdate() &#123; console.log(&apos;beforeUpdate&apos;, new Date().getTime() - this.time); &#125;, updated() &#123; console.log(&apos;updated&apos;, new Date().getTime() - this.time); &#125;, beforeDestroy() &#123; console.log(&apos;beforeDestroyed&apos;, new Date().getTime() - this.time); &#125;, destroyed() &#123; console.log(&apos;destroyed&apos;, new Date().getTime() - this.time); &#125;&#125;;&lt;/script&gt; 输出结果12345678beforeCreate NaN # 这里输出NaN是因为beforeCreate时，this.time取不到值created 0beforeMount 0mounted 3beforeUpdate 1005updated 1006beforeDestroyed 2004destroyed 2005 参考文档：Vue 官网 API]]></content>
+    <title>Vue · 生命周期</title>
+    <url>/2018/11/09/vue-learn-001/</url>
+    <content><![CDATA[<p><strong>1. beforeCreate</strong><br><strong>2. created</strong><br><strong>3. beforeMount</strong><br><strong>4. mounted</strong><br><strong>5. beforeUpdate</strong><br><strong>6. updated</strong><br><strong>7. beforeDestroy</strong><br><strong>8. destroyed</strong><br><strong>9. 示例</strong></p>
+<a id="more"></a>
+<blockquote>
+<p>Vue生命周期图示</p>
+</blockquote>
+<p><img src="/images/vue-lifeCircle.png" alt="vue-lifeCircle"></p>
+<h3 id="1-beforeCreate"><a href="#1-beforeCreate" class="headerlink" title="1. beforeCreate"></a>1. beforeCreate</h3><blockquote>
+<p>在实例初始化之后，数据观测(data observer)和event/watcher事件配置之前被调用</p>
+</blockquote>
+<h3 id="2-created"><a href="#2-created" class="headerlink" title="2. created"></a>2. created</h3><blockquote>
+<p>在实例创建完成之后被立即调用<br>在这一步，已完成一下的配置：<br>  数据观测(data observer)<br>  属性和方法的运算<br>  watch/event事件回调<br>挂载阶段还未开始，$el属性目前不可用</p>
+</blockquote>
+<h3 id="3-beforeMount"><a href="#3-beforeMount" class="headerlink" title="3. beforeMount"></a>3. beforeMount</h3><blockquote>
+<p>在挂载开始之前被调用<br>该钩子在服务端渲染期间不被调用</p>
+</blockquote>
+<h3 id="4-mounted"><a href="#4-mounted" class="headerlink" title="4. mounted"></a>4. mounted</h3><blockquote>
+<p>el被新创建的vm.$el替换，并挂载到实例上去之后调用该钩子<br>mounted时，子组件未必已经被挂载<br>若需要整个视图渲染完毕再执行，需要用vm.$nextTick()<br>该钩子在服务端渲染期间不被调用</p>
+</blockquote>
+<h3 id="5-beforeUpdate"><a href="#5-beforeUpdate" class="headerlink" title="5. beforeUpdate"></a>5. beforeUpdate</h3><blockquote>
+<p>数据更新时调用，发生在虚拟 DOM 打补丁之前。这里适合在更新之前访问现有的 DOM，比如手动移除已添加的事件监听器。<br>该钩子在服务器端渲染期间不被调用，因为只有初次渲染会在服务端进行。</p>
+</blockquote>
+<h3 id="6-updated"><a href="#6-updated" class="headerlink" title="6. updated"></a>6. updated</h3><blockquote>
+<p>由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子<br>当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态。如果要相应状态改变，通常最好使用计算属性或 watcher 取而代之。<br>注意 updated 不会承诺所有的子组件也都一起被重绘。如果你希望等到整个视图都重绘完毕，可以用 vm.$nextTick<br>该钩子在服务器端渲染期间不被调用。</p>
+</blockquote>
+<h3 id="7-beforeDestroy"><a href="#7-beforeDestroy" class="headerlink" title="7. beforeDestroy"></a>7. beforeDestroy</h3><blockquote>
+<p>实例销毁之前调用。在这一步，实例仍然完全可用。<br>该钩子在服务器端渲染期间不被调用。</p>
+</blockquote>
+<h3 id="8-destroyed"><a href="#8-destroyed" class="headerlink" title="8. destroyed"></a>8. destroyed</h3><blockquote>
+<p>Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。<br>该钩子在服务器端渲染期间不被调用。</p>
+</blockquote>
+<h3 id="9-示例"><a href="#9-示例" class="headerlink" title="9. 示例"></a>9. 示例</h3><figure class="highlight plain"><figcaption><span>app.vue</span></figcaption><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id=&quot;app&quot;&gt;hello, vue.&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      time: new Date().getTime()</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  beforeCreate() &#123;</span><br><span class="line">    console.log(&apos;beforeCreate&apos;, new Date().getTime() - this.time);</span><br><span class="line">  &#125;,</span><br><span class="line">  created() &#123;</span><br><span class="line">    console.log(&apos;created&apos;, new Date().getTime() - this.time);</span><br><span class="line">  &#125;,</span><br><span class="line">  beforeMount() &#123;</span><br><span class="line">    console.log(&apos;beforeMount&apos;, new Date().getTime() - this.time);</span><br><span class="line">  &#125;,</span><br><span class="line">  mounted() &#123;</span><br><span class="line">    console.log(&apos;mounted&apos;, new Date().getTime() - this.time);</span><br><span class="line">    setTimeout(() =&gt; &#123;</span><br><span class="line">      this.$forceUpdate();</span><br><span class="line">    &#125;, 1000);</span><br><span class="line">    setTimeout(() =&gt; &#123;</span><br><span class="line">      this.$destroy();</span><br><span class="line">    &#125;, 2000);</span><br><span class="line">  &#125;,</span><br><span class="line">  beforeUpdate() &#123;</span><br><span class="line">    console.log(&apos;beforeUpdate&apos;, new Date().getTime() - this.time);</span><br><span class="line">  &#125;,</span><br><span class="line">  updated() &#123;</span><br><span class="line">    console.log(&apos;updated&apos;, new Date().getTime() - this.time);</span><br><span class="line">  &#125;,</span><br><span class="line">  beforeDestroy() &#123;</span><br><span class="line">    console.log(&apos;beforeDestroyed&apos;, new Date().getTime() - this.time);</span><br><span class="line">  &#125;,</span><br><span class="line">  destroyed() &#123;</span><br><span class="line">    console.log(&apos;destroyed&apos;, new Date().getTime() - this.time);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption><span>输出结果</span></figcaption><table><tr><td class="code"><pre><span class="line">beforeCreate NaN <span class="comment"># 这里输出NaN是因为beforeCreate时，this.time取不到值</span></span><br><span class="line">created 0</span><br><span class="line">beforeMount 0</span><br><span class="line">mounted 3</span><br><span class="line">beforeUpdate 1005</span><br><span class="line">updated 1006</span><br><span class="line">beforeDestroyed 2004</span><br><span class="line">destroyed 2005</span><br></pre></td></tr></table></figure>
+<p>参考文档：<a href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90" target="_blank" rel="noopener">Vue 官网 API</a></p>
+]]></content>
       <categories>
         <category>vue</category>
       </categories>
@@ -273,9 +1321,27 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[ES6 · async/await]]></title>
-    <url>%2F2018%2F11%2F09%2Fes6-learn-002%2F</url>
-    <content type="text"><![CDATA[async 是 Generator 函数的语法糖，用于异步编程async 返回 Promise 对象，可以链式添加回调函数await 代表后面跟着的可能是异步操作，要等待异步操作结束，再接着执行如果不是异步操作，会立即返回对应值 例如：现在有一个商品的 goodsId，要获取商品对应店铺的所有宝贝。 1.先通过 goodsId 查询 shopId 2.然后通过 shopId 查询 GoodsList 12345async function getGoodsList(goodsId) &#123; const shopId = await getShopIdByGoodsId(goodsId) const goodsList = await getAllGoodsByShopId(shopId) return goodsList&#125; async 函数 return 返回的值，将会是第一个回调函数的参数 例如：获取店铺的所有宝贝之后，按照价格进行排序1234getGoodsList() .then(list =&gt; &#123; sortByPrice(list) &#125;) async 函数内部出错时，如果内部异步方法没有错误处理，则 Promise 的状态会变为 rejected，该错误会被第一个 catch 回调函数接收。 例如：获取 shopId 出错了，如果 getShopIdByGoodsId 内部有部署 catch 方法，错误会被自己捕获，如果没有部署，错误会被 async 的回调捕获。123getGoodsList() .then(f1) .catch(error =&gt; console.error(error))]]></content>
+    <title>ES6 · async/await</title>
+    <url>/2018/11/09/es6-learn-002/</url>
+    <content><![CDATA[<blockquote>
+<p><code>async</code> 是 <code>Generator</code> 函数的语法糖，用于异步编程<br><code>async</code> 返回 <code>Promise</code> 对象，可以链式添加回调函数<br><code>await</code> 代表后面跟着的可能是异步操作，要等待异步操作结束，再接着执行如果不是异步操作，会立即返回对应值</p>
+</blockquote>
+<a id="more"></a>
+<p>例如：现在有一个商品的 <code>goodsId</code>，要获取商品对应店铺的所有宝贝。</p>
+<ul>
+<li>1.先通过 <code>goodsId</code> 查询 <code>shopId</code></li>
+<li>2.然后通过 <code>shopId</code> 查询 <code>GoodsList</code></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getGoodsList</span>(<span class="params">goodsId</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> shopId = <span class="keyword">await</span> getShopIdByGoodsId(goodsId)</span><br><span class="line">  <span class="keyword">const</span> goodsList = <span class="keyword">await</span> getAllGoodsByShopId(shopId)</span><br><span class="line">  <span class="keyword">return</span> goodsList</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>async</code> 函数 <code>return</code> 返回的值，将会是第一个回调函数的参数</p>
+</blockquote>
+<p>例如：获取店铺的所有宝贝之后，按照价格进行排序<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">getGoodsList()</span><br><span class="line">  .then(<span class="function"><span class="params">list</span> =&gt;</span> &#123;</span><br><span class="line">    sortByPrice(list)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p><code>async</code> 函数内部出错时，如果内部异步方法没有错误处理，则 <code>Promise</code> 的状态会变为 <code>rejected</code>，该错误会被第一个 <code>catch</code> 回调函数接收。</p>
+</blockquote>
+<p>例如：获取 <code>shopId</code> 出错了，如果 <code>getShopIdByGoodsId</code> 内部有部署 <code>catch</code> 方法，错误会被自己捕获，如果没有部署，错误会被 <code>async</code> 的回调捕获。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">getGoodsList()</span><br><span class="line">  .then(f1)</span><br><span class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> <span class="built_in">console</span>.error(error))</span><br></pre></td></tr></table></figure></p>
+]]></content>
       <categories>
         <category>es6</category>
       </categories>
@@ -284,9 +1350,33 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[ES6 · Promise]]></title>
-    <url>%2F2018%2F11%2F07%2Fes6-learn-001%2F</url>
-    <content type="text"><![CDATA[1. 理解Promise2. new Promise()3. Promise.resolve()4. Promise.reject()5. Promise.prototype.then()6. Promise.prototype.catch()7. Promise.prototype.finally()8. Promise.prototype.done()9. Promise.all()10. Promise.race() 异步编程的传统解决方案是回调函数和事件，在复杂的逻辑中，很容易出现多层回调函数嵌套(Callback Hell)Promise 是一种新的解决方案，帮助开发者摆脱多层回调函数嵌套问题 理解PromisePromise即承诺，即答应未来会做某件事。在未来某个时间，这个承诺可能会实现，也可能会被拒绝。例如：A承诺(promise)B，十年后娶B。在这十年里，这个承诺的状态是进行中(状态为pending)。十年后，如果A娶B，这个承诺就实现(状态变为resolved)了。如果A不娶B，这个承诺就被拒绝(转态变为rejected)了。 123456789const promise = new Promise((resolve, reject) =&gt; &#123; setTimeout(() =&gt; &#123; if (AMarryB) &#123; resolve() &#125; else &#123; reject() &#125; &#125;, tenYear)&#125;) B说：十年后如果A娶B(承诺resolved)，B就给A生猴子；如果A不娶B(承诺rejected)，B就给嫁给C；但无论如何(finally)，B都爱着A。 12345678910promise.then(() =&gt; &#123; // 十年后，A娶了B BMakeMonkeyWithA()&#125;).catch(() =&gt; &#123; // 十年后，A不娶B BMarryC()&#125;).finally(() =&gt; &#123; // 无论如何 BStillLoveA()&#125;) Promise的状态一旦发生变化，就不会再变。Promise的状态只能变化一次，而且只能是下面两种之一：pending =&gt; resolved，即承诺达成pending =&gt; rejected，即承诺未达成 new Promise()创建一个Promise实例 123const promise = new Promise((resolve, reject) =&gt; &#123; &#125;) Promise.resolve()把Promise实例的状态由pending转化为resolved，可以传参也可以把普通对象转化为Promise对象，并立即转化为resolved状态1234const promise = new Promise((resolve, reject) =&gt; &#123; // some async code here resolve(param1)&#125;) Promise.reject()把Promise实例的状态由pending转化为rejected，可以传参也可以把普通对象转化为Promise对象，并立即转化为rejected状态1234const promise = new Promise((resolve, reject) =&gt; &#123; // some async code here reject(param2)&#125;) Promise.prototype.then()Promise实例的回调函数，Promise实例的状态发生变化时调用。有两个参数：第一个参数是状态变为resolved的回调，接收resolve()传递的参数；第二个是状态变为rejected的回调，接收reject()传递的参数；第二个参数是可选的。 1234567promise.then((param1) =&gt; &#123; // resolve()的回调 // do some thing here&#125;, (param2) =&gt; &#123; // reject()的回调 // do some thing here&#125;) Promise.prototype.catch()Promise实例状态变为rejected的回调，.then(null, rejectCallBack)的别名，接收reject()传递的参数。 1234promise.catch(param2 =&gt; &#123; // reject()的回调 // some code here&#125;) Promise.prototype.finally()只要状态发生变化，就会执行有一个回调参数，处于链式的末端ES2018引入标准1234567promise .then() .catch() .finally(() =&gt; &#123; // 不接收任何参数 // some code here &#125;) Promise.prototype.done()捕捉可能出现的错误，并向全局抛出处于链式的末端可以有回调参数，也可以没有1234promise .then() .catch() .done() Promise.all()将多个Promise实例包装成一个新的Promise实例接收一个数组作为参数数组的元素都是Promise实例所有参数Promise实例状态都变化为resolved，该实例的状态才会变为resolved，所有参数Promise实例都可以向该实例传参，这些参数会被包装成一个数组，传给改实例有一个参数Promise实例的状态变为rejected，该实例的状态立即变为rejected，率先发生状态变化的参数Promise实例，可以把参数传给该实例例如：猴王承诺花十年时间同时和三千妃嫔生猴子，十年后，最聪明的小公猴立为太子，最漂亮的小母猴立为公主，但是如果发现有的小猴子不像猴王，承诺作废。1234567891011121314151617const promise = Promise.all([ makeMonkeyWith1, makeMonkeyWith2, ...])promise .then(monkeys =&gt; &#123; // monkeys是所有小猴子的数组 monkeys.map(monkey =&gt; &#123; if(isMale(monkey) &amp;&amp; isMostClever(monkey)) &#123; bePrince(monkey) &#125; else if (isFemale(monkey) &amp;&amp; isMostBeautiful(monkey)) &#123; bePrincess(monkey) &#125; else &#123; beGone(monkey) &#125; &#125;) &#125;) .catch(error =&gt; &#123; monkeyKingHadGreenHats() &#125;) Promise.race()将多个Promise实例包装成一个新的Promise实例接收一个数组作为参数数组的元素都是Promise实例任何一个参数Promise实例状态发生变化，都会改变该实例的状态率先发生状态变化的参数Promise实例，可以把参数传给该实例例如：猴王承诺同时和三千妃嫔生猴子，第一个出生的如果是公猴立为太子，如果是母猴立为公主。123456789101112131415const promise = Promise.race([ makeMonkeyWith1InTenYear, makeMonkeyWith2InTenYear, ...])promise .then(monkey =&gt; &#123; // monkey是第一个出生的小猴子 if(isMale(monkey)) &#123; bePrince(monkey) &#125; else if (isFemale(monkey)) &#123; bePrincess(monkey) &#125; else &#123; beGone(monkey) &#125; &#125;) .catch(error =&gt; &#123; neverBelieveInLove() &#125;)]]></content>
+    <title>ES6 · Promise</title>
+    <url>/2018/11/07/es6-learn-001/</url>
+    <content><![CDATA[<p><strong>1. 理解Promise</strong><br><strong>2. new Promise()</strong><br><strong>3. Promise.resolve()</strong><br><strong>4. Promise.reject()</strong><br><strong>5. Promise.prototype.then()</strong><br><strong>6. Promise.prototype.catch()</strong><br><strong>7. Promise.prototype.finally()</strong><br><strong>8. Promise.prototype.done()</strong><br><strong>9. Promise.all()</strong><br><strong>10. Promise.race()</strong></p>
+<a id="more"></a>
+<blockquote>
+<p>异步编程的传统解决方案是回调函数和事件，在复杂的逻辑中，很容易出现多层回调函数嵌套(<code>Callback Hell</code>)<br>Promise 是一种新的解决方案，帮助开发者摆脱多层回调函数嵌套问题</p>
+</blockquote>
+<h3 id="理解Promise"><a href="#理解Promise" class="headerlink" title="理解Promise"></a>理解Promise</h3><p>Promise即承诺，即答应未来会做某件事。在未来某个时间，这个承诺可能会实现，也可能会被拒绝。<br>例如：A承诺(promise)B，十年后娶B。在这十年里，这个承诺的状态是进行中(状态为pending)。十年后，如果A娶B，这个承诺就实现(状态变为resolved)了。如果A不娶B，这个承诺就被拒绝(转态变为rejected)了。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (AMarryB) &#123;</span><br><span class="line">      resolve()</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      reject()</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, tenYear)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>B说：十年后如果A娶B(承诺resolved)，B就给A生猴子；如果A不娶B(承诺rejected)，B就给嫁给C；但无论如何(finally)，B都爱着A。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">promise.then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 十年后，A娶了B</span></span><br><span class="line">  BMakeMonkeyWithA()</span><br><span class="line">&#125;).catch(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 十年后，A不娶B</span></span><br><span class="line">  BMarryC()</span><br><span class="line">&#125;).finally(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 无论如何</span></span><br><span class="line">  BStillLoveA()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>Promise</code>的状态一旦发生变化，就不会再变。<br><code>Promise</code>的状态只能变化一次，而且只能是下面两种之一：<br><code>pending</code> =&gt; <code>resolved</code>，即承诺达成<br><code>pending</code> =&gt; <code>rejected</code>，即承诺未达成</p>
+</blockquote>
+<h3 id="new-Promise"><a href="#new-Promise" class="headerlink" title="new Promise()"></a>new Promise()</h3><p>创建一个<code>Promise</code>实例</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="Promise-resolve"><a href="#Promise-resolve" class="headerlink" title="Promise.resolve()"></a>Promise.resolve()</h3><p>把<code>Promise</code>实例的状态由<code>pending</code>转化为<code>resolved</code>，可以传参<br>也可以把普通对象转化为<code>Promise</code>对象，并立即转化为<code>resolved</code>状态<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// some async code here</span></span><br><span class="line">  resolve(param1)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="Promise-reject"><a href="#Promise-reject" class="headerlink" title="Promise.reject()"></a>Promise.reject()</h3><p>把<code>Promise</code>实例的状态由<code>pending</code>转化为<code>rejected</code>，可以传参<br>也可以把普通对象转化为<code>Promise</code>对象，并立即转化为<code>rejected</code>状态<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// some async code here</span></span><br><span class="line">  reject(param2)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="Promise-prototype-then"><a href="#Promise-prototype-then" class="headerlink" title="Promise.prototype.then()"></a>Promise.prototype.then()</h3><p><code>Promise</code>实例的回调函数，<code>Promise</code>实例的状态发生变化时调用。<br>有两个参数：<br>第一个参数是状态变为<code>resolved</code>的回调，接收<code>resolve()</code>传递的参数；<br>第二个是状态变为<code>rejected</code>的回调，接收<code>reject()</code>传递的参数；<br>第二个参数是可选的。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">promise.then(<span class="function">(<span class="params">param1</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// resolve()的回调</span></span><br><span class="line">  <span class="comment">// do some thing here</span></span><br><span class="line">&#125;, (param2) =&gt; &#123;</span><br><span class="line">  <span class="comment">// reject()的回调</span></span><br><span class="line">  <span class="comment">// do some thing here</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="Promise-prototype-catch"><a href="#Promise-prototype-catch" class="headerlink" title="Promise.prototype.catch()"></a>Promise.prototype.catch()</h3><p><code>Promise</code>实例状态变为<code>rejected</code>的回调，<br><code>.then(null, rejectCallBack)</code>的别名，<br>接收<code>reject()</code>传递的参数。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">promise.catch(<span class="function"><span class="params">param2</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// reject()的回调</span></span><br><span class="line">  <span class="comment">// some code here</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="Promise-prototype-finally"><a href="#Promise-prototype-finally" class="headerlink" title="Promise.prototype.finally()"></a>Promise.prototype.finally()</h3><p>只要状态发生变化，就会执行<br>有一个回调参数，处于链式的末端<br>ES2018引入标准<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">promise</span><br><span class="line">  .then()</span><br><span class="line">  .catch()</span><br><span class="line">  .finally(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 不接收任何参数</span></span><br><span class="line">    <span class="comment">// some code here</span></span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="Promise-prototype-done"><a href="#Promise-prototype-done" class="headerlink" title="Promise.prototype.done()"></a>Promise.prototype.done()</h3><p>捕捉可能出现的错误，并向全局抛出<br>处于链式的末端<br>可以有回调参数，也可以没有<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">promise</span><br><span class="line">  .then()</span><br><span class="line">  .catch()</span><br><span class="line">  .done()</span><br></pre></td></tr></table></figure></p>
+<h3 id="Promise-all"><a href="#Promise-all" class="headerlink" title="Promise.all()"></a>Promise.all()</h3><p>将多个<code>Promise</code>实例包装成一个新的<code>Promise</code>实例<br>接收一个数组作为参数<br>数组的元素都是<code>Promise</code>实例<br>所有参数<code>Promise</code>实例状态都变化为<code>resolved</code>，该实例的状态才会变为<code>resolved</code>，所有参数<code>Promise</code>实例都可以向该实例传参，这些参数会被包装成一个数组，传给改实例<br>有一个参数<code>Promise</code>实例的状态变为<code>rejected</code>，该实例的状态立即变为<code>rejected</code>，率先发生状态变化的参数<code>Promise</code>实例，可以把参数传给该实例<br>例如：猴王承诺花十年时间同时和三千妃嫔生猴子，十年后，最聪明的小公猴立为太子，最漂亮的小母猴立为公主，但是如果发现有的小猴子不像猴王，承诺作废。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="built_in">Promise</span>.all([ makeMonkeyWith1, makeMonkeyWith2, ...])</span><br><span class="line">promise</span><br><span class="line">  .then(<span class="function"><span class="params">monkeys</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// monkeys是所有小猴子的数组</span></span><br><span class="line">    monkeys.map(<span class="function"><span class="params">monkey</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span>(isMale(monkey) &amp;&amp; isMostClever(monkey)) &#123;</span><br><span class="line">        bePrince(monkey)</span><br><span class="line">      &#125; <span class="keyword">else</span> <span class="keyword">if</span> (isFemale(monkey) &amp;&amp; isMostBeautiful(monkey)) &#123;</span><br><span class="line">        bePrincess(monkey)</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        beGone(monkey)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">    monkeyKingHadGreenHats()</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="Promise-race"><a href="#Promise-race" class="headerlink" title="Promise.race()"></a>Promise.race()</h3><p>将多个<code>Promise</code>实例包装成一个新的<code>Promise</code>实例<br>接收一个数组作为参数<br>数组的元素都是<code>Promise</code>实例<br>任何一个参数<code>Promise</code>实例状态发生变化，都会改变该实例的状态<br>率先发生状态变化的参数<code>Promise</code>实例，可以把参数传给该实例<br>例如：猴王承诺同时和三千妃嫔生猴子，第一个出生的如果是公猴立为太子，如果是母猴立为公主。<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="built_in">Promise</span>.race([ makeMonkeyWith1InTenYear, makeMonkeyWith2InTenYear, ...])</span><br><span class="line">promise</span><br><span class="line">  .then(<span class="function"><span class="params">monkey</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// monkey是第一个出生的小猴子</span></span><br><span class="line">    <span class="keyword">if</span>(isMale(monkey)) &#123;</span><br><span class="line">      bePrince(monkey)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (isFemale(monkey)) &#123;</span><br><span class="line">      bePrincess(monkey)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      beGone(monkey)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">    neverBelieveInLove()</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure></p>
+]]></content>
       <categories>
         <category>es6</category>
       </categories>
@@ -295,9 +1385,45 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Linux · 环境变量]]></title>
-    <url>%2F2018%2F11%2F07%2Flinux-learn-001%2F</url>
-    <content type="text"><![CDATA[1. 查看环境变量2. 设置临时环境变量3. 当前用户的环境变量4. 所有用户的环境变量 查看环境变量 $PATH 12[root@localhost ~]# echo $PATH/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin export 12345678910111213141516171819202122232425[root@localhost node-v11.1.0-linux-x64]# exportdeclare -x HISTCONTROL="ignoredups"declare -x HISTSIZE="1000"declare -x HOME="/root"declare -x HOSTNAME="localhost.localdomain"declare -x LANG="zh_CN.UTF-8"declare -x LESSOPEN="||/usr/bin/lesspipe.sh %s"declare -x LOGNAME="root"declare -x LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:"declare -x MAIL="/var/spool/mail/root"declare -x OLDPWD="/opt"declare -x PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin"declare -x PWD="/opt/node-v11.1.0-linux-x64"declare -x SELINUX_LEVEL_REQUESTED=""declare -x SELINUX_ROLE_REQUESTED=""declare -x SELINUX_USE_CURRENT_RANGE=""declare -x SHELL="/bin/bash"declare -x SHLVL="1"declare -x SSH_CLIENT="192.168.197.1 56779 22"declare -x SSH_CONNECTION="192.168.197.1 56779 192.168.197.130 22"declare -x SSH_TTY="/dev/pts/0"declare -x TERM="xterm"declare -x USER="root"declare -x XDG_RUNTIME_DIR="/run/user/0"declare -x XDG_SESSION_ID="1" 临时环境变量 重启后临时环境变量消失12345[root@localhost opt]# export PATH=/opt/nodejs/bin:$PATH[root@localhost opt]# node -vv11.1.0[root@localhost opt]# npm -v6.4.1 当前用户的环境变量(CentOS) 编辑 ~/.bash_profile 1[root@localhost ~]# vi .bash_profile 找到PATH，并在后面追加： 1PATH=$PATH:$HOME/bin:/opt/nodejs/bin 刷新环境变量 12345[root@localhost ~]# source .bash_profile[root@localhost ~]# node -vv11.1.0[root@localhost ~]# npm -v6.4.1 所有用户的环境变量 编辑 /etc/profile 1[root@localhost ~]# vi .bash_profile 在后面追加： 1PATH=$PATH:$HOME/bin:/opt/nodejs/bin 刷新环境变量 12345[root@localhost ~]# source /etc/profile[root@localhost ~]# node -vv11.1.0[root@localhost ~]# npm -v6.4.1]]></content>
+    <title>Linux · 环境变量</title>
+    <url>/2018/11/07/linux-learn-001/</url>
+    <content><![CDATA[<p><strong>1. 查看环境变量</strong><br><strong>2. 设置临时环境变量</strong><br><strong>3. 当前用户的环境变量</strong><br><strong>4. 所有用户的环境变量</strong></p>
+<a id="more"></a>
+<h3 id="查看环境变量"><a href="#查看环境变量" class="headerlink" title="查看环境变量"></a>查看环境变量</h3><ul>
+<li><p><code>$PATH</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># echo $PATH</span></span><br><span class="line">/usr/<span class="built_in">local</span>/sbin:/usr/<span class="built_in">local</span>/bin:/usr/sbin:/usr/bin:/root/bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>export</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost node-v11.1.0-linux-x64]<span class="comment"># export</span></span><br><span class="line"><span class="built_in">declare</span> -x HISTCONTROL=<span class="string">"ignoredups"</span></span><br><span class="line"><span class="built_in">declare</span> -x HISTSIZE=<span class="string">"1000"</span></span><br><span class="line"><span class="built_in">declare</span> -x HOME=<span class="string">"/root"</span></span><br><span class="line"><span class="built_in">declare</span> -x HOSTNAME=<span class="string">"localhost.localdomain"</span></span><br><span class="line"><span class="built_in">declare</span> -x LANG=<span class="string">"zh_CN.UTF-8"</span></span><br><span class="line"><span class="built_in">declare</span> -x LESSOPEN=<span class="string">"||/usr/bin/lesspipe.sh %s"</span></span><br><span class="line"><span class="built_in">declare</span> -x LOGNAME=<span class="string">"root"</span></span><br><span class="line"><span class="built_in">declare</span> -x LS_COLORS=<span class="string">"rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:"</span></span><br><span class="line"><span class="built_in">declare</span> -x MAIL=<span class="string">"/var/spool/mail/root"</span></span><br><span class="line"><span class="built_in">declare</span> -x OLDPWD=<span class="string">"/opt"</span></span><br><span class="line"><span class="built_in">declare</span> -x PATH=<span class="string">"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin"</span></span><br><span class="line"><span class="built_in">declare</span> -x PWD=<span class="string">"/opt/node-v11.1.0-linux-x64"</span></span><br><span class="line"><span class="built_in">declare</span> -x SELINUX_LEVEL_REQUESTED=<span class="string">""</span></span><br><span class="line"><span class="built_in">declare</span> -x SELINUX_ROLE_REQUESTED=<span class="string">""</span></span><br><span class="line"><span class="built_in">declare</span> -x SELINUX_USE_CURRENT_RANGE=<span class="string">""</span></span><br><span class="line"><span class="built_in">declare</span> -x SHELL=<span class="string">"/bin/bash"</span></span><br><span class="line"><span class="built_in">declare</span> -x SHLVL=<span class="string">"1"</span></span><br><span class="line"><span class="built_in">declare</span> -x SSH_CLIENT=<span class="string">"192.168.197.1 56779 22"</span></span><br><span class="line"><span class="built_in">declare</span> -x SSH_CONNECTION=<span class="string">"192.168.197.1 56779 192.168.197.130 22"</span></span><br><span class="line"><span class="built_in">declare</span> -x SSH_TTY=<span class="string">"/dev/pts/0"</span></span><br><span class="line"><span class="built_in">declare</span> -x TERM=<span class="string">"xterm"</span></span><br><span class="line"><span class="built_in">declare</span> -x USER=<span class="string">"root"</span></span><br><span class="line"><span class="built_in">declare</span> -x XDG_RUNTIME_DIR=<span class="string">"/run/user/0"</span></span><br><span class="line"><span class="built_in">declare</span> -x XDG_SESSION_ID=<span class="string">"1"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="临时环境变量"><a href="#临时环境变量" class="headerlink" title="临时环境变量"></a>临时环境变量</h3><ul>
+<li>重启后临时环境变量消失<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost opt]<span class="comment"># export PATH=/opt/nodejs/bin:$PATH</span></span><br><span class="line">[root@localhost opt]<span class="comment"># node -v</span></span><br><span class="line">v11.1.0</span><br><span class="line">[root@localhost opt]<span class="comment"># npm -v</span></span><br><span class="line">6.4.1</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="当前用户的环境变量-CentOS"><a href="#当前用户的环境变量-CentOS" class="headerlink" title="当前用户的环境变量(CentOS)"></a>当前用户的环境变量(CentOS)</h3><ul>
+<li><p>编辑 <code>~/.bash_profile</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># vi .bash_profile</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>找到PATH，并在后面追加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH=$PATH:$HOME/bin:/opt/nodejs/bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>刷新环境变量</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># source .bash_profile</span></span><br><span class="line">[root@localhost ~]<span class="comment"># node -v</span></span><br><span class="line">v11.1.0</span><br><span class="line">[root@localhost ~]<span class="comment"># npm -v</span></span><br><span class="line">6.4.1</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="所有用户的环境变量"><a href="#所有用户的环境变量" class="headerlink" title="所有用户的环境变量"></a>所有用户的环境变量</h3><ul>
+<li><p>编辑 <code>/etc/profile</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># vi .bash_profile</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在后面追加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH=$PATH:$HOME/bin:/opt/nodejs/bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>刷新环境变量</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># source /etc/profile</span></span><br><span class="line">[root@localhost ~]<span class="comment"># node -v</span></span><br><span class="line">v11.1.0</span><br><span class="line">[root@localhost ~]<span class="comment"># npm -v</span></span><br><span class="line">6.4.1</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>linux</category>
       </categories>
@@ -306,9 +1432,32 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Nodejs · 安装]]></title>
-    <url>%2F2018%2F11%2F06%2Fnodejs-learn-001%2F</url>
-    <content type="text"><![CDATA[1. 官网2. 源码安装3. npm源 官网NodeJS有两个版本： 长期维护版(LTS)推荐多数用户使用，建议开发中使用； 最新发布版含实验性功能，建议个人学习时使用。 官网-英文 官网-中文 官方镜像 国内官网 淘宝镜像 源码安装12345$ wget https://npm.taobao.org/mirrors/node/v10.13.0/node-v10.13.0.tar.gz$ tar -zxvf node-v10.13.0.tar.gz$ cd node-v10.13.0$ ./configure$ make &amp;&amp; make install 官方镜像下载较慢，建议使用国内镜像 用到了 wget下载源码，也可以使用其它方式下载 编译需要 gcc g++ gcc-c++ 源码安装时间较长，请耐心等待 推荐使用二进制包，下载解压即用 npm源官方源在国外，速度较慢，建议切换为国内源，推荐使用淘宝源。更换npm源有三种方式，如下： 1.直接修改配置文件(推荐)配置文件在 ~/.npmrc .npmrc1registry=https://registry.npm.taobao.org/ 2.使用 cnpm 替代 npm1$ npm install cnpm -g 3.使用 nrm 管理 npm 源12345678# 安装 nrm$ npm install nrm -g# 列出可用的npm源$ nrm ls# 切换为淘宝npm源$ nrm use taobao# 切换为官方npm源$ nrm use npm]]></content>
+    <title>Nodejs · 安装</title>
+    <url>/2018/11/06/nodejs-learn-001/</url>
+    <content><![CDATA[<p><strong>1. 官网</strong><br><strong>2. 源码安装</strong><br><strong>3. npm源</strong></p>
+<a id="more"></a>
+<h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>NodeJS有两个版本：<br>    <code>长期维护版</code>(LTS)推荐多数用户使用，建议开发中使用；<br>    <code>最新发布版</code>含实验性功能，建议个人学习时使用。</p>
+<ul>
+<li><a href="https://nodejs.org" target="_blank" rel="noopener">官网-英文</a></li>
+<li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">官网-中文</a></li>
+<li><a href="https://nodejs.org/dist" target="_blank" rel="noopener">官方镜像</a></li>
+<li><a href="http://nodejs.cn" target="_blank" rel="noopener">国内官网</a></li>
+<li><a href="https://npm.taobao.org/mirrors/node/" target="_blank" rel="noopener">淘宝镜像</a></li>
+</ul>
+<h3 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ wget https://npm.taobao.org/mirrors/node/v10.13.0/node-v10.13.0.tar.gz</span><br><span class="line">$ tar -zxvf node-v10.13.0.tar.gz</span><br><span class="line">$ <span class="built_in">cd</span> node-v10.13.0</span><br><span class="line">$ ./configure</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<ul>
+<li>官方镜像下载较慢，建议使用国内镜像</li>
+<li>用到了 <code>wget</code>下载源码，也可以使用其它方式下载</li>
+<li>编译需要 <code>gcc</code> <code>g++</code> <code>gcc-c++</code></li>
+<li>源码安装时间较长，请耐心等待</li>
+<li>推荐使用二进制包，下载解压即用</li>
+</ul>
+<h3 id="npm源"><a href="#npm源" class="headerlink" title="npm源"></a>npm源</h3><p><a href="https://registry.npmjs.org/" target="_blank" rel="noopener">官方源</a>在国外，速度较慢，建议切换为国内源，推荐使用<a href="https://npm.taobao.org/" target="_blank" rel="noopener">淘宝源</a>。<br>更换npm源有三种方式，如下：</p>
+<h4 id="1-直接修改配置文件-推荐"><a href="#1-直接修改配置文件-推荐" class="headerlink" title="1.直接修改配置文件(推荐)"></a>1.直接修改配置文件(推荐)</h4><p>配置文件在 <code>~/.npmrc</code></p>
+<figure class="highlight bash"><figcaption><span>.npmrc</span></figcaption><table><tr><td class="code"><pre><span class="line">registry=https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
+<h4 id="2-使用-cnpm-替代-npm"><a href="#2-使用-cnpm-替代-npm" class="headerlink" title="2.使用 cnpm 替代 npm"></a>2.使用 <a href="https://npm.taobao.org/" target="_blank" rel="noopener">cnpm</a> 替代 npm</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install cnpm -g</span><br></pre></td></tr></table></figure>
+<h4 id="3-使用-nrm-管理-npm-源"><a href="#3-使用-nrm-管理-npm-源" class="headerlink" title="3.使用 nrm 管理 npm 源"></a>3.使用 <a href="https://www.npmjs.com/package/nrm" target="_blank" rel="noopener">nrm</a> 管理 npm 源</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装 nrm</span></span><br><span class="line">$ npm install nrm -g</span><br><span class="line"><span class="comment"># 列出可用的npm源</span></span><br><span class="line">$ nrm ls</span><br><span class="line"><span class="comment"># 切换为淘宝npm源</span></span><br><span class="line">$ nrm use taobao</span><br><span class="line"><span class="comment"># 切换为官方npm源</span></span><br><span class="line">$ nrm use npm</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>nodejs</category>
       </categories>
@@ -317,9 +1466,57 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 模板]]></title>
-    <url>%2F2018%2F11%2F05%2Fhexo-learn-016%2F</url>
-    <content type="text"><![CDATA[1. 模板2. 布局3. 局部模板4. 局部变量5. 优化 模板每个主题至少应包含一个index模板 模板 用途 回调 index 首页 - post 文章 index page 分页 index archive 归档 index category 分类 archive tag 标签 archive 布局通过布局让多个模板共享相同的结构默认使用layout布局，可以在front-matter中指定其他布局，或设置为false关闭布局功能 局部模板局部模板类似组件，可以在多个模板之间共享 局部变量可以在局部模板中指定局部变量 优化Hexo 2.7 新增了局部缓存(Fragment Caching)功能]]></content>
+    <title>Hexo · 模板</title>
+    <url>/2018/11/05/hexo-learn-016/</url>
+    <content><![CDATA[<p><strong>1. 模板</strong><br><strong>2. 布局</strong><br><strong>3. 局部模板</strong><br><strong>4. 局部变量</strong><br><strong>5. 优化</strong></p>
+<a id="more"></a>
+<h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><p>每个主题至少应包含一个<code>index</code>模板</p>
+<table>
+<thead>
+<tr>
+<th>模板</th>
+<th>用途</th>
+<th>回调</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>首页</td>
+<td>-</td>
+</tr>
+<tr>
+<td>post</td>
+<td>文章</td>
+<td>index</td>
+</tr>
+<tr>
+<td>page</td>
+<td>分页</td>
+<td>index</td>
+</tr>
+<tr>
+<td>archive</td>
+<td>归档</td>
+<td>index</td>
+</tr>
+<tr>
+<td>category</td>
+<td>分类</td>
+<td>archive</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>标签</td>
+<td>archive</td>
+</tr>
+</tbody>
+</table>
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>通过布局让多个模板共享相同的结构<br>默认使用<code>layout</code>布局，可以在<code>front-matter</code>中指定其他布局，或设置为<code>false</code>关闭布局功能</p>
+<h3 id="局部模板"><a href="#局部模板" class="headerlink" title="局部模板"></a>局部模板</h3><p>局部模板类似组件，可以在多个模板之间共享</p>
+<h3 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h3><p>可以在局部模板中指定局部变量</p>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>Hexo 2.7 新增了局部缓存(<code>Fragment Caching</code>)功能</p>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -328,9 +1525,32 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 主题]]></title>
-    <url>%2F2018%2F11%2F05%2Fhexo-learn-015%2F</url>
-    <content type="text"><![CDATA[1. 更换主题2. 主题结构3. _config.yml4. language5. layout6. scripts7. source 更换主题选择主题 主题列表 克隆仓库 克隆主题仓库到本地themes文件夹下1$ git clone repo-url themes/repo-name 修改配置 修改根目录下的_config.yml文件_config.yml1theme: repo-name 重新生成 重新生成静态资源12$ hexo clean$ hexo generate 主题结构123456.├── _config.yml├── languages├── layout├── scripts└── source _config.yml主题的配置文件，修改时会自动更新，无需重启 languages语言文件夹 layout布局文件夹，存放主题的模板文件。内建Swig模板引擎，可以安装插件来支持EJS、Haml或Jade根据扩展名来决定使用哪一个模板引擎 scripts脚本文件夹，启动时会自动载入 source资源文件夹，除了模板以外的Asset都应该放在这里。_开头的文件或文件夹会被忽略如果文件可以渲染，解析后存储到public文件夹，否则直接拷贝到public文件夹]]></content>
+    <title>Hexo · 主题</title>
+    <url>/2018/11/05/hexo-learn-015/</url>
+    <content><![CDATA[<p><strong>1. 更换主题</strong><br><strong>2. 主题结构</strong><br><strong>3. _config.yml</strong><br><strong>4. language</strong><br><strong>5. layout</strong><br><strong>6. scripts</strong><br><strong>7. source</strong></p>
+<a id="more"></a>
+<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><h4 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a>选择主题</h4><ul>
+<li><a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题列表</a></li>
+</ul>
+<h4 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h4><ul>
+<li>克隆主题仓库到本地<code>themes</code>文件夹下<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> repo-url themes/repo-name</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><ul>
+<li>修改根目录下的<code>_config.yml</code>文件<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">repo-name</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="重新生成"><a href="#重新生成" class="headerlink" title="重新生成"></a>重新生成</h4><ul>
+<li>重新生成静态资源<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="主题结构"><a href="#主题结构" class="headerlink" title="主题结构"></a>主题结构</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── languages</span><br><span class="line">├── layout</span><br><span class="line">├── scripts</span><br><span class="line">└── source</span><br></pre></td></tr></table></figure>
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>主题的配置文件，修改时会自动更新，无需重启</p>
+<h3 id="languages"><a href="#languages" class="headerlink" title="languages"></a>languages</h3><p>语言文件夹</p>
+<h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><p>布局文件夹，存放主题的模板文件。<br>内建Swig模板引擎，可以安装插件来支持EJS、Haml或Jade<br>根据扩展名来决定使用哪一个模板引擎</p>
+<h3 id="scripts"><a href="#scripts" class="headerlink" title="scripts"></a>scripts</h3><p>脚本文件夹，启动时会自动载入</p>
+<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹，除了模板以外的Asset都应该放在这里。<br><code>_</code>开头的文件或文件夹会被忽略<br>如果文件可以渲染，解析后存储到<code>public</code>文件夹，否则直接拷贝到<code>public</code>文件夹</p>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -339,9 +1559,80 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 永久链接]]></title>
-    <url>%2F2018%2F11%2F04%2Fhexo-learn-014%2F</url>
-    <content type="text"><![CDATA[1. 变量2. 示例3. 多语种支持 可以在_config.yml配置中调整网站的永久链接，也可以在每篇文章的Front-matter中指定 变量 变量 描述 :year 年 :month 月 :day 日 :title 文章名称 :post_title 文章标题 :id 文章ID :category 分类 在permalink_default调整变量的默认值 12permalink_defaults: lang: en 示例 参数 结果 :year/:month/:day/:title 2018/11/04/hello-world :year-:month-:day-:title.html 2018-11-04-hello-world.html :/category/:title foo/bar/hello-world 多语种支持修改new_post_name 和 permalink 12new_post_name: :lang/:title.mdpermalink: :lang/:title/ 12$ hexo new "hello world" --lang en# =&gt; source/_post/en/hello-world.md 1http://localhost:4000/en/hello-world/]]></content>
+    <title>Hexo · 永久链接</title>
+    <url>/2018/11/04/hexo-learn-014/</url>
+    <content><![CDATA[<p><strong>1. 变量</strong><br><strong>2. 示例</strong><br><strong>3. 多语种支持</strong></p>
+<a id="more"></a>
+<blockquote>
+<p>可以在<code>_config.yml</code>配置中调整网站的永久链接，也可以在每篇文章的<code>Front-matter</code>中指定</p>
+</blockquote>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:year</code></td>
+<td>年</td>
+</tr>
+<tr>
+<td><code>:month</code></td>
+<td>月</td>
+</tr>
+<tr>
+<td><code>:day</code></td>
+<td>日</td>
+</tr>
+<tr>
+<td><code>:title</code></td>
+<td>文章名称</td>
+</tr>
+<tr>
+<td><code>:post_title</code></td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td><code>:id</code></td>
+<td>文章ID</td>
+</tr>
+<tr>
+<td><code>:category</code></td>
+<td>分类</td>
+</tr>
+</tbody>
+</table>
+<p>在<code>permalink_default</code>调整变量的默认值</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">  lang:</span> <span class="string">en</span></span><br></pre></td></tr></table></figure>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:year/:month/:day/:title</td>
+<td>2018/11/04/hello-world</td>
+</tr>
+<tr>
+<td>:year-:month-:day-:title.html</td>
+<td>2018-11-04-hello-world.html</td>
+</tr>
+<tr>
+<td>:/category/:title</td>
+<td>foo/bar/hello-world</td>
+</tr>
+</tbody>
+</table>
+<h3 id="多语种支持"><a href="#多语种支持" class="headerlink" title="多语种支持"></a>多语种支持</h3><p>修改<code>new_post_name</code> 和 <code>permalink</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">new_post_name:</span> <span class="string">:lang/:title.md</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:lang/:title/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"hello world"</span> --lang en</span><br><span class="line"><span class="comment"># =&gt; source/_post/en/hello-world.md</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http://localhost:4000/en/hello-world/</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -350,9 +1641,24 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 部署]]></title>
-    <url>%2F2018%2F11%2F03%2Fhexo-learn-013%2F</url>
-    <content type="text"><![CDATA[1. Git2. Heroku3. Rsync4. OpenShift5. FTPSync6. 其它方法 一键部署修改_config.yml，可以同时部署多个12345deploy:- type: git repo:- type: heroku repo: 一键部署12$ hexo d$ hexo deploy Git安装hexo-deployer-git1$ npm install hexo-deployer-git --save _config.yml12345deploy: type: git repo: &lt;repository url&gt; branch: [branch] message: [message] Heroku安装hexo-deployer-heroku1$ npm install hexo-deployer-heroku --save _config.yml1234deploy: type: heroku repo: &lt;repository url&gt; message: [message] Rsync安装hexo-deployer-rsync1$ npm install hexo-deployer-rsync --save _config.yml123456789deploy: type: rsync host: &lt;host&gt; user: &lt;user&gt; root: &lt;root&gt; port: [port] delete: Boolean # 删除远程主机上的旧文件 verbose: Boolean # 显示调试信息 ignore_errors: Boolean # 忽略错误 OpenShift安装hexo-deployer-openshift1$ npm install hexo-deployer-openshift --save _config.yml1234deploy: type: openshift repo: &lt;repository url&gt; message: [message] FTPSync1$ npm install hexo-deployer-ftpsync --save _config.yml12345678910deploy: type: ftpsync host: &lt;host&gt; user: &lt;user&gt; pass: &lt;password&gt; remote: [remote] # 远程主机的根目录 port: [port] ignore: [ignore] # 忽略的文件或目录 connections: [connections] # 使用连接数 1 verbose: Boolean # 显示调试信息 true 其它方法Hexo生成的所有文件都放在public文件夹中，可以将它们复制到静态服务器中]]></content>
+    <title>Hexo · 部署</title>
+    <url>/2018/11/03/hexo-learn-013/</url>
+    <content><![CDATA[<p><strong>1. Git</strong><br><strong>2. Heroku</strong><br><strong>3. Rsync</strong><br><strong>4. OpenShift</strong><br><strong>5. FTPSync</strong><br><strong>6. 其它方法</strong></p>
+<a id="more"></a>
+<h3 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h3><figure class="highlight yaml"><figcaption><span>修改_config.yml，可以同时部署多个</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">- type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span></span><br><span class="line"><span class="attr">- type:</span> <span class="string">heroku</span></span><br><span class="line"><span class="attr">  repo:</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption><span>一键部署</span></figcaption><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><figure class="highlight bash"><figcaption><span>安装hexo-deployer-git</span></figcaption><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
+<h3 id="Heroku"><a href="#Heroku" class="headerlink" title="Heroku"></a>Heroku</h3><figure class="highlight bash"><figcaption><span>安装hexo-deployer-heroku</span></figcaption><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-heroku --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">heroku</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
+<h3 id="Rsync"><a href="#Rsync" class="headerlink" title="Rsync"></a>Rsync</h3><figure class="highlight bash"><figcaption><span>安装hexo-deployer-rsync</span></figcaption><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-rsync --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">rsync</span></span><br><span class="line"><span class="attr">  host:</span> <span class="string">&lt;host&gt;</span></span><br><span class="line"><span class="attr">  user:</span> <span class="string">&lt;user&gt;</span></span><br><span class="line"><span class="attr">  root:</span> <span class="string">&lt;root&gt;</span></span><br><span class="line"><span class="attr">  port:</span> <span class="string">[port]</span></span><br><span class="line"><span class="attr">  delete:</span> <span class="string">Boolean</span> <span class="comment"># 删除远程主机上的旧文件</span></span><br><span class="line"><span class="attr">  verbose:</span> <span class="string">Boolean</span> <span class="comment"># 显示调试信息</span></span><br><span class="line"><span class="attr">  ignore_errors:</span> <span class="string">Boolean</span> <span class="comment"># 忽略错误</span></span><br></pre></td></tr></table></figure>
+<h3 id="OpenShift"><a href="#OpenShift" class="headerlink" title="OpenShift"></a>OpenShift</h3><figure class="highlight bash"><figcaption><span>安装hexo-deployer-openshift</span></figcaption><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-openshift --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">openshift</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
+<h3 id="FTPSync"><a href="#FTPSync" class="headerlink" title="FTPSync"></a>FTPSync</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-ftpsync --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">ftpsync</span></span><br><span class="line"><span class="attr">  host:</span> <span class="string">&lt;host&gt;</span></span><br><span class="line"><span class="attr">  user:</span> <span class="string">&lt;user&gt;</span></span><br><span class="line"><span class="attr">  pass:</span> <span class="string">&lt;password&gt;</span></span><br><span class="line"><span class="attr">  remote:</span> <span class="string">[remote]</span> <span class="comment"># 远程主机的根目录</span></span><br><span class="line"><span class="attr">  port:</span> <span class="string">[port]</span></span><br><span class="line"><span class="attr">  ignore:</span> <span class="string">[ignore]</span> <span class="comment"># 忽略的文件或目录</span></span><br><span class="line"><span class="attr">  connections:</span> <span class="string">[connections]</span> <span class="comment"># 使用连接数 1</span></span><br><span class="line"><span class="attr">  verbose:</span> <span class="string">Boolean</span> <span class="comment"># 显示调试信息 true</span></span><br></pre></td></tr></table></figure>
+<h3 id="其它方法"><a href="#其它方法" class="headerlink" title="其它方法"></a>其它方法</h3><p><code>Hexo</code>生成的所有文件都放在<code>public</code>文件夹中，可以将它们复制到静态服务器中</p>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -361,9 +1667,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 生成器]]></title>
-    <url>%2F2018%2F11%2F03%2Fhexo-learn-012%2F</url>
-    <content type="text"><![CDATA[1. 生成文件2. 监视文件变动3. 完成后部署4. 简写 生成文件1$ hexo generate 监视文件变动1$ hexo generate --watch 完成后部署12$ hexo generate --deploy$ hexo deploy --generate 简写12$ hexo g -d$ hexo d -g]]></content>
+    <title>Hexo · 生成器</title>
+    <url>/2018/11/03/hexo-learn-012/</url>
+    <content><![CDATA[<p><strong>1. 生成文件</strong><br><strong>2. 监视文件变动</strong><br><strong>3. 完成后部署</strong><br><strong>4. 简写</strong></p>
+<a id="more"></a>
+<h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate --watch</span><br></pre></td></tr></table></figure>
+<h3 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure>
+<h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -372,9 +1684,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 服务器]]></title>
-    <url>%2F2018%2F11%2F03%2Fhexo-learn-011%2F</url>
-    <content type="text"><![CDATA[1. hexo-server2. 静态模式3. 自定义IP4. Pow hexo-server123$ npm install hexo-server --save$ hexo server$ hexo server -p 5000 静态模式静态模式下，服务器只处理public文件夹内的文件 1$ hexo server -s 自定义IP默认运行在0.0.0.01$ hexo server -i 192.168.1.1 PowPow是Mac系统上的零配置Rack服务器123$ curl get.pow.cx | sh$ cd ~/.pow$ ln -s /path/to/myapp]]></content>
+    <title>Hexo · 服务器</title>
+    <url>/2018/11/03/hexo-learn-011/</url>
+    <content><![CDATA[<p><strong>1. hexo-server</strong><br><strong>2. 静态模式</strong><br><strong>3. 自定义IP</strong><br><strong>4. Pow</strong></p>
+<a id="more"></a>
+<h3 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo-server"></a>hexo-server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br><span class="line">$ hexo server</span><br><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<h3 id="静态模式"><a href="#静态模式" class="headerlink" title="静态模式"></a>静态模式</h3><p>静态模式下，服务器只处理<code>public</code>文件夹内的文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -s</span><br></pre></td></tr></table></figure>
+<h3 id="自定义IP"><a href="#自定义IP" class="headerlink" title="自定义IP"></a>自定义IP</h3><p>默认运行在<code>0.0.0.0</code><br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -i 192.168.1.1</span><br></pre></td></tr></table></figure></p>
+<h3 id="Pow"><a href="#Pow" class="headerlink" title="Pow"></a>Pow</h3><p>Pow是Mac系统上的零配置Rack服务器<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ curl get.pow.cx | sh</span><br><span class="line">$ <span class="built_in">cd</span> ~/.pow</span><br><span class="line">$ ln -s /path/to/myapp</span><br></pre></td></tr></table></figure></p>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -383,9 +1702,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 数据文件夹]]></title>
-    <url>%2F2018%2F11%2F02%2Fhexo-learn-010%2F</url>
-    <content type="text"><![CDATA[1. 数据文件 数据文件hexo3.0新增数据文件功能自动载入source/_data内的YAML/JSON文件 source/_data/menu.yml12Home: /Archives: /archives/ 123&lt;% for (var link in site.data.menu) &#123; %&gt;&lt;a href=&quot;&lt;%= site.data.menu[link] %&gt;&quot;&gt; &lt;%= link %&gt; &lt;/a&gt;&lt;% &#125; %&gt; 12&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;a href=&quot;/archives/&quot;&gt;Archives&lt;/a&gt;]]></content>
+    <title>Hexo · 数据文件夹</title>
+    <url>/2018/11/02/hexo-learn-010/</url>
+    <content><![CDATA[<p><strong>1. 数据文件</strong></p>
+<a id="more"></a>
+<h3 id="数据文件"><a href="#数据文件" class="headerlink" title="数据文件"></a>数据文件</h3><p>hexo3.0新增数据文件功能<br>自动载入<code>source/_data</code>内的YAML/JSON文件</p>
+<figure class="highlight yaml"><figcaption><span>source/_data/menu.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">Archives:</span> <span class="string">/archives/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;% for (var link in site.data.menu) &#123; %&gt;</span><br><span class="line">&lt;a href=&quot;&lt;%= site.data.menu[link] %&gt;&quot;&gt; &lt;%= link %&gt; &lt;/a&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;</span><br><span class="line">&lt;a href=&quot;/archives/&quot;&gt;Archives&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -394,9 +1719,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[hexo · 资源文件夹]]></title>
-    <url>%2F2018%2F11%2F02%2Fhexo-learn-009%2F</url>
-    <content type="text"><![CDATA[1. 资源文件夹2. 文章资源文件夹3. 相对路径引用的标签插件 资源文件夹资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。 文章资源文件夹将 config.yml 文件中的 post_asset_folder 选项设为 true 来启用，默认为 false通过 new 命令创建文章时，会同时创建同名文件夹，可以通过相对路径来引用它们 相对路径引用的标签插件123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% asset_link slug [title] %&#125; 正确的引用图片方式是使用下列的标签插件而不是 markdown 1&#123;% asset_img example.jpg This is an example image %&#125;]]></content>
+    <title>hexo · 资源文件夹</title>
+    <url>/2018/11/02/hexo-learn-009/</url>
+    <content><![CDATA[<p><strong>1. 资源文件夹</strong><br><strong>2. 文章资源文件夹</strong><br><strong>3. 相对路径引用的标签插件</strong></p>
+<a id="more"></a>
+<h3 id="资源文件夹"><a href="#资源文件夹" class="headerlink" title="资源文件夹"></a>资源文件夹</h3><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于 <code>![](/images/image.jpg)</code> 的方法访问它们。</p>
+<h3 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h3><p>将 <code>config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code> 来启用，默认为 <code>false</code><br>通过 <code>new</code> 命令创建文章时，会同时创建同名文件夹，可以通过相对路径来引用它们</p>
+<h3 id="相对路径引用的标签插件"><a href="#相对路径引用的标签插件" class="headerlink" title="相对路径引用的标签插件"></a>相对路径引用的标签插件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
+<p>正确的引用图片方式是使用下列的标签插件而不是 <code>markdown</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img example.jpg This is an example image %&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -405,9 +1737,99 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 标签插件]]></title>
-    <url>%2F2018%2F11%2F01%2Fhexo-learn-008%2F</url>
-    <content type="text"><![CDATA[1. 引用块2. 代码块3. 反引号代码块4. Pull Quote5. jsFiddle6. Gist7. iframe8. Image9. Link10. Include Code11. Youtube12. Vimeo13. 引用文章14. 引用资源15. Raw 引用块 用法 123&#123;% blockquote %&#125;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.&#123;% endblockquote %&#125; 效果 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem. 代码块 用法 123&#123;% codeblock lang:javascript Object.assign http://es6.ruanyifeng.com/#docs/object#Object-assign Object.assign %&#125;Object.assign(targetObject, sourceObject);&#123;% endcodeblock %&#125; 效果 Object.assignObject.assign1Object.assign(targetObject, sourceObject); 反引号代码块 用法[language] [title] [url] [link text] code snippet 效果 Object.assignObject.assign1Object.assign(targetObject, sourceObject); Pull Quote 用法 123&#123;% pullquote [class] %&#125;content&#123;% endpullquote %&#125; 效果 content jsFiddle 用法1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; Gist 用法1&#123;% gist gist_id [filename %&#125; iframe 用法 1&#123;% iframe url [width] [height] %&#125; 效果 Image 用法 1&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125; 效果 Link 用法 1&#123;% link text url [external] [title] %&#125; 效果 Object.assign Include Code 用法1&#123;% include_code [title] [lang:language] path/to/file %&#125; Youtube 用法1&#123;% youtube video_id %&#125; Vimeo 用法1&#123;% vimeo vimeo_id %&#125; 引用文章 用法12&#123;% post_path slug %&#125;&#123;% post_link slug [title] %&#125; 引用资源 用法123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% assset_link slug [title] %&#125; Raw 用法123&#123;% raw %&#125;content&#123;% endraw %&#125;]]></content>
+    <title>Hexo · 标签插件</title>
+    <url>/2018/11/01/hexo-learn-008/</url>
+    <content><![CDATA[<p><strong>1. 引用块</strong><br><strong>2. 代码块</strong><br><strong>3. 反引号代码块</strong><br><strong>4. Pull Quote</strong><br><strong>5. jsFiddle</strong><br><strong>6. Gist</strong><br><strong>7. iframe</strong><br><strong>8. Image</strong><br><strong>9. Link</strong><br><strong>10. Include Code</strong><br><strong>11. Youtube</strong><br><strong>12. Vimeo</strong><br><strong>13. 引用文章</strong><br><strong>14. 引用资源</strong><br><strong>15. Raw</strong></p>
+<a id="more"></a>
+<h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h3><ul>
+<li><p>用法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote %&#125;</span><br><span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><ul>
+<li><p>用法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock lang:javascript Object.assign http://es6.ruanyifeng.com/#docs/object#Object-assign Object.assign %&#125;</span><br><span class="line">Object.assign(targetObject, sourceObject);</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<figure class="highlight javascript"><figcaption><span>Object.assign</span><a href="http://es6.ruanyifeng.com/#docs/object#Object-assign" target="_blank" rel="noopener">Object.assign</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="built_in">Object</span>.assign(targetObject, sourceObject);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="反引号代码块"><a href="#反引号代码块" class="headerlink" title="反引号代码块"></a>反引号代码块</h3><ul>
+<li><p>用法<br><code>[language] [title] [url] [link text] code snippet</code></p>
+</li>
+<li><p>效果</p>
+<figure class="highlight javascript"><figcaption><span>Object.assign</span><a href="http://es6.ruanyifeng.com/#docs/object#Object-assign" target="_blank" rel="noopener">Object.assign</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="built_in">Object</span>.assign(targetObject, sourceObject);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Pull-Quote"><a href="#Pull-Quote" class="headerlink" title="Pull Quote"></a>Pull Quote</h3><ul>
+<li><p>用法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% pullquote [class] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endpullquote %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<blockquote class="pullquote [class]"><p>content</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% gist gist_id [filename %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h3><ul>
+<li><p>用法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% iframe url [width] [height] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<iframe src="https://www.baidu.com" width="680" height="280" frameborder="0" allowfullscreen></iframe>
+</li>
+</ul>
+<h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><ul>
+<li><p>用法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果<br><img src="\images\dog.png" alt="img"></p>
+</li>
+</ul>
+<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><ul>
+<li><p>用法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<a href="http://es6.ruanyifeng.com/#docs/object#Object-assign" title="ES6 Object.assign" target="_blank" rel="noopener">Object.assign</a>
+</li>
+</ul>
+<h3 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% include_code [title] [lang:language] path/to/file %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% youtube video_id %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Vimeo"><a href="#Vimeo" class="headerlink" title="Vimeo"></a>Vimeo</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% vimeo vimeo_id %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="引用文章"><a href="#引用文章" class="headerlink" title="引用文章"></a>引用文章</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% post_path slug %&#125;</span><br><span class="line">&#123;% post_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="引用资源"><a href="#引用资源" class="headerlink" title="引用资源"></a>引用资源</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% assset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Raw"><a href="#Raw" class="headerlink" title="Raw"></a>Raw</h3><ul>
+<li>用法<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -416,9 +1838,13 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · Front-Matter]]></title>
-    <url>%2F2018%2F11%2F01%2Fhexo-learn-007%2F</url>
-    <content type="text"><![CDATA[1. layout 布局2. title 标题3. date 建立日期4. update 更新日期5. comments 开启评论6. tags 标签7. categories 分类 Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量 12345---title: Hexo · Front-Matterdate: 2018-11-01 16:06:00tags: hexo---]]></content>
+    <title>Hexo · Front-Matter</title>
+    <url>/2018/11/01/hexo-learn-007/</url>
+    <content><![CDATA[<p><strong>1. <code>layout</code> 布局</strong><br><strong>2. <code>title</code> 标题</strong><br><strong>3. <code>date</code> 建立日期</strong><br><strong>4. <code>update</code> 更新日期</strong><br><strong>5. <code>comments</code> 开启评论</strong><br><strong>6. <code>tags</code> 标签</strong><br><strong>7. <code>categories</code> 分类</strong> </p>
+<a id="more"></a>
+<p>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo · Front-Matter</span><br><span class="line">date: 2018-11-01 16:06:00</span><br><span class="line">tags: hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -427,9 +1853,22 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 写作]]></title>
-    <url>%2F2018%2F10%2F29%2Fhexo-learn-006%2F</url>
-    <content type="text"><![CDATA[1. 新建2. 布局3. 文件名称4. 草稿5. 模板 1. 新建layout 默认为 post， 可以通过修改_config.yml中的 default_layout 来指定默认布局 1$ hexo new [layout] &lt;title&gt; 2. 布局 post – 文章 page draft – 草稿 3. 文件名称默认以标题作为文件名称可以通过 new_post_name 来修改默认文件名称 4. 草稿12$ hexo new draft &lt;title&gt;$ hexo publish [layout] &lt;title&gt; 草稿默认不会展示在页面中，可以在执行是加上 --draft 参数，或把 render_draft 设为 true 来预览草稿。 5. 模板12$ hexo new photo 'my page'# 根据 photo 模板来创建 my page]]></content>
+    <title>Hexo · 写作</title>
+    <url>/2018/10/29/hexo-learn-006/</url>
+    <content><![CDATA[<p><strong>1. 新建</strong><br><strong>2. 布局</strong><br><strong>3. 文件名称</strong><br><strong>4. 草稿</strong><br><strong>5. 模板</strong></p>
+<a id="more"></a>
+<h3 id="1-新建"><a href="#1-新建" class="headerlink" title="1. 新建"></a>1. 新建</h3><p><code>layout</code> 默认为 <code>post</code>， 可以通过修改<code>_config.yml中</code>的 <code>default_layout</code> 来指定默认布局</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2-布局"><a href="#2-布局" class="headerlink" title="2. 布局"></a>2. 布局</h3><ul>
+<li><code>post</code> – 文章</li>
+<li><code>page</code></li>
+<li><code>draft</code> – 草稿</li>
+</ul>
+<h3 id="3-文件名称"><a href="#3-文件名称" class="headerlink" title="3. 文件名称"></a>3. 文件名称</h3><p>默认以标题作为文件名称<br>可以通过 <code>new_post_name</code> 来修改默认文件名称</p>
+<h3 id="4-草稿"><a href="#4-草稿" class="headerlink" title="4. 草稿"></a>4. 草稿</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new draft &lt;title&gt;</span><br><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<p>草稿默认不会展示在页面中，可以在执行是加上 <code>--draft</code> 参数，或把 <code>render_draft</code> 设为 <code>true</code> 来预览草稿。</p>
+<h3 id="5-模板"><a href="#5-模板" class="headerlink" title="5. 模板"></a>5. 模板</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new photo <span class="string">'my page'</span></span><br><span class="line"><span class="comment"># 根据 photo 模板来创建 my page</span></span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -438,9 +1877,22 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 迁移]]></title>
-    <url>%2F2018%2F10%2F29%2Fhexo-learn-005%2F</url>
-    <content type="text"><![CDATA[1. RSS2. Jekll3. Octopress4. WordPress5. Joomla RSS12$ npm install hexo-migrator-rss -S$ hexo migrate rss &lt;source&gt; Jekyll 把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，并在 _config.yml 中修改 new_post_name 参数。 1new_post_name: :year-:month-:day-:title.md Octopress 把 Octopress source/_posts 文件夹内的所有文件转移到 Hexo 的 source/_posts 文件夹，并修改 _config.yml 中的 new_post_name 参数 1new_post_name: :year-:month-:day-:title.md WordPress12$ npm install hexo-migrator-wordpress --save$ hexo migrate wordpress &lt;source&gt; Joomla12$ npm install hexo-migrator-joomla --save$ hexo migrate joomla &lt;source&gt;]]></content>
+    <title>Hexo · 迁移</title>
+    <url>/2018/10/29/hexo-learn-005/</url>
+    <content><![CDATA[<p><strong>1. RSS</strong><br><strong>2. Jekll</strong><br><strong>3. Octopress</strong><br><strong>4. WordPress</strong><br><strong>5. Joomla</strong></p>
+<a id="more"></a>
+<h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-rss -S</span><br><span class="line">$ hexo migrate rss &lt;<span class="built_in">source</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><ul>
+<li>把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，并在 _config.yml 中修改 new_post_name 参数。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
+<h3 id="Octopress"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</h3><ul>
+<li>把 Octopress source/_posts 文件夹内的所有文件转移到 Hexo 的 source/_posts 文件夹，并修改 _config.yml 中的 new_post_name 参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
+<h3 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br><span class="line">$ hexo migrate wordpress &lt;<span class="built_in">source</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Joomla"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-joomla --save</span><br><span class="line">$ hexo migrate joomla &lt;<span class="built_in">source</span>&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -449,9 +1901,28 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 命令]]></title>
-    <url>%2F2018%2F10%2F29%2Fhexo-learn-004%2F</url>
-    <content type="text"><![CDATA[1. init2. new3. generate4. publish5. server6. deploy7. render8. migrate9. clean10. list11. version init1$ hexo init blog new 新建文章12$ hexo new [layout] &lt;title&gt;# 例如 hexo new post hello-world generate 生成静态文件12$ hexo generate$ hexo g publish 发表草稿1$ hexo publish [layout] filename server 启动本地服务器1234$ hexo server# -p, --port# -s, --static 只使用静态文件# -l, --log 启用日志 deploy 部署123$ hexo deploy$ hexo d# -g, --generate 部署之前生成静态文件 render 渲染文件12$ hexo render &lt;file1&gt; [file2] ...# -o, --output 设置输出路径 migrate 从其它博客迁移1$ hexo migrate &lt;type&gt; clean 清理缓存和静态文件1$ hexo clean list1$ hexo list version1$ hexo version 安全模式1$ hexo --safe 调试模式1$ hexo --debug 简洁模式1$ hexo --silent 自定义配置文件的路径1$ hexo --config custom.yml 显示草稿1$ hexo --draft 自定义CWD1$ hexo --cwd /path/to/cwd]]></content>
+    <title>Hexo · 命令</title>
+    <url>/2018/10/29/hexo-learn-004/</url>
+    <content><![CDATA[<p><strong>1. init</strong><br><strong>2. new</strong><br><strong>3. generate</strong><br><strong>4. publish</strong><br><strong>5. server</strong><br><strong>6. deploy</strong><br><strong>7. render</strong><br><strong>8. migrate</strong><br><strong>9. clean</strong><br><strong>10. list</strong><br><strong>11. version</strong></p>
+<a id="more"></a>
+<h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure>
+<h3 id="new-新建文章"><a href="#new-新建文章" class="headerlink" title="new 新建文章"></a>new 新建文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br><span class="line"><span class="comment"># 例如 hexo new post hello-world</span></span><br></pre></td></tr></table></figure>
+<h3 id="generate-生成静态文件"><a href="#generate-生成静态文件" class="headerlink" title="generate 生成静态文件"></a>generate 生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<h3 id="publish-发表草稿"><a href="#publish-发表草稿" class="headerlink" title="publish 发表草稿"></a>publish 发表草稿</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] filename</span><br></pre></td></tr></table></figure>
+<h3 id="server-启动本地服务器"><a href="#server-启动本地服务器" class="headerlink" title="server 启动本地服务器"></a>server 启动本地服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line"><span class="comment"># -p, --port</span></span><br><span class="line"><span class="comment"># -s, --static 只使用静态文件</span></span><br><span class="line"><span class="comment"># -l, --log 启用日志</span></span><br></pre></td></tr></table></figure>
+<h3 id="deploy-部署"><a href="#deploy-部署" class="headerlink" title="deploy 部署"></a>deploy 部署</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br><span class="line"><span class="comment"># -g, --generate 部署之前生成静态文件</span></span><br></pre></td></tr></table></figure>
+<h3 id="render-渲染文件"><a href="#render-渲染文件" class="headerlink" title="render 渲染文件"></a>render 渲染文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo render &lt;file1&gt; [file2] ...</span><br><span class="line"><span class="comment"># -o, --output 设置输出路径</span></span><br></pre></td></tr></table></figure>
+<h3 id="migrate-从其它博客迁移"><a href="#migrate-从其它博客迁移" class="headerlink" title="migrate 从其它博客迁移"></a>migrate 从其它博客迁移</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo migrate &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="clean-清理缓存和静态文件"><a href="#clean-清理缓存和静态文件" class="headerlink" title="clean 清理缓存和静态文件"></a>clean 清理缓存和静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo list</span><br></pre></td></tr></table></figure>
+<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo version</span><br></pre></td></tr></table></figure>
+<h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo --safe</span><br></pre></td></tr></table></figure>
+<h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure>
+<h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure>
+<h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo --config custom.yml</span><br></pre></td></tr></table></figure>
+<h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure>
+<h3 id="自定义CWD"><a href="#自定义CWD" class="headerlink" title="自定义CWD"></a>自定义CWD</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo --cwd /path/to/cwd</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -460,9 +1931,17 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 配置]]></title>
-    <url>%2F2018%2F10%2F29%2Fhexo-learn-003%2F</url>
-    <content type="text"><![CDATA[1. timezone2. language3. theme4. deploy _config.yml timezone: Asia/Shanghai 时区列表 language: zh-CN theme: Hacker false代表禁用主题 deploy: 部署相关]]></content>
+    <title>Hexo · 配置</title>
+    <url>/2018/10/29/hexo-learn-003/</url>
+    <content><![CDATA[<p><strong>1. timezone</strong><br><strong>2. language</strong><br><strong>3. theme</strong><br><strong>4. deploy</strong></p>
+<a id="more"></a>
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><ol>
+<li>timezone: Asia/Shanghai <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="noopener">时区列表</a></li>
+<li>language: zh-CN</li>
+<li>theme: Hacker false代表禁用主题</li>
+<li>deploy: 部署相关</li>
+</ol>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -471,9 +1950,24 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 建站]]></title>
-    <url>%2F2018%2F10%2F29%2Fhexo-learn-002%2F</url>
-    <content type="text"><![CDATA[1. _config.yml 配置2. package.json 应用信息3. scaffolds 模板4. source 资源5. theme 主题 创建123$ hexo init blog$ cd blog$ npm install _config.yml配置信息 package.json应用信息和依赖。 scaffolds模板。Hexo根据scaffold来生成文件。 source资源文件夹，用来存放用户资源。 theme主题。Hexo根据主题来生成静态页面。]]></content>
+    <title>Hexo · 建站</title>
+    <url>/2018/10/29/hexo-learn-002/</url>
+    <content><![CDATA[<p><strong>1. <code>_config.yml</code> 配置</strong><br><strong>2. <code>package.json</code> 应用信息</strong><br><strong>3. <code>scaffolds</code> 模板</strong><br><strong>4. <code>source</code> 资源</strong><br><strong>5. <code>theme</code> 主题</strong></p>
+<a id="more"></a>
+<h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>_config.yml<br>配置信息</p>
+</li>
+<li><p>package.json<br>应用信息和依赖。</p>
+</li>
+<li><p>scaffolds<br>模板。Hexo根据scaffold来生成文件。</p>
+</li>
+<li><p>source<br>资源文件夹，用来存放用户资源。</p>
+</li>
+<li><p>theme<br>主题。Hexo根据主题来生成静态页面。</p>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -482,9 +1976,18 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo · 概述]]></title>
-    <url>%2F2018%2F10%2F29%2Fhexo-learn-001%2F</url>
-    <content type="text"><![CDATA[1. Hexo 是一个快速、简洁且高效的博客框架2. 安装git3. 安装nodejs4. 安装hexo-cli 什么是 Hexo？Hexo 是一个快速、简洁且高效的博客框架。 安装 安装gitGit for Windows 国内下载站 安装nodejsNodejs中文官网 安装hexo-cli1$ npm install -g hexo-cli]]></content>
+    <title>Hexo · 概述</title>
+    <url>/2018/10/29/hexo-learn-001/</url>
+    <content><![CDATA[<p><strong>1. <code>Hexo</code> 是一个快速、简洁且高效的博客框架</strong><br><strong>2. 安装<code>git</code></strong><br><strong>3. 安装<code>nodejs</code></strong><br><strong>4. 安装<code>hexo-cli</code></strong></p>
+<a id="more"></a>
+<h3 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h3><p>Hexo 是一个快速、简洁且高效的博客框架。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
+<li>安装git<br><a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">Git for Windows 国内下载站</a></li>
+<li>安装nodejs<br><a href="http://nodejs.cn/" target="_blank" rel="noopener">Nodejs中文官网</a></li>
+<li>安装hexo-cli<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
