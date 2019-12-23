@@ -1,7 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>git-learn-002</title>
+    <title>console 常用方法</title>
+    <url>/2019/12/23/nodejs-learn-002/</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;</span><br><span class="line">  log,</span><br><span class="line">  info,</span><br><span class="line">  warn,</span><br><span class="line">  debug,</span><br><span class="line">  error,</span><br><span class="line">  assert,</span><br><span class="line">  clear,</span><br><span class="line">  count,</span><br><span class="line">  countReset,</span><br><span class="line">  group,</span><br><span class="line">  groupEnd,</span><br><span class="line">  table,</span><br><span class="line">  time,</span><br><span class="line">  timeLog,</span><br><span class="line">  timeEnd,</span><br><span class="line">  trace</span><br><span class="line">&#125; = <span class="built_in">console</span>;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<ol>
+<li><p>log info warn debug<br><code>info</code> <code>warn</code> <code>debug</code> 是 <code>log</code> 的别名</p>
+</li>
+<li><p>assert<br>简单的断言测试，断言为假的时候才输出</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.assert(<span class="literal">true</span>, <span class="string">'ok'</span>);</span><br><span class="line"><span class="built_in">console</span>.assert(<span class="literal">false</span>, <span class="string">'not ok'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Assertion failed: not ok</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>clear<br>清理终端输出信息，不同系统不同shell表现有所不同</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.clear();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>count countReset<br>count 计数<br>countreset 重置计数</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.count(<span class="string">'count1'</span>);</span><br><span class="line"><span class="built_in">console</span>.count(<span class="string">'count1'</span>);</span><br><span class="line"><span class="built_in">console</span>.countReset(<span class="string">'count1'</span>);</span><br><span class="line"><span class="built_in">console</span>.count(<span class="string">'count1'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// count1: 1</span></span><br><span class="line"><span class="comment">// count1: 2</span></span><br><span class="line"><span class="comment">// count1: 1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>group groupEnd<br><code>group</code> 将后续行的缩进增加两个空格<br><code>groupEnd</code> 减少后续行的缩进两个空格</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.group(<span class="string">'group1'</span>);</span><br><span class="line"><span class="built_in">console</span>.count();</span><br><span class="line"><span class="built_in">console</span>.count();</span><br><span class="line"><span class="built_in">console</span>.groupEnd(<span class="string">'group1'</span>);</span><br><span class="line"><span class="built_in">console</span>.count();</span><br><span class="line"></span><br><span class="line"><span class="comment">// group1</span></span><br><span class="line"><span class="comment">//   default: 1</span></span><br><span class="line"><span class="comment">//   default: 2</span></span><br><span class="line"><span class="comment">// default: 3</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>table<br><code>table</code> 输出表格</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.table([&#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>&#125;, &#123;<span class="attr">a</span>: <span class="number">3</span>, <span class="attr">b</span>: <span class="number">4</span>&#125;], [<span class="string">'a'</span>, <span class="string">'b'</span>]);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ┌─────────┬───┬───┐</span></span><br><span class="line"><span class="comment">// │ (index)    │ a  │ b │</span></span><br><span class="line"><span class="comment">// ├─────────┼───┼───┤</span></span><br><span class="line"><span class="comment">// │    0       │ 1  │ 2 │</span></span><br><span class="line"><span class="comment">// │    1       │ 3  │ 4 │</span></span><br><span class="line"><span class="comment">// └─────────┴───┴───┘</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>time timeLog timeEnd<br><code>time</code> 开始计时<br><code>timeLog</code> 输出计时持续时间<br><code>timeEnd</code> 结束计时</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.time();</span><br><span class="line"><span class="built_in">console</span>.timeLog();</span><br><span class="line"><span class="built_in">console</span>.timeEnd();</span><br><span class="line"></span><br><span class="line"><span class="comment">// default: 0.105ms</span></span><br><span class="line"><span class="comment">// default: 6.221ms</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>trace<br>将 util.format() 格式化的消息和堆栈跟踪打印到代码中的当前位置。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.trace(<span class="string">'trace1'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Trace: trace1</span></span><br><span class="line"><span class="comment">//     at Object.&lt;anonymous&gt; (C:\Users\zhanghao30\Desktop\document\test.js:16:9)</span></span><br><span class="line"><span class="comment">//     at Module._compile (internal/modules/cjs/loader.js:956:30)</span></span><br><span class="line"><span class="comment">//     at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)</span></span><br><span class="line"><span class="comment">//     at Module.load (internal/modules/cjs/loader.js:812:32)</span></span><br><span class="line"><span class="comment">//     at Function.Module._load (internal/modules/cjs/loader.js:724:14)</span></span><br><span class="line"><span class="comment">//     at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)</span></span><br><span class="line"><span class="comment">//     at internal/main/run_main_module.js:17:11</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>nodejs</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vscode 使用技巧1</title>
+    <url>/2019/12/23/vscode-learn-001/</url>
+    <content><![CDATA[<p><strong> 局部格式化 </strong><br><strong> 折叠全部标签 </strong><br><strong> 打开全部标签 </strong><br><strong> 折叠当前标签 </strong><br><strong> 打开当前标签 </strong></p>
+<a id="more"></a>
+<ol>
+<li><p>局部格式化<br><code>CTRL + K  CTRL + F</code></p>
+</li>
+<li><p>折叠全部标签<br><code>CTRL + K  CTRL + 0</code></p>
+</li>
+<li><p>打开全部标签<br><code>CTRL + K CTRL + J</code></p>
+</li>
+<li><p>折叠当前标签<br><code>CTRL + SHIFT + [</code></p>
+</li>
+<li><p>打开当前标签<br><code>CTRL + SHIFT + ]</code></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>editor</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git 在线学习</title>
     <url>/2019/12/16/git-learn-002/</url>
     <content><![CDATA[<p><strong>分享一个git的在线学习网站</strong><br><strong>每个命令都有动画演示，还有沙盒模式，可以自由操练</strong><br><strong>每个关卡都有练习题目，每个题目都有最少的完成步骤</strong><br><strong>教程比较基础，适合新手，学完大约需要花费半天时间</strong></p>
 <a id="more"></a>
@@ -27,12 +89,12 @@
   <entry>
     <title>网摘</title>
     <url>/2019/05/10/other-001/</url>
-    <content><![CDATA[<h2 id="码农"><a href="#码农" class="headerlink" title="码农"></a>码农</h2><p>  前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？</p>
+    <content><![CDATA[<h2 id="码农"><a href="#码农" class="headerlink" title="码农"></a>码农</h2><p>前几天，我听一个广播节目。主持人问，现在很多人开网约车，这样能赚多少钱，能够赚到大钱吗？</p>
 <a id="more"></a>
-<p>  这个问题很容易回答，答案就是不能。出租车司机的收入，主要由营业时间的长短决定。基本上，一天开12个小时，就是比开6个小时，收入高出一倍。每天只有24个小时，因此收入存在上限，不可能偏离平均水平很远。</p>
-<p>  出租车是“时间换收入”的典型行业，投入的时间越多，收入越高，在家休息就没收入。很多行业都属于“时间换收入”，所有此类行业都赚不到大钱。因为你能用来交换的时间是有限的，而且进入中年以后，你就拿不出更多的时间来交换。开出租车赚零花钱，或者作为短期过渡，这是没问题的，但作为终身职业是很糟糕的。</p>
-<p>  我觉得，越来越多的程序员正在落入这个陷井，用编码的时间换取收入。只有不停地做项目，才能拿到钱。项目做得越多，收入越高。这个项目开发完了，公司又让他去干下一个项目。 忙了好几年，项目完成了一大堆，但是自己什么也没留下，以后的收入还要取决于从零开始的新项目。这样的话，你跟出租车司机有何两样，哪一天你不写代码了，不是照样没收入。</p>
-<p>  那些赚到大钱的人，没有一个是靠时间换取收入的。他们要么通过积累资产致富，要么购买他人的时间，为自己创造财富。你应该警惕，不要落入“时间换取收入”的陷井，不要只顾着为别人生产代码，而要注意积累自己的资产，以及适时开展属于自己的业务。</p>
+<p>这个问题很容易回答，答案就是不能。出租车司机的收入，主要由营业时间的长短决定。基本上，一天开12个小时，就是比开6个小时，收入高出一倍。每天只有24个小时，因此收入存在上限，不可能偏离平均水平很远。</p>
+<p>出租车是“时间换收入”的典型行业，投入的时间越多，收入越高，在家休息就没收入。很多行业都属于“时间换收入”，所有此类行业都赚不到大钱。因为你能用来交换的时间是有限的，而且进入中年以后，你就拿不出更多的时间来交换。开出租车赚零花钱，或者作为短期过渡，这是没问题的，但作为终身职业是很糟糕的。</p>
+<p>我觉得，越来越多的程序员正在落入这个陷井，用编码的时间换取收入。只有不停地做项目，才能拿到钱。项目做得越多，收入越高。这个项目开发完了，公司又让他去干下一个项目。 忙了好几年，项目完成了一大堆，但是自己什么也没留下，以后的收入还要取决于从零开始的新项目。这样的话，你跟出租车司机有何两样，哪一天你不写代码了，不是照样没收入。</p>
+<p>那些赚到大钱的人，没有一个是靠时间换取收入的。他们要么通过积累资产致富，要么购买他人的时间，为自己创造财富。你应该警惕，不要落入“时间换取收入”的陷井，不要只顾着为别人生产代码，而要注意积累自己的资产，以及适时开展属于自己的业务。</p>
 ]]></content>
       <categories>
         <category>excerpt</category>
