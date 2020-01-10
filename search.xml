@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ES6 · Set</title>
+    <url>/2020/01/10/es6-learn-009/</url>
+    <content><![CDATA[<p><strong>new Set()</strong><br><strong>size</strong><br><strong>has()</strong><br><strong>add()</strong><br><strong>delete()</strong><br><strong>clear()</strong><br><strong>keys()</strong><br><strong>values()</strong><br><strong>entries()</strong><br><strong>forEach()</strong></p>
+<a id="more"></a>
+<h2 id="new-Set-argv"><a href="#new-Set-argv" class="headerlink" title="new Set(argv)"></a>new Set(argv)</h2><p>argv: array, string<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> s1 = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]);</span><br><span class="line"><span class="keyword">const</span> s2 = <span class="keyword">new</span> <span class="built_in">Set</span>(<span class="string">'abcdefg'</span>);</span><br></pre></td></tr></table></figure></p>
+<h2 id="size"><a href="#size" class="headerlink" title="size"></a>size</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.size <span class="comment">//3</span></span><br><span class="line">s2.size <span class="comment">//7</span></span><br></pre></td></tr></table></figure>
+<h2 id="has"><a href="#has" class="headerlink" title="has()"></a>has()</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.has(<span class="number">1</span>); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<h2 id="add"><a href="#add" class="headerlink" title="add()"></a>add()</h2><p>可以链式调用<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.add(<span class="number">4</span>).add(<span class="number">5</span>);</span><br></pre></td></tr></table></figure></p>
+<h2 id="delete"><a href="#delete" class="headerlink" title="delete()"></a>delete()</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.delete(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="clear"><a href="#clear" class="headerlink" title="clear()"></a>clear()</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.clear();</span><br></pre></td></tr></table></figure>
+<h2 id="keys"><a href="#keys" class="headerlink" title="keys()"></a>keys()</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.keys();</span><br></pre></td></tr></table></figure>
+<h2 id="values"><a href="#values" class="headerlink" title="values()"></a>values()</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.values();</span><br></pre></td></tr></table></figure>
+<h2 id="entries"><a href="#entries" class="headerlink" title="entries()"></a>entries()</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.values();</span><br></pre></td></tr></table></figure>
+<h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach()"></a>forEach()</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">s1.forEach(<span class="function">(<span class="params">value, key</span>) =&gt;</span> &#123;&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>set</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ES6 · Array 常用方法</title>
     <url>/2020/01/09/es6-learn-008/</url>
     <content><![CDATA[<p><strong>数组求和</strong><br><strong>数组最大值</strong><br><strong>数组最小值</strong><br><strong>数组去重</strong><br><strong>检查数组是否有重复项</strong><br><strong>查找数组中的重复项</strong><br><strong>两个数组的交集</strong><br><strong>两个数组的差集</strong><br><strong>两个数组的并集</strong></p>
