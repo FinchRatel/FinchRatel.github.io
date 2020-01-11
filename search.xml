@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ES6 · Map</title>
+    <url>/2020/01/11/es6-learn-010/</url>
+    <content><![CDATA[<p><strong>new Map()</strong><br><strong>size</strong><br><strong>set(k, v)</strong><br><strong>get(k)</strong><br><strong>has(k)</strong><br><strong>delete(k)</strong><br><strong>clear()</strong><br><strong>keys()</strong><br><strong>values()</strong><br><strong>entries()</strong><br><strong>forEach()</strong></p>
+<a id="more"></a>
+<p>Object–string: value<br>Map–any: value</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>(); <span class="comment">// Map &#123;&#125;</span></span><br><span class="line"><span class="keyword">const</span> m1 = <span class="keyword">new</span> <span class="built_in">Map</span>([ [<span class="string">'a'</span>, <span class="number">1</span>], [<span class="string">'b'</span>, <span class="number">2</span>] ]); <span class="comment">// Map &#123; a =&gt; 1, b =&gt; 2&#125;</span></span><br><span class="line">m.set(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'date'</span>).set(<span class="keyword">new</span> <span class="built_in">Array</span>(), []).set(m1, <span class="string">'map'</span>);</span><br><span class="line">m.get(m1);</span><br><span class="line">m.delete(m1);</span><br><span class="line">m.keys();</span><br><span class="line">m.values();</span><br><span class="line">m.entries();</span><br><span class="line">m.forEach(<span class="function">(<span class="params">value,key</span>) =&gt;</span> &#123;&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>es6</category>
+      </categories>
+      <tags>
+        <tag>map</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ES6 · Set</title>
     <url>/2020/01/10/es6-learn-009/</url>
     <content><![CDATA[<p><strong>new Set()</strong><br><strong>size</strong><br><strong>has()</strong><br><strong>add()</strong><br><strong>delete()</strong><br><strong>clear()</strong><br><strong>keys()</strong><br><strong>values()</strong><br><strong>entries()</strong><br><strong>forEach()</strong></p>
@@ -139,10 +153,9 @@
       </tags>
   </entry>
   <entry>
-    <title>localStorage &amp;&amp; sessionStorage</title>
-    <url>/2019/05/05/js-learn-003/</url>
-    <content><![CDATA[<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> storage = localStorage <span class="comment">// or sessionStorage</span></span><br><span class="line"><span class="comment">// 增 改</span></span><br><span class="line">storage.setItem(<span class="string">'version'</span>, <span class="string">'0.2.0'</span>)</span><br><span class="line"><span class="comment">// 查</span></span><br><span class="line">storage.getItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.removeItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.clear()</span><br></pre></td></tr></table></figure>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN web docs – Window​.local​Storage</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage" target="_blank" rel="noopener">MDN web docs – Window​.session​Storage</a><br><a href="https://www.cnblogs.com/st-leslie/p/5617130.html" target="_blank" rel="noopener">localStorage使用总结</a></p>
+    <title>魔术字符串</title>
+    <url>/2019/05/05/js-learn-004/</url>
+    <content><![CDATA[<h2 id="魔术字符串"><a href="#魔术字符串" class="headerlink" title="魔术字符串"></a>魔术字符串</h2><p>在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。风格良好的代码，应该尽量消除魔术字符串，改由含义清晰的变量代替。</p>
 ]]></content>
       <categories>
         <category>h5</category>
@@ -152,9 +165,12 @@
       </tags>
   </entry>
   <entry>
-    <title>魔术字符串</title>
-    <url>/2019/05/05/js-learn-004/</url>
-    <content><![CDATA[<h2 id="魔术字符串"><a href="#魔术字符串" class="headerlink" title="魔术字符串"></a>魔术字符串</h2><p>在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。风格良好的代码，应该尽量消除魔术字符串，改由含义清晰的变量代替。</p>
+    <title>localStorage &amp;&amp; sessionStorage</title>
+    <url>/2019/05/05/js-learn-003/</url>
+    <content><![CDATA[<p><strong>setItem(key, value)</strong><br><strong>getItem(key)</strong><br><strong>removeItem(key)</strong><br><strong>clear()</strong></p>
+<a id="more"></a>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> storage = localStorage <span class="comment">// or sessionStorage</span></span><br><span class="line"><span class="comment">// 增 改</span></span><br><span class="line">storage.setItem(<span class="string">'version'</span>, <span class="string">'0.2.0'</span>)</span><br><span class="line"><span class="comment">// 查</span></span><br><span class="line">storage.getItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.removeItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.clear()</span><br></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN web docs – Window​.local​Storage</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage" target="_blank" rel="noopener">MDN web docs – Window​.session​Storage</a><br><a href="https://www.cnblogs.com/st-leslie/p/5617130.html" target="_blank" rel="noopener">localStorage使用总结</a></p>
 ]]></content>
       <categories>
         <category>h5</category>

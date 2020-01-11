@@ -46,18 +46,20 @@
   };
 </script>
 
-  <meta name="description" content="温故而知新">
-<meta property="og:type" content="website">
-<meta property="og:title" content="远上寒山石径斜">
-<meta property="og:url" content="https://finchratel.github.io/archives/2018/11/index.html">
+  <meta name="description" content="new Map()sizeset(k, v)get(k)has(k)delete(k)clear()keys()values()entries()forEach()">
+<meta name="keywords" content="map">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6 · Map">
+<meta property="og:url" content="https://finchratel.github.io/2020/01/11/es6-learn-010/index.html">
 <meta property="og:site_name" content="远上寒山石径斜">
-<meta property="og:description" content="温故而知新">
+<meta property="og:description" content="new Map()sizeset(k, v)get(k)has(k)delete(k)clear()keys()values()entries()forEach()">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-01-11T03:59:48.128Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="远上寒山石径斜">
-<meta name="twitter:description" content="温故而知新">
+<meta name="twitter:title" content="ES6 · Map">
+<meta name="twitter:description" content="new Map()sizeset(k, v)get(k)has(k)delete(k)clear()keys()values()entries()forEach()">
 
-<link rel="canonical" href="https://finchratel.github.io/archives/2018/11/">
+<link rel="canonical" href="https://finchratel.github.io/2020/01/11/es6-learn-010/">
 
 
 <script id="page-configurations">
@@ -65,11 +67,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false
+    isPost: true
   };
 </script>
 
-  <title>归档 | 远上寒山石径斜</title>
+  <title>ES6 · Map | 远上寒山石径斜</title>
   
 
 
@@ -195,233 +197,114 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        
-        <span class="collection-header">不错! 目前共计 52 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://finchratel.github.io/2020/01/11/es6-learn-010/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dog.png">
+      <meta itemprop="name" content="Finch Ratel">
+      <meta itemprop="description" content="温故而知新">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="远上寒山石径斜">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ES6 · Map
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-11 11:21:46 / 修改时间：11:59:48" itemprop="dateCreated datePublished" datetime="2020-01-11T11:21:46+08:00">2020-01-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/es6/" itemprop="url" rel="index">
+                    <span itemprop="name">es6</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2018</h1>
+        <p><strong>new Map()</strong><br><strong>size</strong><br><strong>set(k, v)</strong><br><strong>get(k)</strong><br><strong>has(k)</strong><br><strong>delete(k)</strong><br><strong>clear()</strong><br><strong>keys()</strong><br><strong>values()</strong><br><strong>entries()</strong><br><strong>forEach()</strong></p>
+<a id="more"></a>
+<p>Object–string: value<br>Map–any: value</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>(); <span class="comment">// Map &#123;&#125;</span></span><br><span class="line"><span class="keyword">const</span> m1 = <span class="keyword">new</span> <span class="built_in">Map</span>([ [<span class="string">'a'</span>, <span class="number">1</span>], [<span class="string">'b'</span>, <span class="number">2</span>] ]); <span class="comment">// Map &#123; a =&gt; 1, b =&gt; 2&#125;</span></span><br><span class="line">m.set(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'date'</span>).set(<span class="keyword">new</span> <span class="built_in">Array</span>(), []).set(m1, <span class="string">'map'</span>);</span><br><span class="line">m.get(m1);</span><br><span class="line">m.delete(m1);</span><br><span class="line">m.keys();</span><br><span class="line">m.values();</span><br><span class="line">m.entries();</span><br><span class="line">m.forEach(<span class="function">(<span class="params">value,key</span>) =&gt;</span> &#123;&#125;);</span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-30T16:22:01+08:00"
-              content="2018-11-30">
-          11-30
-        </time>
+    
+    
+    
+        <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Finch Ratel 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="Finch Ratel 支付宝">
+        <p>支付宝</p>
       </div>
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/30/es6-learn-005/" itemprop="url">
-            <span itemprop="name">ES6 · Class继承</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-30T16:11:16+08:00"
-              content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/30/es6-learn-004/" itemprop="url">
-            <span itemprop="name">ES6 · Class基础</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-29T11:49:37+08:00"
-              content="2018-11-29">
-          11-29
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/29/vim-study-003/" itemprop="url">
-            <span itemprop="name">VIM · 小结03</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-28T13:57:43+08:00"
-              content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/28/vim-study-002/" itemprop="url">
-            <span itemprop="name">VIM · 小结02</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-26T15:36:00+08:00"
-              content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/26/es6-learn-003/" itemprop="url">
-            <span itemprop="name">ES6 · Module</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-23T17:54:26+08:00"
-              content="2018-11-23">
-          11-23
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/23/linux-learn-002/" itemprop="url">
-            <span itemprop="name">SFTP · 简易教程及示例</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-23T10:10:06+08:00"
-              content="2018-11-23">
-          11-23
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/23/vim-study-001/" itemprop="url">
-            <span itemprop="name">VIM · 小结01</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-21T15:07:15+08:00"
-              content="2018-11-21">
-          11-21
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/21/vim-learn-006/" itemprop="url">
-            <span itemprop="name">VIM · 基础06</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-21T14:26:06+08:00"
-              content="2018-11-21">
-          11-21
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/21/vim-learn-005/" itemprop="url">
-            <span itemprop="name">VIM · 基础05</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2018-11-20T16:53:44+08:00"
-              content="2018-11-20">
-          11-20
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2018/11/20/vim-learn-004/" itemprop="url">
-            <span itemprop="name">VIM · 基础04</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-
-    </div>
   </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/map/" rel="tag"># map</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/10/es6-learn-009/" rel="prev" title="ES6 · Set">
+      <i class="fa fa-chevron-left"></i> ES6 · Set
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
   
   
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2018/11/page/2/">2</a><a class="page-number" href="/archives/2018/11/page/3/">3</a><a class="extend next" rel="next" href="/archives/2018/11/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>

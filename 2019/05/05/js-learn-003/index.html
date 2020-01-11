@@ -46,18 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="API123456789const storage = localStorage // or sessionStorage// 增 改storage.setItem(&apos;version&apos;, &apos;0.2.0&apos;)// 查storage.getItem(&apos;version&apos;)// 删storage.removeItem(&apos;version&apos;)// 删storage.clear() 参考MDN web docs">
+  <meta name="description" content="setItem(key, value)getItem(key)removeItem(key)clear()">
 <meta name="keywords" content="h5">
 <meta property="og:type" content="article">
 <meta property="og:title" content="localStorage &amp;&amp; sessionStorage">
 <meta property="og:url" content="https://finchratel.github.io/2019/05/05/js-learn-003/index.html">
 <meta property="og:site_name" content="远上寒山石径斜">
-<meta property="og:description" content="API123456789const storage = localStorage // or sessionStorage// 增 改storage.setItem(&apos;version&apos;, &apos;0.2.0&apos;)// 查storage.getItem(&apos;version&apos;)// 删storage.removeItem(&apos;version&apos;)// 删storage.clear() 参考MDN web docs">
+<meta property="og:description" content="setItem(key, value)getItem(key)removeItem(key)clear()">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-16T07:50:49.100Z">
+<meta property="og:updated_time" content="2020-01-11T04:01:48.276Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="localStorage &amp;&amp; sessionStorage">
-<meta name="twitter:description" content="API123456789const storage = localStorage // or sessionStorage// 增 改storage.setItem(&apos;version&apos;, &apos;0.2.0&apos;)// 查storage.getItem(&apos;version&apos;)// 删storage.removeItem(&apos;version&apos;)// 删storage.clear() 参考MDN web docs">
+<meta name="twitter:description" content="setItem(key, value)getItem(key)removeItem(key)clear()">
 
 <link rel="canonical" href="https://finchratel.github.io/2019/05/05/js-learn-003/">
 
@@ -142,7 +142,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">25</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">26</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -152,7 +152,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">51</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">52</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -232,7 +232,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-16 15:50:49" itemprop="dateModified" datetime="2019-12-16T15:50:49+08:00">2019-12-16</time>
+                <time title="修改时间：2020-01-11 12:01:48" itemprop="dateModified" datetime="2020-01-11T12:01:48+08:00">2020-01-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -257,7 +257,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> storage = localStorage <span class="comment">// or sessionStorage</span></span><br><span class="line"><span class="comment">// 增 改</span></span><br><span class="line">storage.setItem(<span class="string">'version'</span>, <span class="string">'0.2.0'</span>)</span><br><span class="line"><span class="comment">// 查</span></span><br><span class="line">storage.getItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.removeItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.clear()</span><br></pre></td></tr></table></figure>
+        <p><strong>setItem(key, value)</strong><br><strong>getItem(key)</strong><br><strong>removeItem(key)</strong><br><strong>clear()</strong></p>
+<a id="more"></a>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> storage = localStorage <span class="comment">// or sessionStorage</span></span><br><span class="line"><span class="comment">// 增 改</span></span><br><span class="line">storage.setItem(<span class="string">'version'</span>, <span class="string">'0.2.0'</span>)</span><br><span class="line"><span class="comment">// 查</span></span><br><span class="line">storage.getItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.removeItem(<span class="string">'version'</span>)</span><br><span class="line"><span class="comment">// 删</span></span><br><span class="line">storage.clear()</span><br></pre></td></tr></table></figure>
 <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage" target="_blank" rel="noopener">MDN web docs – Window​.local​Storage</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage" target="_blank" rel="noopener">MDN web docs – Window​.session​Storage</a><br><a href="https://www.cnblogs.com/st-leslie/p/5617130.html" target="_blank" rel="noopener">localStorage使用总结</a></p>
 
     </div>
@@ -297,12 +299,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/05/05/js-learn-004/" rel="prev" title="魔术字符串">
-      <i class="fa fa-chevron-left"></i> 魔术字符串
+    <a href="/2019/04/08/typescript-learn-001/" rel="prev" title="typescript">
+      <i class="fa fa-chevron-left"></i> typescript
     </a></div>
       <div class="post-nav-item">
-    <a href="/2019/05/10/other-001/" rel="next" title="网摘">
-      网摘 <i class="fa fa-chevron-right"></i>
+    <a href="/2019/05/05/js-learn-004/" rel="next" title="魔术字符串">
+      魔术字符串 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -379,7 +381,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">51</span>
+          <span class="site-state-item-count">52</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -388,7 +390,7 @@
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-count">26</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
